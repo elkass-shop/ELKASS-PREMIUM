@@ -1,0 +1,190 @@
+{
+  "version": "v46",
+  "module": "ELKASS Media Studio PRO",
+  "defaultMode": "smart-crop",
+  "formats": [
+    "jpg",
+    "png",
+    "webp",
+    "avif",
+    "svg",
+    "pdf",
+    "mp4"
+  ],
+  "targetPresets": [
+    {
+      "id": "product-main",
+      "name": "Zdjęcie główne produktu",
+      "ratio": "4:3",
+      "desktop": 900,
+      "mobile": 720,
+      "crop": "contain-smart"
+    },
+    {
+      "id": "product-thumb",
+      "name": "Miniatura produktu",
+      "ratio": "1:1",
+      "desktop": 240,
+      "mobile": 180,
+      "crop": "contain-smart"
+    },
+    {
+      "id": "product-card",
+      "name": "Karta produktu",
+      "ratio": "1:1",
+      "desktop": 420,
+      "mobile": 320,
+      "crop": "contain-smart"
+    },
+    {
+      "id": "hero",
+      "name": "Hero / banner",
+      "ratio": "16:7",
+      "desktop": 1800,
+      "mobile": 900,
+      "crop": "cover-focus"
+    },
+    {
+      "id": "category",
+      "name": "Kategoria",
+      "ratio": "16:9",
+      "desktop": 800,
+      "mobile": 600,
+      "crop": "cover-focus"
+    },
+    {
+      "id": "theme-decoration",
+      "name": "Dekoracja motywu",
+      "ratio": "auto",
+      "desktop": 600,
+      "mobile": 300,
+      "crop": "none"
+    }
+  ],
+  "library": [
+    {
+      "id": "media-tv-samsung-demo",
+      "name": "Samsung TV demo",
+      "type": "product",
+      "path": "/assets/images/products/samsung-tv-demo.jpg",
+      "assignedTo": [
+        "tv-samsung-55-crystal-uhd-4k"
+      ],
+      "alt": "Telewizor Samsung 55 cali na ekspozycji ELKASS",
+      "status": "demo"
+    },
+    {
+      "id": "media-bosch-zmywarka-demo",
+      "name": "Bosch zmywarka demo",
+      "type": "product",
+      "path": "/assets/images/products/bosch-zmywarka-demo.jpg",
+      "assignedTo": [
+        "zmywarka-bosch-60-serie4"
+      ],
+      "alt": "Zmywarka Bosch 60 cm",
+      "status": "demo"
+    },
+    {
+      "id": "media-salon-demo",
+      "name": "Salon ELKASS",
+      "type": "gallery",
+      "path": "/assets/images/gallery/salon-elkass-demo.jpg",
+      "assignedTo": [
+        "gallery",
+        "home"
+      ],
+      "alt": "Salon ELKASS w Oleśnie",
+      "status": "demo"
+    },
+    {
+      "id": "media-hero-premium-demo",
+      "name": "Hero premium",
+      "type": "hero",
+      "path": "/assets/images/hero/hero-premium-demo.png",
+      "assignedTo": [
+        "home-hero"
+      ],
+      "alt": "Hero ELKASS Premium",
+      "status": "demo"
+    },
+    {
+      "id": "theme-black-week",
+      "name": "Black Week banner",
+      "type": "theme",
+      "path": "/assets/images/banners/banner-premium-demo.png",
+      "assignedTo": [
+        "black-week"
+      ],
+      "alt": "Baner promocji Black Week ELKASS",
+      "status": "demo"
+    }
+  ],
+  "themeMedia": {
+    "christmas": {
+      "decorations": [
+        "snow-subtle",
+        "corner-spruce",
+        "gift-badge"
+      ],
+      "mobileEffects": "reduced"
+    },
+    "winter": {
+      "decorations": [
+        "snow-corners",
+        "frost-glow"
+      ],
+      "mobileEffects": "reduced"
+    },
+    "easter": {
+      "decorations": [
+        "pastel-corners",
+        "spring-leaf"
+      ],
+      "mobileEffects": "static"
+    },
+    "summer": {
+      "decorations": [
+        "sun-wave",
+        "holiday-badge"
+      ],
+      "mobileEffects": "static"
+    },
+    "autumn": {
+      "decorations": [
+        "warm-gradient",
+        "leaf-corner"
+      ],
+      "mobileEffects": "static"
+    },
+    "black-week": {
+      "decorations": [
+        "dark-gradient",
+        "timer-strip",
+        "premium-badge"
+      ],
+      "mobileEffects": "reduced"
+    },
+    "tv-days": {
+      "decorations": [
+        "screen-glow",
+        "tech-badge"
+      ],
+      "mobileEffects": "static"
+    },
+    "agd-days": {
+      "decorations": [
+        "home-line",
+        "kitchen-badge"
+      ],
+      "mobileEffects": "static"
+    }
+  },
+  "studioChecklist": [
+    "Dodaj media",
+    "Ustaw ALT",
+    "Wybierz użycia",
+    "Sprawdź desktop",
+    "Sprawdź mobile",
+    "Opublikuj"
+  ]
+}

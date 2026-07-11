@@ -1,0 +1,23 @@
+{
+  "hit": "tv-samsung-55-crystal-uhd",
+  "quickPromos": [
+    "zmywarka-bosch-60-serie4",
+    "pralka-beko-8kg-inverter",
+    "ekspres-philips-lattego",
+    "lodowka-lg-no-frost"
+  ],
+  "dynamicSections": [
+    {
+      "id": "promocje-wybrane",
+      "title": "Promocje wybrane przez ELKASS",
+      "products": [
+        "piekarnik-samsung-dual-cook",
+        "odkurzacz-bosch-hepa",
+        "plyta-indukcyjna-amica-60",
+        "soundbar-lg-premium",
+        "monitor-lenovo-gaming",
+        "smartfon-samsung-galaxy"
+      ]
+    }
+  ]
+}

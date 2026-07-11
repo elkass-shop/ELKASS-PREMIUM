@@ -1,0 +1,6 @@
+{
+  "version":"4.2",
+  "module":"ELKASS Studio Core",
+  "sections":["home","products","categories","promotions","reviews","media","responsive","settings"],
+  "rule":"Każdy moduł rozwijany równolegle: desktop, mobile, ELKASS Studio."
+}

@@ -1,0 +1,45 @@
+{
+  "module": "Orders & Customer Center",
+  "statuses": [
+    "new",
+    "in_progress",
+    "ready_for_pickup",
+    "completed",
+    "service",
+    "warranty"
+  ],
+  "orders": [
+    {
+      "id": "ELK-1024",
+      "customer": "Anna K.",
+      "city": "Olesno",
+      "status": "new",
+      "total": 2498,
+      "items": [
+        "Samsung 55 Crystal UHD",
+        "Montaż TV"
+      ]
+    },
+    {
+      "id": "ELK-1023",
+      "customer": "Marek S.",
+      "city": "Praszka",
+      "status": "in_progress",
+      "total": 1999,
+      "items": [
+        "Bosch zmywarka 60 cm Serie 4"
+      ]
+    },
+    {
+      "id": "ELK-1022",
+      "customer": "Joanna L.",
+      "city": "Dobrodzień",
+      "status": "ready_for_pickup",
+      "total": 1499,
+      "items": [
+        "Beko pralka 8 kg"
+      ]
+    }
+  ],
+  "woodyboy_note": "Moduł projektowany jako przyszły Orders Engine w WOODYBOY Core."
+}

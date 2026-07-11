@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="90" viewBox="0 0 220 90" role="img" aria-label="Philips logo">
+  <rect width="220" height="90" rx="18" fill="#ffffff"/>
+  <rect x="1" y="1" width="218" height="88" rx="17" fill="none" stroke="#e8edf3"/>
+  <text x="110" y="54" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" letter-spacing="0" fill="#111827">Philips</text>
+</svg>

@@ -1,0 +1,55 @@
+{
+  "version": "v57",
+  "project": "elkass",
+  "orders": [
+    {
+      "id": "ELK-2026-001",
+      "customer": "Jan K.",
+      "city": "Olesno",
+      "status": "nowe",
+      "total": 4298,
+      "items": [
+        "Samsung 55” Crystal UHD",
+        "Soundbar LG"
+      ],
+      "service": "Transport + konfiguracja"
+    },
+    {
+      "id": "ELK-2026-002",
+      "customer": "Anna M.",
+      "city": "Dobrodzień",
+      "status": "w realizacji",
+      "total": 1999,
+      "items": [
+        "Bosch zmywarka 60 cm Serie 4"
+      ],
+      "service": "Montaż"
+    },
+    {
+      "id": "ELK-2026-003",
+      "customer": "Piotr S.",
+      "city": "Praszka",
+      "status": "gotowe do odbioru",
+      "total": 1499,
+      "items": [
+        "Beko pralka 8 kg"
+      ],
+      "service": "Odbiór w salonie"
+    }
+  ],
+  "statuses": [
+    "nowe",
+    "w realizacji",
+    "gotowe do odbioru",
+    "dostarczone",
+    "zakończone",
+    "serwis"
+  ],
+  "customerCenter": [
+    "historia zakupów",
+    "gwarancje",
+    "zgłoszenia serwisowe",
+    "ulubione",
+    "adresy dostawy"
+  ]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b1d24"/><stop offset="1" stop-color="#e30613"/></linearGradient>
+<radialGradient id="glow" cx=".82" cy=".18" r=".45"><stop stop-color="white" stop-opacity=".24"/><stop offset=".8" stop-color="white" stop-opacity="0"/></radialGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="26" stdDeviation="24" flood-opacity=".35"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#glow)"/>
+<path d="M955 0h645v1000h-385z" fill="white" opacity=".10"/>
+<g opacity=".18" stroke="white" stroke-width="5"><path d="M900 90h530M860 170h620M930 250h500M885 810h560"/></g>
+<g filter="url(#shadow)"><rect x="830" y="245" width="570" height="430" rx="40" fill="#111827" stroke="white" stroke-width="10"/><rect x="895" y="315" width="445" height="280" rx="24" fill="#444"/><circle cx="1125" cy="455" r="100" fill="none" stroke="#e30613" stroke-width="20"/><rect x="930" y="705" width="370" height="56" rx="22" fill="white"/></g>
+<rect y="440" width="1600" height="560" fill="black" opacity=".18"/>
+</svg>

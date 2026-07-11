@@ -1,0 +1,26 @@
+{
+  "module": "Search + SEO + Performance",
+  "searchIndexes": [
+    "products",
+    "categories",
+    "brands",
+    "promotions",
+    "content"
+  ],
+  "seoFields": [
+    "title",
+    "description",
+    "canonical",
+    "openGraph",
+    "schemaProduct",
+    "sitemap"
+  ],
+  "performanceChecks": [
+    "lazyImages",
+    "validLinks",
+    "mobileLayout",
+    "unusedCssReview",
+    "imageSizes"
+  ],
+  "woodyboy_note": "Moduł projektowany jako przyszły Search/SEO Engine w WOODYBOY Core."
+}

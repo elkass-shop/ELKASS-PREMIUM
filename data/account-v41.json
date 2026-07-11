@@ -1,0 +1,20 @@
+{
+  "module": "Customer Account Experience v4.1",
+  "sections": [
+    "orders",
+    "warranty",
+    "favorites",
+    "service",
+    "profile"
+  ],
+  "mobile": {
+    "bottomNavigation": true,
+    "singleColumn": true,
+    "horizontalProductRail": true
+  },
+  "studioReady": {
+    "Customer Studio": true,
+    "Order Studio": true,
+    "Service Studio": true
+  }
+}

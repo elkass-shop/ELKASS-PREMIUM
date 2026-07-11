@@ -1,0 +1,52 @@
+{
+  "version": "v3.6",
+  "productStudio": {
+    "editableSections": [
+      "gallery",
+      "mainPhoto",
+      "thumbnails",
+      "buyBox",
+      "badges",
+      "price",
+      "services",
+      "descriptionTabs",
+      "parameters",
+      "dimensions",
+      "faq",
+      "relatedProducts",
+      "accessories",
+      "seo"
+    ],
+    "imageEngine": {
+      "formats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "webp",
+        "avif"
+      ],
+      "modes": [
+        "contain",
+        "cover",
+        "manual focus point"
+      ],
+      "targets": [
+        "gallery",
+        "thumbnail",
+        "product card",
+        "promotion card",
+        "mobile",
+        "zoom"
+      ]
+    },
+    "templates": [
+      "Telewizor",
+      "Pralka",
+      "Lodówka",
+      "Zmywarka",
+      "Piekarnik",
+      "Małe AGD",
+      "Audio"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "version": "2.2",
+  "promotions": {
+    "seasonMode": "base",
+    "randomDiscounts": true,
+    "badges": [
+      "Hit tygodnia",
+      "Super cena",
+      "Weekend",
+      "Polecamy",
+      "Ostatnie sztuki"
+    ],
+    "hit": {
+      "badge": "Hit tygodnia",
+      "name": "Telewizor Samsung 55\" Crystal UHD 4K",
+      "image": "assets/products/product-05-telewizor-samsung.jpg",
+      "oldPrice": 2999,
+      "price": 2299,
+      "discount": 23,
+      "features": [
+        "Smart TV Tizen",
+        "Crystal UHD 4K",
+        "Doradztwo i konfiguracja"
+      ],
+      "expert": "Dobry wybór do salonu: duży obraz, intuicyjny Smart TV i bardzo dobry stosunek ceny do jakości.",
+      "cta": "Zobacz produkt"
+    },
+    "items": [
+      {
+        "badge": "Super cena",
+        "name": "Zmywarka Bosch 60 cm",
+        "image": "assets/products/product-10-zmywarka-bosch.jpg",
+        "oldPrice": 2499,
+        "price": 1999,
+        "discount": 20,
+        "feature": "Cicha praca i oszczędne programy"
+      },
+      {
+        "badge": "Raty 0%",
+        "name": "Pralka Beko 8 kg",
+        "image": "assets/products/product-02-pralka-beko.jpg",
+        "oldPrice": 1899,
+        "price": 1499,
+        "discount": 21,
+        "feature": "Programy szybkie i ekonomiczne"
+      },
+      {
+        "badge": "Weekend",
+        "name": "Ekspres Philips LatteGo",
+        "image": "assets/products/product-12-ekspres-philips.jpg",
+        "oldPrice": 2799,
+        "price": 2199,
+        "discount": 21,
+        "feature": "Kawa mleczna jednym kliknięciem"
+      },
+      {
+        "badge": "Outlet",
+        "name": "Lodówka LG No Frost",
+        "image": "assets/products/product-16-lodowka-lg.jpg",
+        "oldPrice": 3299,
+        "price": 2699,
+        "discount": 18,
+        "feature": "Duża pojemność i świeżość na dłużej"
+      }
+    ]
+  },
+  "brands": [
+    "Samsung",
+    "LG",
+    "Bosch",
+    "Philips",
+    "Beko",
+    "Whirlpool",
+    "Electrolux",
+    "TCL",
+    "Sony",
+    "Amica",
+    "Kernau",
+    "Sencor",
+    "Gorenje",
+    "Hisense",
+    "JBL",
+    "Panasonic",
+    "Sharp",
+    "Tefal",
+    "Xiaomi",
+    "AEG"
+  ]
+}

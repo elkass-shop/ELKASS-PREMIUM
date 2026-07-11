@@ -1,0 +1,35 @@
+{
+  "version": "v55",
+  "project": "elkass",
+  "note": "Home Visual Builder LIVE: ustawienia grafik strony głównej zapisywane lokalnie i przygotowane pod chmurę.",
+  "sections": {
+    "hero": {
+      "title": "Sprzęt do domu z doradztwem, nie tylko z półki!",
+      "subtitle": "RTV, AGD, multimedia, serwis, transport i pomoc w wyborze. Lokalnie, konkretnie i w premium wydaniu.",
+      "desktopImage": "/assets/images/hero/hero-premium-demo.png",
+      "mobileImage": "/assets/images/hero/hero-premium-demo.png",
+      "overlay": "premium-dark",
+      "heightDesktop": "560px",
+      "heightMobile": "430px"
+    },
+    "gallery": {
+      "image": "/assets/images/gallery/salon-elkass-demo.jpg",
+      "title": "Poznaj salon ELKASS"
+    },
+    "categories": {
+      "rtv": "/assets/categories/clean-rtv.jpg",
+      "agd": "/assets/categories/clean-agd.jpg",
+      "agd-zabudowa": "/assets/categories/clean-agd-zabudowa.jpg",
+      "male-agd": "/assets/categories/clean-male-agd.jpg",
+      "komputery-telefony": "/assets/categories/clean-komputery-telefony.jpg",
+      "audio": "/assets/categories/clean-audio.jpg",
+      "gaming": "/assets/categories/clean-gaming.jpg",
+      "serwis": "/assets/categories/clean-serwis.jpg"
+    },
+    "banners": {
+      "promotion": "/assets/banners/weekend-sale.jpg",
+      "raty": "/assets/banners/raty-0.jpg",
+      "smartHome": "/assets/banners/smart-home.jpg"
+    }
+  }
+}

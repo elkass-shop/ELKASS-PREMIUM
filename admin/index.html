@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ELKASS Studio LIVE</title>
+  <link rel="stylesheet" href="/assets/css/elkass-studio-live.css">
+  <link rel="stylesheet" href="/assets/css/elkass-seasonal-engine.css">
+</head>
+<body>
+  <section class="login-shell" id="loginView">
+    <div class="login-card">
+      <a class="brand login-brand" href="/"><span>E</span><b>ELKASS Studio<small>LIVE CMS + Auth</small></b></a>
+      <h1>Zaloguj do panelu</h1>
+      <p>Panel do dodawania produktów, grafik, zmiany Hero i przygotowania sklepu do prezentacji.</p>
+      <form id="loginForm" class="auth-form">
+        <label>Email<input name="email" type="email" placeholder="email@firma.pl" autocomplete="username" required></label>
+        <label>Hasło<input name="password" type="password" placeholder="Wpisz hasło" autocomplete="current-password" required></label>
+        <button>Zaloguj</button>
+      </form>
+      <button class="linklike" id="showReset" type="button">Nie pamiętasz hasła? Wyślij reset na email</button>
+      <form id="resetForm" class="auth-form hidden">
+        <label>Email do resetu<input name="email" type="email" placeholder="email@firma.pl" autocomplete="username" required></label>
+        <button type="submit">Wyślij link resetujący</button>
+      </form>
+      <div class="demo-users">
+        <b>Konta testowe:</b>
+        <span>admin@elkass.pl / admin123 — pełny dostęp</span>
+        <span>mod@elkass.pl / mod123 — produkty i grafiki</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="studio hidden" id="studioView">
+    <aside>
+      <a class="brand" href="/"><span>E</span><b>ELKASS Studio<small>LIVE CMS</small></b></a>
+      <div class="userbox"><b id="userName">Admin</b><small id="userRole">admin</small></div>
+      <button class="active" data-tab="dashboard">Start</button>
+      <button data-tab="product">Produkty</button>
+      <button data-tab="media">Grafiki</button>
+      <button data-tab="brands">Producenci</button>
+      <button data-tab="categories">Kategorie i podkategorie</button>
+      <button data-tab="themes">Motywy sezonowe</button>
+      <button data-tab="home">Strona główna</button>
+      <button data-tab="layout">Układ</button>
+      <button data-tab="users" data-admin-only>Użytkownicy</button>
+      <a href="/" target="_blank">↗ Podgląd sklepu</a>
+      <button id="logout" class="logout" type="button">Wyloguj</button>
+      <p>ELKASS to pierwsze wdrożenie przyszłej platformy WOODYBOY. Codzienna obsługa ma działać bez edycji kodu.</p>
+    </aside>
+    <main><div id="modeBanner" class="mode-banner">Tryb demonstracyjny — dane zapisują się tylko w tej przeglądarce. Podłącz Supabase przed użyciem produkcyjnym.</div>
+      <header>
+        <div><h1>ELKASS Studio LIVE</h1><p>Produkty, grafiki i strona główna — prosty panel dla laika.</p></div>
+        <button id="publish">Opublikuj / odśwież podgląd</button>
+      </header>
+
+      <section class="tab active" id="dashboard">
+        <div class="cards"><article><b id="countProducts">0</b><span>produktów</span></article><article><b id="countMedia">0</b><span>grafik lokalnych</span></article><article><b id="countUsers">2</b><span>użytkowników</span></article><article><b>LIVE</b><span>tryb zapisu</span></article></div>
+        <div class="panel"><h2>Co możesz pokazać rano</h2><ul class="checklist"><li>Dodajesz produkt w panelu i pojawia się na stronie.</li><li>Dodajesz grafikę i ustawiasz ją jako Hero lub zdjęcie salonu.</li><li>Administrator ma pełny dostęp, moderator ograniczony.</li><li>Reset hasła działa jako wersja demo i jest gotowy pod Supabase Auth.</li></ul></div>
+      </section>
+
+      <section class="tab" id="product">
+        <div class="grid">
+          <form id="productForm" class="panel"><h2>Dodaj / edytuj produkt</h2>
+            <label>ID produktu<input name="id" placeholder="np. tv-samsung-55"></label>
+            <label>Nazwa<input name="name" required placeholder="Nazwa produktu"></label>
+            <div class="two"><label>Marka<select name="brand" id="productBrand"></select></label><label>Kategoria<select name="category" id="productCategory"></select></label></div>
+            <div class="two"><label>Podkategoria<select name="subcategory" id="productSubcategory"></select></label><label>Seria / model<input name="series" placeholder="np. Serie 4 / Crystal UHD"></label></div>
+            <div class="two"><label>Cena<input name="price" value="2299"></label><label>Stara cena<input name="oldPrice" value="2999"></label></div>
+            <div class="two"><label>Badge<input name="badge" value="Promocja"></label><label>Status<select name="status"><option value="published">Opublikowany</option><option value="draft">Szkic</option></select></label></div>
+            <div class="checks"><label><input type="checkbox" name="showHome" checked> Pokaż na stronie głównej</label><label><input type="checkbox" name="isPromo"> Promocja</label><label><input type="checkbox" name="isHit"> Hit tygodnia</label><label><input type="checkbox" name="isOutlet"> Outlet</label><label><input type="checkbox" name="isNew"> Nowość</label></div>
+            <label>Zdjęcie URL<input name="image" value="/assets/products/product-05-telewizor-samsung.jpg"></label>
+            <label>Krótki opis<textarea name="short">Produkt dodany z ELKASS Studio.</textarea></label>
+            <label>Cechy, po jednej w linii<textarea name="features">Doradztwo ELKASS
+Transport lokalny
+Raty 0%</textarea></label>
+            <div class="actions"><button>Zapisz produkt</button><button id="newProduct" type="button" class="secondary">Wyczyść formularz</button></div>
+          </form>
+          <div class="panel"><h2>Lista produktów</h2><div id="productList" class="list"></div></div>
+        </div>
+      </section>
+
+      <section class="tab" id="media">
+        <div class="grid"><div class="panel"><h2>Dodaj grafikę</h2><input type="file" id="mediaFile" accept="image/*"><p>Grafika zapisuje się lokalnie jako demo. Po podpięciu Supabase Storage ten sam wybór będzie wysyłał pliki do chmury.</p><button id="useHero">Użyj zaznaczonej jako Hero</button><button id="useSalon">Użyj zaznaczonej jako Salon</button><button id="useProductImage" type="button">Wstaw do formularza produktu</button></div><div class="panel"><h2>Biblioteka</h2><div id="mediaGrid" class="media"></div></div></div>
+      </section>
+
+
+      <section class="tab" id="brands">
+        <div class="grid">
+          <form id="brandForm" class="panel"><h2>Producenci</h2>
+            <p class="note">Pasek producentów wraca do poprzedniej formy: większe, ruchome kafle tekstowe. Bez nieudanych pseudo-logotypów.</p>
+            <label>Nazwa producenta<input name="name" placeholder="np. Samsung" required></label>
+            <div class="actions"><button>Dodaj producenta</button><button id="restoreBrands" type="button" class="secondary">Przywróć pełną listę</button></div>
+          </form>
+          <div class="panel"><h2>Lista marek na stronie</h2><div id="brandList" class="list"></div></div>
+        </div>
+      </section>
+
+      <section class="tab" id="categories">
+        <div class="grid">
+          <form id="categoryForm" class="panel"><h2>Kategorie główne</h2>
+            <label>Nazwa kategorii<input name="name" placeholder="np. AGD" required></label>
+            <label>Opis<input name="description" placeholder="Krótki opis kategorii"></label>
+            <label>Grafika URL<input name="image" placeholder="/assets/categories/clean-agd.jpg"></label>
+            <div class="actions"><button>Dodaj kategorię</button><button id="restoreCategories" type="button" class="secondary">Przywróć bazowe</button></div>
+          </form>
+          <form id="subcategoryForm" class="panel"><h2>Podkategorie</h2>
+            <label>Kategoria nadrzędna<select name="parent" id="subcategoryParent"></select></label>
+            <label>Nazwa podkategorii<input name="name" placeholder="np. Pralki ładowane od frontu" required></label>
+            <label>Grafika URL<input name="image" placeholder="opcjonalnie"></label>
+            <button>Dodaj podkategorię</button>
+          </form>
+        </div>
+        <div class="panel"><h2>Struktura kategorii widoczna w sklepie</h2><div id="categoryTree" class="category-tree"></div></div>
+      </section>
+
+      <section class="tab" id="themes">
+        <div class="grid">
+          <form id="themeForm" class="panel"><h2>Motywy / Design Engine</h2>
+            <label>Aktywny motyw<select name="theme" id="themeSelect">
+              <option value="premium">ELKASS Premium</option>
+              <option value="christmas">Boże Narodzenie</option><option value="winter">Zima</option><option value="mikolajki">Mikołajki</option>
+              <option value="easter">Wielkanoc</option>
+              <option value="spring">Wiosna</option>
+              <option value="summer">Lato</option>
+              <option value="autumn">Jesień</option>
+              <option value="blackweek">Black Week</option><option value="cyberweek">Cyber Week</option>
+              <option value="backtoschool">Back to School</option>
+              <option value="rtvdays">RTV Days</option>
+              <option value="agddays">AGD Days</option>
+            </select></label>
+            <label>Komunikat kampanii<input name="message" placeholder="np. Świąteczne okazje w ELKASS"></label>
+            <label>Etykieta kampanii<input name="campaignLabel" placeholder="np. Świąteczna kolekcja"></label>
+            <label>Intensywność dekoracji<select name="intensity"><option value="subtle">Subtelna</option><option value="balanced" selected>Elegancka</option><option value="rich">Bogata</option></select></label>
+            <label>Grafika Hero desktop<input name="heroDesktop" placeholder="puste = grafika motywu"></label>
+            <label>Grafika Hero mobile<input name="heroMobile" placeholder="opcjonalnie"></label>
+            <label><input type="checkbox" name="useThemeHero" checked> Automatycznie zmieniaj Hero zgodnie z motywem</label>
+            <label><input type="checkbox" name="decorations" checked> Dekoracje sezonowe aktywne</label>
+            <label><input type="checkbox" name="autoSchedule"> Aktywuj według harmonogramu</label>
+            <div class="grid"><label>Start<input type="datetime-local" name="startAt"></label><label>Koniec<input type="datetime-local" name="endAt"></label></div>
+            <div class="actions"><button>Zapisz i opublikuj motyw</button><button id="themePreviewOpen" type="button" class="secondary">Podgląd sklepu</button></div>
+          </form>
+          <div class="panel"><h2>Ekskluzywne motywy i kampanie</h2><p>Motyw zmienia Hero, akcenty, oprawę kart, dekoracje i komunikat kampanii. Harmonogram może automatycznie włączyć i wyłączyć akcję.</p><div id="themeScheduleStatus" class="theme-status"></div><div id="themePreview" class="theme-preview"></div><h3>Historia publikacji</h3><div id="themeHistory" class="theme-history"></div></div>
+        </div>
+      </section>
+
+      <section class="tab" id="home"><form id="homeForm" class="panel"><h2>Strona główna</h2><label>Tytuł Hero<textarea name="heroTitle">Technologia do Twojego domu &lt;em&gt;z doradztwem ELKASS&lt;/em&gt;</textarea></label><label>Opis Hero<textarea name="heroText">RTV, AGD, montaż, transport i wsparcie po zakupie. Lokalny salon w Oleśnie, który pomaga dobrać sprzęt do domu, nie tylko do ceny z półki.</textarea></label><label>Grafika Hero<input name="heroImage" placeholder="/assets/hero-clean-panorama.png"></label><label>Grafika salonu<input name="salonImage" placeholder="/assets/gallery/gallery-16-salon-elkass.jpg"></label><button>Zapisz stronę główną</button></form></section>
+
+      <section class="tab" id="layout"><div class="panel"><h2>Układ strony</h2><p>Na prezentację kolejność sekcji jest zablokowana: Hero, statystyki, kategorie, Hit tygodnia, marki, produkty, salon, opinie, kontakt i stopka. To chroni wygląd przed przypadkowym rozsypaniem.</p></div></section>
+
+      <section class="tab" id="users"><div class="grid"><form id="userForm" class="panel"><h2>Dodaj użytkownika</h2><label>Email<input name="email" type="email" placeholder="pracownik@elkass.pl" required></label><label>Imię<input name="name" placeholder="Pracownik"></label><label>Rola<select name="role"><option value="editor">Pracownik</option><option value="admin">Szef / Administrator</option></select></label><label>Hasło startowe<input name="password" type="password" minlength="10" autocomplete="new-password" placeholder="Minimum 10 znaków"></label><button>Dodaj użytkownika</button></form><div class="panel"><h2>Użytkownicy i role</h2><div id="usersList" class="list"></div><p class="note">Konta tworzy Szef. Pracownik obsługuje produkty, media i zamówienia; ustawienia użytkowników pozostają dostępne tylko dla Szefa.</p></div></div></section>
+    </main>
+  </div>
+  <div id="toast"></div><script src="/config/cloud-config.js"></script><script src="/assets/js/elkass-production-core.js"></script><script src="/assets/js/cloud-data-v54.js"></script><script src="/assets/js/elkass-seasonal-engine.js"></script><script src="/assets/js/elkass-studio-live.js"></script>
+</body>
+</html>

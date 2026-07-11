@@ -1,0 +1,38 @@
+{
+  "version": "v45",
+  "activeTheme": "default",
+  "intensity": "subtle",
+  "themes": [
+    "christmas",
+    "winter",
+    "easter",
+    "spring",
+    "summer",
+    "autumn",
+    "blackweek",
+    "tvdays",
+    "agddays",
+    "laptopweek",
+    "smartphoneweek"
+  ],
+  "finance": {
+    "zeroPercent": {
+      "enabled": true,
+      "label": "Raty 0%",
+      "installments": [
+        10,
+        20,
+        30
+      ]
+    },
+    "flexible": {
+      "enabled": true,
+      "label": "Dogodne raty",
+      "months": [
+        24,
+        36,
+        48
+      ]
+    }
+  }
+}

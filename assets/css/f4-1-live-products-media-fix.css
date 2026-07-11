@@ -1,0 +1,156 @@
+
+/* F4.1 FINAL DATA + MEDIA VISIBILITY FIX
+   Cel: produkty z panelu są widoczne od razu, zdjęcia nie są ucinane,
+   logotypy producentów są większe i bardziej czytelne. */
+
+/* Bezpieczne dopasowanie zdjęć dodawanych z panelu */
+.ef-product img,
+.ef-mini img,
+.ef-hit-img img,
+.main-photo-v44 img,
+.thumb-v44 img,
+.gallery-layout-v44 img,
+.m3-mini-img,
+.row img,
+.media img,
+.m3-media-tile img,
+#productList img,
+#mediaGrid img {
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #f6f8fb !important;
+}
+
+/* Hero i salon nie powinny wyglądać jak ucięty przypadkowy kadr po dodaniu własnego zdjęcia */
+.ef-hero-media img,
+.ef-showroom figure img,
+#efHeroImage,
+#efSalonImage {
+  object-position: center center !important;
+}
+
+/* Jeżeli użytkownik wrzuci zdjęcie produktu w pionie/poziomie, karta ma je zmieścić bez obcinania */
+.ef-product img {
+  padding: 10px !important;
+  height: 172px !important;
+}
+.ef-mini img {
+  padding: 8px !important;
+}
+.ef-hit-img img {
+  padding: 8px !important;
+  max-height: 290px !important;
+}
+
+/* Produkty z panelu mają wyglądać normalnie także jeśli nie mają perfekcyjnego packshota */
+.ef-product {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.ef-product .row {
+  margin-top: auto !important;
+}
+
+/* Lepszy, większy pasek producentów */
+.ef-brands {
+  min-height: 108px !important;
+  height: auto !important;
+  padding: 18px 28px !important;
+  gap: 24px !important;
+}
+.ef-brands > b {
+  color: #111827 !important;
+  font-size: 12px !important;
+  letter-spacing: 1.8px !important;
+}
+.ef-brands div {
+  gap: 22px !important;
+  overflow-x: auto !important;
+  scroll-snap-type: x proximity;
+  padding: 2px 0 !important;
+}
+.ef-brands img {
+  height: 54px !important;
+  min-width: 128px !important;
+  max-width: 168px !important;
+  padding: 9px 16px !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+  border: 1px solid #e8edf3 !important;
+  box-shadow: 0 10px 24px rgba(8,15,30,.07) !important;
+  object-fit: contain !important;
+  scroll-snap-align: start;
+}
+
+/* Widoczność: dodane produkty mają nie ginąć przez zbyt małą sekcję */
+#produkty .ef-product-grid {
+  align-items: stretch !important;
+}
+#produkty .ef-product:nth-child(n+9) {
+  display: flex !important;
+}
+
+/* Admin: biblioteka grafik ma pokazywać całe zdjęcie, a nie crop */
+.media img,
+.m3-media-tile img {
+  height: 132px !important;
+  padding: 8px !important;
+  border-radius: 14px !important;
+}
+.media button,
+.m3-media-tile {
+  background: #fff !important;
+}
+
+/* Admin: formularz i lista bardziej czytelne */
+#productList .row {
+  grid-template-columns: 64px 1fr auto auto auto !important;
+}
+#productList .row img {
+  width: 64px !important;
+  height: 64px !important;
+  padding: 6px !important;
+}
+
+/* Karta produktu: główne zdjęcie całe, bez agresywnego kadrowania */
+.main-photo-v44 img {
+  width: 100% !important;
+  height: min(520px, 60vh) !important;
+  padding: 18px !important;
+}
+.thumb-v44 img {
+  padding: 5px !important;
+}
+
+/* Mobile */
+@media(max-width: 920px) {
+  .ef-brands {
+    min-height: 96px !important;
+    padding: 14px 18px !important;
+  }
+  .ef-brands img {
+    height: 46px !important;
+    min-width: 112px !important;
+    max-width: 150px !important;
+  }
+  .ef-product img {
+    height: 160px !important;
+  }
+}
+@media(max-width: 560px) {
+  #productList .row {
+    grid-template-columns: 56px 1fr !important;
+  }
+  #productList .row button,
+  #productList .row a {
+    grid-column: 2;
+    width: max-content;
+  }
+  .ef-brands div {
+    gap: 12px !important;
+  }
+  .ef-brands img {
+    height: 42px !important;
+    min-width: 104px !important;
+  }
+}

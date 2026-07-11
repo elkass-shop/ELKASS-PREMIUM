@@ -1,0 +1,476 @@
+
+/* ELKASS M2 — Premium Design Pass
+   Cel: podniesienie pierwszego wrażenia sklepu bez dodawania nowych funkcji.
+   Zasada: 95% spokojne tło, 5% mocny czerwony akcent. */
+:root{
+  --elkass-red:#c91524;
+  --elkass-red-dark:#9f101b;
+  --elkass-green:#0f7a42;
+  --elkass-ink:#10131a;
+  --elkass-muted:#69707d;
+  --elkass-line:rgba(16,19,26,.09);
+  --elkass-soft:#f7f4ef;
+  --elkass-card:rgba(255,255,255,.86);
+  --elkass-shadow:0 22px 60px rgba(16,19,26,.12);
+  --elkass-shadow-sm:0 10px 30px rgba(16,19,26,.08);
+  --elkass-radius:28px;
+}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 10% -10%, rgba(201,21,36,.08), transparent 28rem),
+    radial-gradient(circle at 90% 5%, rgba(15,122,66,.06), transparent 26rem),
+    linear-gradient(180deg,#fff 0%,#fbfaf8 42%,#f7f4ef 100%);
+  color:var(--elkass-ink);
+}
+.wrap{max-width:1180px}
+.topline{background:#11151c;color:#fff}
+.topline .perks span{opacity:.82}
+.site-header{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(18px);
+  background:rgba(255,255,255,.88);
+  border-bottom:1px solid rgba(16,19,26,.07);
+  box-shadow:0 8px 30px rgba(16,19,26,.05);
+}
+.header-main{padding:18px 0}
+.logo-type strong span{letter-spacing:.06em}
+.logo-type em{color:var(--elkass-red)}
+.search input{
+  border:1px solid var(--elkass-line);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9);
+  background:#fff;
+}
+.btn,.v22-btn.primary,.btn-v44.primary{
+  background:linear-gradient(135deg,var(--elkass-red),var(--elkass-red-dark))!important;
+  box-shadow:0 12px 26px rgba(201,21,36,.22);
+  border:0!important;
+}
+.btn:hover,.v22-btn.primary:hover,.btn-v44.primary:hover{
+  transform:translateY(-1px);
+  box-shadow:0 16px 34px rgba(201,21,36,.28);
+}
+.btn.light,.v22-btn.secondary,.btn-v44.ghost{
+  background:rgba(255,255,255,.78)!important;
+  color:var(--elkass-ink)!important;
+  border:1px solid rgba(16,19,26,.12)!important;
+  box-shadow:0 10px 28px rgba(16,19,26,.07);
+}
+
+/* HERO — kampanijny, mniej techniczny */
+.hero{
+  padding:34px 0 22px;
+  position:relative;
+}
+.hero-card{
+  overflow:hidden;
+  border-radius:34px!important;
+  min-height:610px;
+  background:
+    linear-gradient(90deg,rgba(17,21,28,.88) 0%,rgba(17,21,28,.68) 42%,rgba(17,21,28,.12) 100%),
+    url('/assets/images/hero/hero-premium-demo.png') center right/cover no-repeat!important;
+  box-shadow:0 32px 80px rgba(16,19,26,.18);
+}
+.hero-card::after{
+  content:"";
+  position:absolute;inset:auto 22px 22px auto;
+  width:160px;height:160px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.20),transparent 64%);
+  pointer-events:none;
+}
+.hero-inner{
+  min-height:610px;
+  align-items:center!important;
+  grid-template-columns:minmax(0,1fr) 360px!important;
+  gap:34px!important;
+}
+.hero .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);
+}
+.hero h1{
+  max-width:780px;
+  font-size:clamp(42px,5.4vw,76px)!important;
+  line-height:.96!important;
+  color:#fff!important;
+  letter-spacing:-.055em;
+  margin:18px 0 18px!important;
+}
+.hero h1 span{color:#fff!important}
+.hero p{
+  max-width:620px;
+  color:rgba(255,255,255,.84)!important;
+  font-size:18px!important;
+  line-height:1.65!important;
+}
+.hero .actions{margin-top:28px!important}
+.service-panel{
+  background:rgba(255,255,255,.13)!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  backdrop-filter:blur(18px);
+  box-shadow:none!important;
+}
+.service-panel .service{
+  background:rgba(255,255,255,.76)!important;
+  border:1px solid rgba(255,255,255,.50)!important;
+  border-radius:20px!important;
+}
+.service-panel h3{font-size:15px!important}
+.service-panel p{font-size:13px!important;color:#596170!important}
+.statsbar{
+  margin-top:18px!important;
+  border-radius:26px!important;
+  background:rgba(255,255,255,.86)!important;
+  box-shadow:var(--elkass-shadow-sm);
+  border:1px solid var(--elkass-line);
+}
+
+/* wspólne nagłówki sekcji */
+.section,.v23-offer,.v22-brands-section,.v24-meet,.trust-section{padding-top:54px!important;padding-bottom:54px!important}
+.v22-section-head,.v23-section-head,.v25-section-head{
+  margin-bottom:24px!important;
+}
+.v22-section-head h2,.v23-section-head h2,.v25-section-head h2,.trust-classic-title{
+  letter-spacing:-.035em;
+  color:var(--elkass-ink);
+}
+.v22-section-head p,.v23-section-head p,.v25-section-head p{
+  color:var(--elkass-muted);
+  max-width:760px;
+}
+
+/* promocje i karty */
+.v22-promo-shell,.v23-card,.v25-dynamic-products .v25-product-card,.v24-meet-card,.find-card,.find-map{
+  border:1px solid var(--elkass-line)!important;
+  box-shadow:var(--elkass-shadow-sm)!important;
+}
+.v22-hit{
+  border-radius:30px!important;
+  background:linear-gradient(135deg,#fff,#faf7f2)!important;
+}
+.v22-product-img,.v22-mini-img,.v25-product-img{
+  background:linear-gradient(180deg,#fff,#f6f3ee)!important;
+}
+.v22-mini{
+  border-radius:24px!important;
+  transition:transform .22s ease, box-shadow .22s ease;
+}
+.v22-mini:hover,.v25-product-card:hover,.v23-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 44px rgba(16,19,26,.13)!important;
+}
+.v22-badge,.v25-badge{
+  border-radius:999px!important;
+  background:rgba(201,21,36,.10)!important;
+  color:var(--elkass-red)!important;
+  border:1px solid rgba(201,21,36,.14)!important;
+}
+.v22-discount,.v22-mini-discount{
+  background:var(--elkass-green)!important;
+  color:#fff!important;
+  border-radius:999px!important;
+}
+
+/* kategorie */
+.v23-offer{
+  background:linear-gradient(180deg,rgba(247,244,239,.38),rgba(255,255,255,.82))!important;
+}
+.v23-grid{gap:18px!important}
+.v23-card{
+  min-height:230px!important;
+  border-radius:28px!important;
+  overflow:hidden;
+}
+.v23-card::before{
+  background:linear-gradient(180deg,rgba(16,19,26,.08),rgba(16,19,26,.68))!important;
+}
+.v23-card h3{
+  font-size:23px!important;
+  letter-spacing:-.02em;
+}
+.v23-card p{font-size:14px!important;line-height:1.5!important}
+
+/* producenci — lżej, mniejsze klocki */
+.v22-brands-section{
+  padding-top:30px!important;
+  padding-bottom:34px!important;
+}
+.v22-brand-card{
+  border-radius:28px!important;
+  border:1px solid var(--elkass-line)!important;
+  box-shadow:var(--elkass-shadow-sm)!important;
+  background:rgba(255,255,255,.82)!important;
+}
+.v22-brands-track{
+  gap:10px!important;
+}
+.v22-brand-pill{
+  min-width:112px!important;
+  min-height:56px!important;
+  padding:10px 16px!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  border:1px solid rgba(16,19,26,.08)!important;
+  box-shadow:0 8px 22px rgba(16,19,26,.05)!important;
+  font-size:14px!important;
+}
+
+/* opinie — lokalne premium bez ciężkich boxów */
+.trust-section{
+  background:linear-gradient(180deg,#fff 0%,#fbfaf7 100%)!important;
+}
+.trust-classic-card{
+  border-radius:34px!important;
+  padding:34px!important;
+  background:
+    radial-gradient(circle at 10% 0,rgba(201,21,36,.08),transparent 28rem),
+    #fff!important;
+  border:1px solid var(--elkass-line)!important;
+  box-shadow:var(--elkass-shadow-sm)!important;
+}
+.trust-classic-top{
+  display:grid!important;
+  grid-template-columns:1fr auto!important;
+  align-items:center!important;
+  gap:28px!important;
+}
+.trust-classic-title{
+  font-size:clamp(30px,4vw,48px)!important;
+  margin:.25em 0!important;
+}
+.trust-classic-score{
+  min-width:190px;
+  text-align:center;
+  padding:22px 20px;
+  border-radius:28px;
+  background:linear-gradient(180deg,#11151c,#1d232e)!important;
+  color:#fff!important;
+  box-shadow:0 18px 46px rgba(16,19,26,.18);
+}
+.trust-classic-score .stars{font-size:22px;color:#f6bd4a;letter-spacing:2px}
+.trust-classic-score b{font-size:38px;letter-spacing:-.04em}
+.trust-classic-grid{
+  margin-top:24px!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+.trust-classic-review{
+  border:0!important;
+  border-radius:22px!important;
+  background:#fbfaf8!important;
+  padding:18px!important;
+  box-shadow:inset 0 0 0 1px rgba(16,19,26,.06);
+}
+.trust-classic-review .stars{color:#f6bd4a;font-size:15px;letter-spacing:1px}
+.trust-classic-review p{
+  font-size:13px!important;
+  line-height:1.55!important;
+  color:#363b45!important;
+}
+.trust-classic-review b{font-size:14px!important}
+
+/* Poznaj ELKASS / lokalna tożsamość */
+.v24-meet-card{
+  border-radius:34px!important;
+  background:linear-gradient(135deg,#fff,#f8f5ef)!important;
+}
+.v24-meet-photo img{filter:saturate(1.05) contrast(1.02)}
+.v24-meet h2{letter-spacing:-.035em}
+
+/* produkt */
+.product-shell-v44{
+  background:
+    radial-gradient(circle at 0 0,rgba(201,21,36,.06),transparent 34rem),
+    linear-gradient(180deg,#fff,#fbfaf8)!important;
+}
+.product-hero-v44{
+  gap:24px!important;
+}
+.premium-panel,.buybox-v44,.gallery-card-v44{
+  border:1px solid var(--elkass-line)!important;
+  border-radius:30px!important;
+  box-shadow:var(--elkass-shadow-sm)!important;
+}
+.main-photo-v44{
+  background:linear-gradient(180deg,#fff,#f7f4ef)!important;
+  border-radius:24px!important;
+}
+.gallery-note{display:none!important}
+.buybox-v44 .badge-row{
+  gap:8px!important;
+  margin-bottom:12px!important;
+}
+.badge-v44{
+  border-radius:999px!important;
+  background:rgba(16,19,26,.06)!important;
+  color:#333a45!important;
+  border:1px solid rgba(16,19,26,.07)!important;
+}
+.badge-v44.green{
+  background:rgba(15,122,66,.10)!important;
+  color:var(--elkass-green)!important;
+}
+.product-title-v44{
+  font-size:clamp(30px,3.2vw,48px)!important;
+  line-height:1.04!important;
+  letter-spacing:-.045em!important;
+}
+.short-v44{
+  color:var(--elkass-muted)!important;
+  font-size:16px!important;
+}
+.pricebox-v44{
+  display:flex!important;
+  align-items:flex-end!important;
+  gap:12px!important;
+  margin:18px 0 8px!important;
+}
+.price-v44{
+  color:var(--elkass-red)!important;
+  font-size:44px!important;
+  letter-spacing:-.05em!important;
+}
+.oldprice-v44{
+  color:#858b96!important;
+  text-decoration:line-through!important;
+  font-size:19px!important;
+  margin-bottom:7px!important;
+}
+.installment-v44{
+  background:rgba(201,21,36,.06)!important;
+  border:1px solid rgba(201,21,36,.10)!important;
+  color:#5f232a!important;
+  border-radius:18px!important;
+}
+.availability-v44{
+  background:rgba(15,122,66,.08)!important;
+  border:1px solid rgba(15,122,66,.12)!important;
+  color:#125d38!important;
+  border-radius:18px!important;
+}
+.finance-v44{
+  grid-template-columns:1fr 1fr!important;
+  gap:10px!important;
+}
+.finance-card{
+  background:#fbfaf8!important;
+  border:1px solid rgba(16,19,26,.07)!important;
+  border-radius:18px!important;
+}
+.finance-card small{
+  color:var(--elkass-muted)!important;
+}
+.top-params-v44{
+  margin-top:16px!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:10px!important;
+}
+.param-chip-v44{
+  border-radius:18px!important;
+  background:#fff!important;
+  border:1px solid var(--elkass-line)!important;
+  box-shadow:0 8px 20px rgba(16,19,26,.04)!important;
+}
+.advisor-v44,.services-v44{
+  background:linear-gradient(135deg,#11151c,#202733)!important;
+  color:#fff!important;
+  border-radius:30px!important;
+  box-shadow:0 22px 60px rgba(16,19,26,.15)!important;
+}
+.advisor-v44 p,.services-v44 small{color:rgba(255,255,255,.74)!important}
+.service-v44{
+  background:rgba(255,255,255,.08)!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  border-radius:20px!important;
+}
+
+/* mobile premium */
+@media (max-width: 820px){
+  .topline{display:none!important}
+  .site-header{position:sticky}
+  .header-main{
+    display:grid!important;
+    grid-template-columns:1fr auto auto!important;
+    gap:10px!important;
+    padding:12px 14px!important;
+  }
+  .search{grid-column:1/-1!important;order:3}
+  .phone{display:none!important}
+  .navrow .wrap{overflow-x:auto;white-space:nowrap;padding:0 14px!important}
+  .menu a{padding:10px 12px!important}
+  .hero{padding:12px 0 18px!important}
+  .hero-card{
+    min-height:auto!important;
+    border-radius:24px!important;
+    background:
+      linear-gradient(180deg,rgba(17,21,28,.92) 0%,rgba(17,21,28,.62) 62%,rgba(17,21,28,.22) 100%),
+      url('/assets/images/hero/hero-premium-demo.png') center/cover no-repeat!important;
+  }
+  .hero-inner{
+    min-height:560px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-end!important;
+    padding:26px 18px!important;
+  }
+  .hero h1{
+    font-size:40px!important;
+    line-height:1!important;
+    margin:12px 0!important;
+  }
+  .hero p{font-size:15px!important;line-height:1.55!important}
+  .hero .actions{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;width:100%}
+  .service-panel{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:8px!important;
+    width:100%!important;
+    padding:10px!important;
+  }
+  .service-panel .service{padding:10px!important}
+  .service-panel .ico{display:none!important}
+  .service-panel h3{font-size:12px!important;margin:0 0 3px!important}
+  .service-panel p{font-size:11px!important;line-height:1.25!important;margin:0!important}
+  .statsbar{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:8px!important;
+    margin:12px 10px 0!important;
+    padding:10px!important;
+  }
+  .stat{padding:10px!important}
+  .section,.v23-offer,.v22-brands-section,.v24-meet,.trust-section{padding-top:34px!important;padding-bottom:34px!important}
+  .v22-hit{grid-template-columns:1fr!important}
+  .v22-product-img{min-height:220px!important}
+  .v22-actions{grid-template-columns:1fr!important}
+  .v22-mini-grid,.trust-classic-grid{grid-template-columns:1fr!important}
+  .v23-grid{grid-template-columns:1fr 1fr!important}
+  .v23-card{min-height:164px!important;border-radius:22px!important}
+  .v23-card h3{font-size:17px!important}
+  .v23-card p{display:none!important}
+  .v22-brand-pill{min-width:92px!important;min-height:46px!important;font-size:12px!important}
+  .trust-classic-card{padding:22px!important;border-radius:26px!important}
+  .trust-classic-top{display:block!important;text-align:center}
+  .trust-classic-score{margin:16px auto 0;min-width:0;width:100%;max-width:220px}
+  .trust-classic-review:nth-child(n+2){display:none!important}
+  .product-hero-v44{grid-template-columns:1fr!important}
+  .gallery-layout-v44{display:block!important}
+  .thumbs-v44{display:flex!important;overflow-x:auto!important;gap:8px!important;margin-bottom:10px!important}
+  .thumb-v44{min-width:72px!important}
+  .product-title-v44{font-size:31px!important}
+  .price-v44{font-size:34px!important}
+  .finance-v44,.top-params-v44{grid-template-columns:1fr 1fr!important}
+  .cta-row-v44{display:grid!important;grid-template-columns:1fr!important}
+  .mobile-buybar-v44{
+    border-radius:22px 22px 0 0!important;
+    box-shadow:0 -18px 50px rgba(16,19,26,.16)!important;
+  }
+}

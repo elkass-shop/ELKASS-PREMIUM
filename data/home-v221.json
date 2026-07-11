@@ -1,0 +1,29 @@
+{
+  "version": "2.2.1",
+  "sections": [
+    "hero",
+    "hit-promotions",
+    "brands",
+    "categories",
+    "gallery",
+    "reviews",
+    "find-us"
+  ],
+  "promotionModule": {
+    "editableInPanel": true,
+    "layout": "hit-left-4-equal-cards",
+    "mobile": "horizontal-slider",
+    "randomDiscounts": {
+      "enabled": true,
+      "min": 10,
+      "max": 30
+    }
+  },
+  "builders": [
+    "Hero Builder",
+    "Menu Builder",
+    "Promotion Builder",
+    "Brand Builder",
+    "Season Builder"
+  ]
+}

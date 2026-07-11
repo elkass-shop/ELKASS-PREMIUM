@@ -1,0 +1,329 @@
+{
+  "version": "v61-demo-store",
+  "products": [
+    {
+      "id": "tv-lg-oled-55-c4",
+      "name": "LG OLED 55 C4 evo",
+      "brand": "LG",
+      "category": "Telewizory",
+      "price": 4299,
+      "oldPrice": 5299,
+      "image": "/assets/products/product-06-telewizor-lg.jpg",
+      "images": [
+        "/assets/products/product-06-telewizor-lg.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "55 cali",
+        "OLED evo",
+        "120 Hz",
+        "webOS",
+        "HDMI 2.1"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 119 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "tv-tcl-qled-65-c745",
+      "name": "TCL QLED 65 C745",
+      "brand": "TCL",
+      "category": "Telewizory",
+      "price": 3199,
+      "oldPrice": 3899,
+      "image": "/assets/products/product-07-telewizor-tcl.jpg",
+      "images": [
+        "/assets/products/product-07-telewizor-tcl.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "65 cali",
+        "QLED",
+        "144 Hz",
+        "Google TV",
+        "Dolby Vision"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 89 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "soundbar-samsung-q600",
+      "name": "Samsung Soundbar Q-Series Q600",
+      "brand": "Samsung",
+      "category": "Audio",
+      "price": 1399,
+      "oldPrice": 1799,
+      "image": "/assets/products/product-21-soundbar-samsung.jpg",
+      "images": [
+        "/assets/products/product-21-soundbar-samsung.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "3.1.2 kanały",
+        "Dolby Atmos",
+        "HDMI eARC",
+        "Bluetooth"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 39 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "pralka-electrolux-9kg",
+      "name": "Electrolux pralka 9 kg PerfectCare",
+      "brand": "Electrolux",
+      "category": "AGD",
+      "price": 2199,
+      "oldPrice": 2699,
+      "image": "/assets/products/product-03-pralka-electrolux.jpg",
+      "images": [
+        "/assets/products/product-03-pralka-electrolux.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "9 kg",
+        "SteamCare",
+        "Inverter",
+        "1400 obr."
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 61 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "lodowka-bosch-no-frost",
+      "name": "Bosch lodówka No Frost Serie 4",
+      "brand": "Bosch",
+      "category": "AGD",
+      "price": 2799,
+      "oldPrice": 3499,
+      "image": "/assets/products/product-17-lodowka-bosch.jpg",
+      "images": [
+        "/assets/products/product-17-lodowka-bosch.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "No Frost",
+        "203 cm",
+        "VitaFresh",
+        "Klasa D"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 78 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "piekarnik-amica-steam",
+      "name": "Amica piekarnik parowy Steam",
+      "brand": "Amica",
+      "category": "AGD do zabudowy",
+      "price": 1599,
+      "oldPrice": 1999,
+      "image": "/assets/products/product-18-piekarnik-amica.jpg",
+      "images": [
+        "/assets/products/product-18-piekarnik-amica.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "Steam",
+        "71 l",
+        "Czyszczenie parowe",
+        "Prowadnice"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 44 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "plyta-bosch-indukcja-60",
+      "name": "Bosch płyta indukcyjna 60 cm",
+      "brand": "Bosch",
+      "category": "AGD do zabudowy",
+      "price": 1899,
+      "oldPrice": 2399,
+      "image": "/assets/products/product-19-plyta-bosch.jpg",
+      "images": [
+        "/assets/products/product-19-plyta-bosch.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "60 cm",
+        "PowerBoost",
+        "4 pola",
+        "Timer"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 53 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "odkurzacz-dyson-v12",
+      "name": "Dyson V12 Detect Slim",
+      "brand": "Dyson",
+      "category": "Małe AGD",
+      "price": 2499,
+      "oldPrice": 2999,
+      "image": "/assets/products/product-13-odkurzacz-dyson.jpg",
+      "images": [
+        "/assets/products/product-13-odkurzacz-dyson.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "Bezprzewodowy",
+        "Laser Dust",
+        "Do 60 min",
+        "HEPA"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 69 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "robot-kenwood-chef",
+      "name": "Kenwood robot kuchenny Chef",
+      "brand": "Kenwood",
+      "category": "Małe AGD",
+      "price": 1999,
+      "oldPrice": 2499,
+      "image": "/assets/products/product-14-robot-kenwood.jpg",
+      "images": [
+        "/assets/products/product-14-robot-kenwood.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "1200 W",
+        "Misa 5 l",
+        "Planetarny",
+        "Akcesoria"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 56 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "laptop-lenovo-ideapad-15",
+      "name": "Lenovo IdeaPad 15 Ryzen 5",
+      "brand": "Lenovo",
+      "category": "Komputery",
+      "price": 2699,
+      "oldPrice": 3299,
+      "image": "/assets/products/product-23-laptop-lenovo.jpg",
+      "images": [
+        "/assets/products/product-23-laptop-lenovo.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "Ryzen 5",
+        "16 GB RAM",
+        "512 GB SSD",
+        "15.6 FHD"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 75 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "smartfon-samsung-a55",
+      "name": "Samsung Galaxy A55 5G",
+      "brand": "Samsung",
+      "category": "Smartfony",
+      "price": 1899,
+      "oldPrice": 2199,
+      "image": "/assets/products/product-24-smartfon-samsung.jpg",
+      "images": [
+        "/assets/products/product-24-smartfon-samsung.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "5G",
+        "128 GB",
+        "AMOLED",
+        "IP67"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 53 zł/mies.",
+      "related": []
+    },
+    {
+      "id": "monitor-lg-ultragear-27",
+      "name": "LG UltraGear 27 Gaming",
+      "brand": "LG",
+      "category": "Gaming",
+      "price": 1199,
+      "oldPrice": 1499,
+      "image": "/assets/products/product-25-monitor-lg.jpg",
+      "images": [
+        "/assets/products/product-25-monitor-lg.jpg"
+      ],
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny od ręki",
+      "short": "Produkt demonstracyjny do testowania wyglądu i działania panelu ELKASS Studio.",
+      "features": [
+        "27 cali",
+        "144 Hz",
+        "IPS",
+        "1 ms"
+      ],
+      "financeZero": "Raty 0% 10×",
+      "financeMonthly": "od 39 zł/mies.",
+      "related": []
+    }
+  ],
+  "home": {
+    "heroImage": "/assets/hero-premium.png",
+    "heroTitle": "Sprzęt do domu z doradztwem, <span>nie tylko z półki!</span>",
+    "heroSubtitle": "RTV, AGD, multimedia i usługi ELKASS w eleganckim wydaniu gotowym do dalszego testu.",
+    "heroHeight": 540,
+    "promoTitle": "Promocje wybrane przez ELKASS",
+    "categoryTitle": "Kategorie dopasowane do domu"
+  },
+  "media": [
+    {
+      "id": "hero-premium",
+      "url": "/assets/hero-premium.png",
+      "type": "hero",
+      "alt": "Hero ELKASS Premium"
+    },
+    {
+      "id": "sklep",
+      "url": "/assets/sklep.jpg",
+      "type": "gallery",
+      "alt": "Salon ELKASS"
+    },
+    {
+      "id": "rtv",
+      "url": "/assets/rtv.jpg",
+      "type": "category",
+      "alt": "RTV"
+    },
+    {
+      "id": "agd",
+      "url": "/assets/agd.jpg",
+      "type": "category",
+      "alt": "AGD"
+    }
+  ]
+}

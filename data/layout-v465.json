@@ -1,0 +1,82 @@
+{
+  "version": "4.6.5",
+  "updated": "2026-07-03",
+  "activePreset": "standard",
+  "presets": {
+    "compact": {
+      "name": "Compact",
+      "heroDesktopHeight": 500,
+      "heroMobileHeight": 430,
+      "sectionPaddingDesktop": 54,
+      "sectionPaddingMobile": 34,
+      "promoHitHeight": 390,
+      "promoMiniHeight": 230,
+      "galleryHeight": 320,
+      "reviewsHeight": 260,
+      "radius": 24
+    },
+    "standard": {
+      "name": "Standard Premium",
+      "heroDesktopHeight": 620,
+      "heroMobileHeight": 520,
+      "sectionPaddingDesktop": 72,
+      "sectionPaddingMobile": 44,
+      "promoHitHeight": 470,
+      "promoMiniHeight": 270,
+      "galleryHeight": 380,
+      "reviewsHeight": 300,
+      "radius": 28
+    },
+    "premium": {
+      "name": "Premium Air",
+      "heroDesktopHeight": 700,
+      "heroMobileHeight": 560,
+      "sectionPaddingDesktop": 86,
+      "sectionPaddingMobile": 54,
+      "promoHitHeight": 520,
+      "promoMiniHeight": 300,
+      "galleryHeight": 440,
+      "reviewsHeight": 330,
+      "radius": 32
+    },
+    "blackweek": {
+      "name": "Black Week",
+      "heroDesktopHeight": 560,
+      "heroMobileHeight": 460,
+      "sectionPaddingDesktop": 62,
+      "sectionPaddingMobile": 38,
+      "promoHitHeight": 500,
+      "promoMiniHeight": 285,
+      "galleryHeight": 330,
+      "reviewsHeight": 280,
+      "radius": 24
+    },
+    "christmas": {
+      "name": "Boże Narodzenie",
+      "heroDesktopHeight": 600,
+      "heroMobileHeight": 500,
+      "sectionPaddingDesktop": 70,
+      "sectionPaddingMobile": 42,
+      "promoHitHeight": 470,
+      "promoMiniHeight": 270,
+      "galleryHeight": 360,
+      "reviewsHeight": 300,
+      "radius": 30
+    }
+  },
+  "sections": {
+    "hero": {"label":"Hero", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 1},
+    "promotions": {"label":"Promocje / Hit tygodnia", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 2},
+    "brands": {"label":"Producenci", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 3},
+    "categories": {"label":"Kategorie", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 4},
+    "dynamicProducts": {"label":"Sekcja promocyjna z panelu", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 5},
+    "about": {"label":"Poznaj ELKASS", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 6},
+    "reviews": {"label":"Opinie", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 7},
+    "contact": {"label":"Znajdź nas", "enabledDesktop": true, "enabledTablet": true, "enabledMobile": true, "order": 8}
+  },
+  "themeCompatibility": {
+    "layoutMode": "linked",
+    "allowThemeOverride": true,
+    "note": "Theme Engine może nadpisywać wybrane wysokości i odstępy bez zmiany treści sekcji."
+  }
+}

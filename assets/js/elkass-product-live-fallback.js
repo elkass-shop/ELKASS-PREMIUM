@@ -1,0 +1,5 @@
+(function(){
+function getProducts(){try{return JSON.parse(localStorage.getItem('elkass_products_live'))||[]}catch(e){return[]}}
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+document.addEventListener('DOMContentLoaded',()=>{const id=new URLSearchParams(location.search).get('id');const p=getProducts().find(x=>x.id===id);const root=document.getElementById('product-v44');if(!p||!root)return;root.innerHTML=`<section class="ef-product-detail"><div class="ef-product-detail-media"><img src="${esc(p.img)}" alt="${esc(p.name)}"></div><div class="ef-product-detail-copy"><span class="ef-kicker">Produkt dodany z panelu</span><h1>${esc(p.name)}</h1><p>${esc(p.desc)}</p><div class="ef-price"><s>${esc(p.old)}</s><strong>${esc(p.price)}</strong></div><div class="ef-actions"><a class="ef-btn" href="/app/cart/?add=${encodeURIComponent(p.id)}">Dodaj do koszyka</a><a class="ef-btn light" href="tel:343582442">Zapytaj doradcę</a></div><div class="ef-product-note">Dane produktu zostały zapisane w ELKASS Studio LIVE. Po podpięciu Supabase zapis będzie chmurowy.</div></div></section>`;});
+})();

@@ -1,0 +1,66 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/admin",
+      "destination": "/admin/index.html"
+    },
+    {
+      "source": "/health",
+      "destination": "/app/health/index.html"
+    },
+    {
+      "source": "/home",
+      "destination": "/app/home/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "/app/home/index.html"
+    },
+    {
+      "source": "/category",
+      "destination": "/app/category/index.html"
+    },
+    {
+      "source": "/product",
+      "destination": "/app/product/index.html"
+    },
+    {
+      "source": "/gallery",
+      "destination": "/app/gallery/index.html"
+    },
+    {
+      "source": "/promotions",
+      "destination": "/app/promotions/index.html"
+    },
+    {
+      "source": "/compare",
+      "destination": "/app/compare/index.html"
+    },
+    {
+      "source": "/cart",
+      "destination": "/app/cart/index.html"
+    },
+    {
+      "source": "/checkout",
+      "destination": "/app/checkout/index.html"
+    },
+    {
+      "source": "/account",
+      "destination": "/app/account/index.html"
+    },
+    {
+      "source": "/app/product/:slug",
+      "destination": "/app/product/index.html"
+    },
+    {
+      "source": "/produkt/:slug",
+      "destination": "/app/product/index.html"
+    },
+    {
+      "source": "/products/:slug",
+      "destination": "/app/product/index.html"
+    }
+  ]
+}

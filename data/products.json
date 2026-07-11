@@ -1,0 +1,818 @@
+{
+  "version": "v43",
+  "source": "Demo Database JSON",
+  "products": [
+    {
+      "id": "tv-samsung-55-crystal-uhd",
+      "name": "Samsung 55\" Crystal UHD 4K Smart TV",
+      "short": "Duży obraz 4K, Smart TV Tizen i konfiguracja z doradcą ELKASS.",
+      "brand": "Samsung",
+      "category": "RTV",
+      "subcategory": "Telewizory",
+      "price": 2299,
+      "oldPrice": 2999,
+      "badge": "Hit tygodnia",
+      "availability": "Dostępny w salonie",
+      "image": "/assets/products/product-05-telewizor-samsung.jpg",
+      "images": [
+        "/assets/products/product-05-telewizor-samsung.jpg",
+        "/assets/products/product-06-soundbar-lg.jpg",
+        "/assets/categories/clean-rtv.jpg"
+      ],
+      "features": [
+        "55 cali",
+        "4K UHD",
+        "Smart TV Tizen",
+        "HDR10+"
+      ],
+      "params": {
+        "Obraz": {
+          "Przekątna": "55 cali",
+          "Rozdzielczość": "3840 × 2160",
+          "HDR": "HDR10+",
+          "Odświeżanie": "60 Hz"
+        },
+        "Łączność": {
+          "Wi-Fi": "Tak",
+          "Bluetooth": "Tak",
+          "HDMI": "3 × HDMI"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "123 cm",
+        "Wysokość": "71 cm",
+        "Głębokość": "6 cm"
+      },
+      "related": [
+        "soundbar-lg-premium",
+        "uchwyt-tv-uniwersalny",
+        "sluchawki-sony-wh",
+        "monitor-lenovo-gaming"
+      ]
+    },
+    {
+      "id": "zmywarka-bosch-60-serie4",
+      "name": "Bosch zmywarka 60 cm Serie 4",
+      "short": "Cicha zmywarka do rodzinnej kuchni z oszczędnymi programami.",
+      "brand": "Bosch",
+      "category": "AGD",
+      "subcategory": "Zmywarki",
+      "price": 1999,
+      "oldPrice": 2499,
+      "badge": "Super cena",
+      "availability": "Dostępna",
+      "image": "/assets/products/product-10-zmywarka-bosch.jpg",
+      "images": [
+        "/assets/products/product-10-zmywarka-bosch.jpg",
+        "/assets/gallery/gallery-02-piekarniki-agd.jpg"
+      ],
+      "features": [
+        "60 cm",
+        "14 kompletów",
+        "Cicha praca",
+        "Montaż ELKASS"
+      ],
+      "params": {
+        "Parametry": {
+          "Szerokość": "60 cm",
+          "Pojemność": "14 kompletów",
+          "Poziom hałasu": "44 dB",
+          "Programy": "Eco, Auto, Intensywny"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "60 cm",
+        "Wysokość": "85 cm",
+        "Głębokość": "60 cm"
+      },
+      "related": [
+        "tabletki-zmywarka-premium",
+        "plyta-indukcyjna-amica-60"
+      ]
+    },
+    {
+      "id": "pralka-beko-8kg-inverter",
+      "name": "Beko pralka 8 kg z silnikiem inwerterowym",
+      "short": "Wygodna pralka z szybkim programem i pojemnością dla rodziny.",
+      "brand": "Beko",
+      "category": "AGD",
+      "subcategory": "Pralki",
+      "price": 1499,
+      "oldPrice": 1899,
+      "badge": "Raty 0%",
+      "availability": "Od ręki",
+      "image": "/assets/products/product-02-pralka-beko.jpg",
+      "images": [
+        "/assets/products/product-02-pralka-beko.jpg",
+        "/assets/gallery/gallery-05-pralki-i-suszarki.jpg"
+      ],
+      "features": [
+        "8 kg wsadu",
+        "Program szybki",
+        "Inwerter",
+        "Transport lokalny"
+      ],
+      "params": {
+        "Pranie": {
+          "Wsad": "8 kg",
+          "Silnik": "Inwerterowy",
+          "Program szybki": "Tak",
+          "Klasa energetyczna": "B"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "60 cm",
+        "Wysokość": "85 cm",
+        "Głębokość": "55 cm"
+      },
+      "related": [
+        "odkurzacz-bosch-hepa",
+        "suszak-lazienkowy"
+      ]
+    },
+    {
+      "id": "ekspres-philips-lattego",
+      "name": "Philips LatteGo ekspres automatyczny",
+      "short": "Kawy mleczne jednym kliknięciem, wygodne czyszczenie i elegancki wygląd kuchni.",
+      "brand": "Philips",
+      "category": "Małe AGD",
+      "subcategory": "Ekspresy",
+      "price": 2199,
+      "oldPrice": 2799,
+      "badge": "Weekend",
+      "availability": "Dostępny",
+      "image": "/assets/products/product-12-ekspres-philips.jpg",
+      "images": [
+        "/assets/products/product-12-ekspres-philips.jpg",
+        "/assets/gallery/gallery-03-ekspresy-czajniki.jpg"
+      ],
+      "features": [
+        "LatteGo",
+        "Kawy mleczne",
+        "Łatwe czyszczenie",
+        "Pomoc w konfiguracji"
+      ],
+      "params": {
+        "Kawa": {
+          "System mleczny": "LatteGo",
+          "Młynek": "Ceramiczny",
+          "Programy": "Espresso, Cappuccino, Latte"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "25 cm",
+        "Wysokość": "37 cm",
+        "Głębokość": "43 cm"
+      },
+      "related": [
+        "czajnik-amica-inox",
+        "robot-kuchenny-premium"
+      ]
+    },
+    {
+      "id": "lodowka-lg-no-frost",
+      "name": "LG lodówka No Frost z dużą pojemnością",
+      "short": "Duża, praktyczna lodówka z No Frost i dostawą z wniesieniem.",
+      "brand": "LG",
+      "category": "AGD",
+      "subcategory": "Lodówki",
+      "price": 2699,
+      "oldPrice": 3299,
+      "badge": "Outlet",
+      "availability": "Dostępna",
+      "image": "/assets/products/product-16-lodowka-lg.jpg",
+      "images": [
+        "/assets/products/product-16-lodowka-lg.jpg",
+        "/assets/gallery/gallery-06-lodowki.jpg"
+      ],
+      "features": [
+        "No Frost",
+        "Duża pojemność",
+        "Cicha praca",
+        "Wniesienie"
+      ],
+      "params": {
+        "Chłodzenie": {
+          "No Frost": "Tak",
+          "Pojemność": "384 l",
+          "Klasa energetyczna": "D",
+          "Poziom hałasu": "35 dB"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "59,5 cm",
+        "Wysokość": "203 cm",
+        "Głębokość": "68 cm"
+      },
+      "related": [
+        "zamrazarka-kernau",
+        "tabletki-zmywarka-premium"
+      ]
+    },
+    {
+      "id": "piekarnik-samsung-dual-cook",
+      "name": "Samsung piekarnik Dual Cook",
+      "short": "Piekarnik do zabudowy z termoobiegiem i elastycznym pieczeniem.",
+      "brand": "Samsung",
+      "category": "AGD do zabudowy",
+      "subcategory": "Piekarniki",
+      "price": 1599,
+      "oldPrice": 1999,
+      "badge": "-20%",
+      "availability": "Na zamówienie",
+      "image": "/assets/products/product-04-piekarnik-samsung.jpg",
+      "images": [
+        "/assets/products/product-04-piekarnik-samsung.jpg",
+        "/assets/gallery/gallery-02-piekarniki-agd.jpg"
+      ],
+      "features": [
+        "Dual Cook",
+        "Termoobieg",
+        "Zabudowa",
+        "Montaż"
+      ],
+      "params": {
+        "Pieczenie": {
+          "Pojemność": "76 l",
+          "Termoobieg": "Tak",
+          "Czyszczenie": "Katalityczne"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "59,5 cm",
+        "Wysokość": "59,5 cm",
+        "Głębokość": "56 cm"
+      },
+      "related": [
+        "plyta-indukcyjna-amica-60",
+        "okap-kuchenny-premium"
+      ]
+    },
+    {
+      "id": "odkurzacz-bosch-hepa",
+      "name": "Bosch odkurzacz bezworkowy HEPA",
+      "short": "Mocne sprzątanie domu z filtrem HEPA i wygodną obsługą.",
+      "brand": "Bosch",
+      "category": "Małe AGD",
+      "subcategory": "Odkurzacze",
+      "price": 699,
+      "oldPrice": 849,
+      "badge": "-17%",
+      "availability": "Dostępny",
+      "image": "/assets/products/product-09-odkurzacz-bosch.jpg",
+      "images": [
+        "/assets/products/product-09-odkurzacz-bosch.jpg",
+        "/assets/gallery/gallery-11-odkurzacze-domowe.jpg"
+      ],
+      "features": [
+        "HEPA",
+        "Bezworkowy",
+        "700 W",
+        "Do domu"
+      ],
+      "params": {
+        "Sprzątanie": {
+          "Typ": "Bezworkowy",
+          "Filtr": "HEPA",
+          "Moc": "700 W"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "29 cm",
+        "Wysokość": "31 cm",
+        "Głębokość": "43 cm"
+      },
+      "related": [
+        "robot-sprzatajacy-smart",
+        "pralka-beko-8kg-inverter"
+      ]
+    },
+    {
+      "id": "plyta-indukcyjna-amica-60",
+      "name": "Amica płyta indukcyjna 60 cm",
+      "short": "Płyta do zabudowy z timerem, blokadą i wygodnym sterowaniem dotykowym.",
+      "brand": "Amica",
+      "category": "AGD do zabudowy",
+      "subcategory": "Płyty indukcyjne",
+      "price": 1349,
+      "oldPrice": 1699,
+      "badge": "Zabudowa",
+      "availability": "Od ręki",
+      "image": "/assets/products/product-20-plyta-indukcyjna.jpg",
+      "images": [
+        "/assets/products/product-20-plyta-indukcyjna.jpg",
+        "/assets/gallery/gallery-14-agd-do-kuchni.jpg"
+      ],
+      "features": [
+        "60 cm",
+        "Timer",
+        "Blokada",
+        "Montaż"
+      ],
+      "params": {
+        "Gotowanie": {
+          "Pola": "4",
+          "Sterowanie": "Dotykowe",
+          "Timer": "Tak"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "59 cm",
+        "Wysokość": "5 cm",
+        "Głębokość": "52 cm"
+      },
+      "related": [
+        "piekarnik-samsung-dual-cook",
+        "okap-kuchenny-premium"
+      ]
+    },
+    {
+      "id": "soundbar-lg-premium",
+      "name": "LG soundbar do telewizora",
+      "short": "Pełniejszy dźwięk do filmów, sportu i muzyki.",
+      "brand": "LG",
+      "category": "RTV",
+      "subcategory": "Audio",
+      "price": 899,
+      "oldPrice": 1199,
+      "badge": "Audio",
+      "availability": "Dostępny",
+      "image": "/assets/products/product-06-soundbar-lg.jpg",
+      "images": [
+        "/assets/products/product-06-soundbar-lg.jpg",
+        "/assets/categories/clean-audio.jpg"
+      ],
+      "features": [
+        "Bluetooth",
+        "Mocny bas",
+        "Do TV",
+        "Łatwa konfiguracja"
+      ],
+      "params": {
+        "Dźwięk": {
+          "Łączność": "Bluetooth / HDMI ARC",
+          "Subwoofer": "Tak",
+          "Montaż": "Opcjonalny"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "89 cm",
+        "Wysokość": "6 cm",
+        "Głębokość": "9 cm"
+      },
+      "related": [
+        "tv-samsung-55-crystal-uhd"
+      ]
+    },
+    {
+      "id": "monitor-lenovo-gaming",
+      "name": "Lenovo monitor gamingowy 27\"",
+      "short": "Monitor do pracy, gier i multimediów z płynnym obrazem.",
+      "brand": "Lenovo",
+      "category": "Komputery i telefony",
+      "subcategory": "Monitory",
+      "price": 999,
+      "oldPrice": 1299,
+      "badge": "Gaming",
+      "availability": "Dostępny",
+      "image": "/assets/products/product-17-monitor-gaming.jpg",
+      "images": [
+        "/assets/products/product-17-monitor-gaming.jpg",
+        "/assets/categories/clean-gaming.jpg"
+      ],
+      "features": [
+        "27 cali",
+        "144 Hz",
+        "Gaming",
+        "HDMI"
+      ],
+      "params": {
+        "Ekran": {
+          "Przekątna": "27 cali",
+          "Odświeżanie": "144 Hz",
+          "Rozdzielczość": "QHD"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "61 cm",
+        "Wysokość": "46 cm",
+        "Głębokość": "21 cm"
+      },
+      "related": [
+        "laptop-lenovo-ideapad",
+        "sluchawki-sony-wh"
+      ]
+    },
+    {
+      "id": "laptop-lenovo-ideapad",
+      "name": "Lenovo IdeaPad laptop 15,6\"",
+      "short": "Laptop do pracy, szkoły i codziennych zadań.",
+      "brand": "Lenovo",
+      "category": "Komputery i telefony",
+      "subcategory": "Laptopy",
+      "price": 2499,
+      "oldPrice": 2899,
+      "badge": "Nowość",
+      "availability": "Na zamówienie",
+      "image": "/assets/products/product-07-laptop-lenovo.jpg",
+      "images": [
+        "/assets/products/product-07-laptop-lenovo.jpg",
+        "/assets/categories/clean-komputery-telefony.jpg"
+      ],
+      "features": [
+        "15,6 cali",
+        "SSD",
+        "Windows",
+        "Do pracy"
+      ],
+      "params": {
+        "Komputer": {
+          "Ekran": "15,6 cali",
+          "Dysk": "SSD 512 GB",
+          "Pamięć": "16 GB"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "36 cm",
+        "Wysokość": "2 cm",
+        "Głębokość": "24 cm"
+      },
+      "related": [
+        "monitor-lenovo-gaming",
+        "sluchawki-sony-wh"
+      ]
+    },
+    {
+      "id": "smartfon-samsung-galaxy",
+      "name": "Samsung Galaxy smartfon",
+      "short": "Nowoczesny telefon do codziennego kontaktu, zdjęć i multimediów.",
+      "brand": "Samsung",
+      "category": "Komputery i telefony",
+      "subcategory": "Smartfony",
+      "price": 1299,
+      "oldPrice": 1599,
+      "badge": "Promocja",
+      "availability": "Dostępny",
+      "image": "/assets/products/product-08-smartfon-samsung.jpg",
+      "images": [
+        "/assets/products/product-08-smartfon-samsung.jpg",
+        "/assets/categories/clean-komputery-telefony.jpg"
+      ],
+      "features": [
+        "Duży ekran",
+        "Dobry aparat",
+        "Android",
+        "Akcesoria"
+      ],
+      "params": {
+        "Telefon": {
+          "System": "Android",
+          "Pamięć": "128 GB",
+          "Aparat": "50 Mpix"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "7,6 cm",
+        "Wysokość": "16,5 cm",
+        "Głębokość": "0,8 cm"
+      },
+      "related": [
+        "tablet-lenovo-tab",
+        "sluchawki-sony-wh"
+      ]
+    },
+    {
+      "id": "tablet-lenovo-tab",
+      "name": "Lenovo tablet multimedialny",
+      "short": "Tablet do filmów, internetu i prostych zadań domowych.",
+      "brand": "Lenovo",
+      "category": "Komputery i telefony",
+      "subcategory": "Tablety",
+      "price": 899,
+      "oldPrice": 1099,
+      "badge": "Poleca ELKASS",
+      "availability": "Dostępny",
+      "image": "/assets/products/product-19-tablet-lenovo.jpg",
+      "images": [
+        "/assets/products/product-19-tablet-lenovo.jpg"
+      ],
+      "features": [
+        "10 cali",
+        "Wi-Fi",
+        "Multimedia",
+        "Rodzinny"
+      ],
+      "params": {
+        "Tablet": {
+          "Ekran": "10 cali",
+          "Łączność": "Wi-Fi",
+          "Pamięć": "64 GB"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "24 cm",
+        "Wysokość": "16 cm",
+        "Głębokość": "0,8 cm"
+      },
+      "related": [
+        "smartfon-samsung-galaxy"
+      ]
+    },
+    {
+      "id": "sluchawki-sony-wh",
+      "name": "Sony słuchawki bezprzewodowe",
+      "short": "Wygodne słuchawki do muzyki, filmów i pracy.",
+      "brand": "Sony",
+      "category": "RTV",
+      "subcategory": "Audio",
+      "price": 349,
+      "oldPrice": 449,
+      "badge": "Audio",
+      "availability": "Dostępne",
+      "image": "/assets/products/product-18-sluchawki-sony.jpg",
+      "images": [
+        "/assets/products/product-18-sluchawki-sony.jpg",
+        "/assets/categories/clean-audio.jpg"
+      ],
+      "features": [
+        "Bluetooth",
+        "Lekka konstrukcja",
+        "Do telefonu",
+        "Do TV"
+      ],
+      "params": {
+        "Audio": {
+          "Łączność": "Bluetooth",
+          "Typ": "Nauszne",
+          "Mikrofon": "Tak"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "17 cm",
+        "Wysokość": "19 cm",
+        "Głębokość": "8 cm"
+      },
+      "related": [
+        "smartfon-samsung-galaxy",
+        "laptop-lenovo-ideapad"
+      ]
+    },
+    {
+      "id": "chlodziarka-amica-podblatowa",
+      "name": "Amica chłodziarka podblatowa",
+      "short": "Kompaktowa chłodziarka do mniejszej kuchni, biura lub zaplecza.",
+      "brand": "Amica",
+      "category": "AGD",
+      "subcategory": "Chłodziarki",
+      "price": 899,
+      "oldPrice": 1099,
+      "badge": "Małe AGD",
+      "availability": "Na zamówienie",
+      "image": "/assets/products/product-03-chlodziarka-amica.jpg",
+      "images": [
+        "/assets/products/product-03-chlodziarka-amica.jpg"
+      ],
+      "features": [
+        "Kompaktowa",
+        "Cicha",
+        "Do małej kuchni",
+        "Wniesienie"
+      ],
+      "params": {
+        "Chłodzenie": {
+          "Typ": "Podblatowa",
+          "Pojemność": "112 l",
+          "Klasa": "E"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "55 cm",
+        "Wysokość": "85 cm",
+        "Głębokość": "58 cm"
+      },
+      "related": [
+        "lodowka-lg-no-frost"
+      ]
+    },
+    {
+      "id": "zamrazarka-kernau",
+      "name": "Kernau zamrażarka szufladowa",
+      "short": "Dodatkowa przestrzeń do przechowywania mrożonek.",
+      "brand": "Kernau",
+      "category": "AGD",
+      "subcategory": "Zamrażarki",
+      "price": 1199,
+      "oldPrice": 1399,
+      "badge": "AGD",
+      "availability": "Dostępna",
+      "image": "/assets/products/product-13-zamrazarka-kernau.jpg",
+      "images": [
+        "/assets/products/product-13-zamrazarka-kernau.jpg"
+      ],
+      "features": [
+        "Szuflady",
+        "Cicha praca",
+        "Do piwnicy/kuchni",
+        "Transport"
+      ],
+      "params": {
+        "Mrożenie": {
+          "Typ": "Szufladowa",
+          "Pojemność": "160 l",
+          "Klasa": "E"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "55 cm",
+        "Wysokość": "143 cm",
+        "Głębokość": "58 cm"
+      },
+      "related": [
+        "lodowka-lg-no-frost"
+      ]
+    },
+    {
+      "id": "pralka-philco-7kg",
+      "name": "Philco pralka 7 kg Slim",
+      "short": "Wąska pralka do mniejszych łazienek bez rezygnacji z wygody.",
+      "brand": "Philco",
+      "category": "AGD",
+      "subcategory": "Pralki",
+      "price": 1299,
+      "oldPrice": 1599,
+      "badge": "Slim",
+      "availability": "Dostępna",
+      "image": "/assets/products/product-14-pralka-philco.jpg",
+      "images": [
+        "/assets/products/product-14-pralka-philco.jpg"
+      ],
+      "features": [
+        "Slim",
+        "7 kg",
+        "Szybki program",
+        "Mała łazienka"
+      ],
+      "params": {
+        "Pranie": {
+          "Wsad": "7 kg",
+          "Głębokość": "Slim",
+          "Program szybki": "Tak"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "60 cm",
+        "Wysokość": "85 cm",
+        "Głębokość": "45 cm"
+      },
+      "related": [
+        "pralka-beko-8kg-inverter"
+      ]
+    },
+    {
+      "id": "robot-sprzatajacy-smart",
+      "name": "Robot sprzątający Smart",
+      "short": "Automatyczne sprzątanie podłóg z wygodną obsługą aplikacji.",
+      "brand": "ELKASS",
+      "category": "Małe AGD",
+      "subcategory": "Roboty sprzątające",
+      "price": 999,
+      "oldPrice": 1299,
+      "badge": "Smart Home",
+      "availability": "Dostępny",
+      "image": "/assets/products/product-15-robot-sprzatajacy.jpg",
+      "images": [
+        "/assets/products/product-15-robot-sprzatajacy.jpg"
+      ],
+      "features": [
+        "Aplikacja",
+        "Automatyczne sprzątanie",
+        "Do domu",
+        "Promocja"
+      ],
+      "params": {
+        "Sprzątanie": {
+          "Sterowanie": "Aplikacja",
+          "Tryby": "Auto / Spot",
+          "Stacja": "Ładowanie"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "34 cm",
+        "Wysokość": "9 cm",
+        "Głębokość": "34 cm"
+      },
+      "related": [
+        "odkurzacz-bosch-hepa"
+      ]
+    },
+    {
+      "id": "mikrofala-amica-inox",
+      "name": "Amica kuchenka mikrofalowa inox",
+      "short": "Szybkie podgrzewanie i rozmrażanie w kompaktowym wydaniu.",
+      "brand": "Amica",
+      "category": "Małe AGD",
+      "subcategory": "Mikrofale",
+      "price": 499,
+      "oldPrice": 649,
+      "badge": "Kuchnia",
+      "availability": "Dostępna",
+      "image": "/assets/products/product-11-mikrofala-amica.jpg",
+      "images": [
+        "/assets/products/product-11-mikrofala-amica.jpg"
+      ],
+      "features": [
+        "20 l",
+        "Inox",
+        "Grill",
+        "Do kuchni"
+      ],
+      "params": {
+        "Kuchnia": {
+          "Pojemność": "20 l",
+          "Moc": "700 W",
+          "Grill": "Tak"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "45 cm",
+        "Wysokość": "26 cm",
+        "Głębokość": "34 cm"
+      },
+      "related": [
+        "ekspres-philips-lattego"
+      ]
+    },
+    {
+      "id": "uchwyt-tv-uniwersalny",
+      "name": "Uchwyt ścienny TV z montażem",
+      "short": "Dobierzemy uchwyt i zamontujemy telewizor bezpiecznie na ścianie.",
+      "brand": "ELKASS",
+      "category": "Usługi i akcesoria",
+      "subcategory": "Montaż TV",
+      "price": 199,
+      "oldPrice": 249,
+      "badge": "Montaż",
+      "availability": "Usługa lokalna",
+      "image": "/assets/banners/oled-tv.jpg",
+      "images": [
+        "/assets/banners/oled-tv.jpg",
+        "/assets/categories/clean-rtv.jpg"
+      ],
+      "features": [
+        "Do TV",
+        "Montaż",
+        "Doradztwo",
+        "Lokalnie"
+      ],
+      "params": {
+        "Usługa": {
+          "Typ": "Uchwyt + montaż",
+          "Dostępność": "Olesno i okolice"
+        }
+      },
+      "dimensions": {
+        "Zakres": "TV 32–75 cali"
+      },
+      "related": [
+        "tv-samsung-55-crystal-uhd",
+        "soundbar-lg-premium"
+      ]
+    },
+    {
+      "id": "okap-kuchenny-premium",
+      "name": "Okap kuchenny do zabudowy",
+      "short": "Praktyczny okap do kuchni z doradztwem przy doborze wydajności.",
+      "brand": "Amica",
+      "category": "AGD do zabudowy",
+      "subcategory": "Okapy",
+      "price": 699,
+      "oldPrice": 899,
+      "badge": "Zabudowa",
+      "availability": "Na zamówienie",
+      "image": "/assets/categories/clean-agd-zabudowa.jpg",
+      "images": [
+        "/assets/categories/clean-agd-zabudowa.jpg"
+      ],
+      "features": [
+        "Do zabudowy",
+        "Cicha praca",
+        "Oświetlenie LED",
+        "Montaż"
+      ],
+      "params": {
+        "Kuchnia": {
+          "Typ": "Do zabudowy",
+          "Oświetlenie": "LED",
+          "Tryby": "Wyciąg / pochłaniacz"
+        }
+      },
+      "dimensions": {
+        "Szerokość": "60 cm"
+      },
+      "related": [
+        "piekarnik-samsung-dual-cook",
+        "plyta-indukcyjna-amica-60"
+      ]
+    }
+  ]
+}

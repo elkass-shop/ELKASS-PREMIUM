@@ -1,0 +1,89 @@
+/* M4.1 Stabilization Fix
+   Cel: po pakiecie Showroom Ready przywrócić stabilną stronę główną.
+   - demo content nie dubluje już sekcji na Home,
+   - Hit tygodnia jest czytelny,
+   - nagłówki sekcji nie chowają się pod sticky menu,
+   - zachowany jest osobny pokaz demo w /app/showroom/. */
+
+:root{
+  --m41-ink:#0f172a;
+  --m41-muted:#667085;
+  --m41-red:#c91524;
+  --m41-red-dark:#9f101b;
+  --m41-green:#0f7a42;
+}
+
+main section[id]{scroll-margin-top:150px;}
+
+/* Sticky header bez zasłaniania nagłówków po wejściu z kotwic */
+.site-header{z-index:80!important;}
+.v22-promo-section{position:relative;padding-top:68px!important;}
+.v22-section-head{position:relative;z-index:2;text-align:center;}
+.v22-section-head h2{color:var(--m41-ink)!important;text-shadow:none!important;}
+.v22-section-head p{color:var(--m41-muted)!important;}
+
+/* Przywrócenie czytelności głównego Hitu tygodnia */
+.v22-hit{
+  background:
+    radial-gradient(circle at 8% 0%,rgba(201,21,36,.28),transparent 22rem),
+    radial-gradient(circle at 90% 105%,rgba(15,122,66,.26),transparent 22rem),
+    linear-gradient(135deg,#0b1220 0%,#161827 46%,#08291b 100%)!important;
+  color:#fff!important;
+  border:1px solid rgba(255,255,255,.09)!important;
+  box-shadow:0 26px 72px rgba(15,23,42,.18)!important;
+}
+.v22-hit h2,
+.v22-hit p,
+.v22-hit .v22-feature-list span,
+.v22-hit .v22-expert,
+.v22-hit .v22-expert strong{color:#fff!important;}
+.v22-hit p{color:rgba(255,255,255,.82)!important;}
+.v22-feature-list span{
+  background:transparent!important;
+  border:0!important;
+  text-shadow:none!important;
+}
+.v22-feature-list span:before{box-shadow:0 0 0 4px rgba(255,255,255,.09)!important;}
+.v22-hit .v22-expert{
+  background:rgba(255,255,255,.09)!important;
+  border:1px solid rgba(255,255,255,.13)!important;
+  border-radius:20px!important;
+}
+.v22-price{color:#fff!important;}
+.v22-old{color:rgba(255,255,255,.58)!important;}
+.v22-product-img{
+  background:linear-gradient(145deg,#fff,#f4f6f8)!important;
+  border:1px solid rgba(255,255,255,.20)!important;
+}
+
+/* Małe kafle promocji: stabilne proporcje i mniej pustki */
+.v22-mini{
+  min-height:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+.v22-mini-img{height:122px!important;min-height:122px!important;}
+.v22-mini h3{min-height:42px!important;}
+.v22-mini p{min-height:42px!important;}
+.v22-mini-price{margin-top:auto!important;}
+.v22-card-cta{margin-top:12px!important;}
+
+/* Sekcje demo M4 tylko tam, gdzie mają własną klasę; nie mają naruszać Home */
+.m4-section{isolation:isolate;}
+.m4-showroom-banner{isolation:isolate;}
+
+/* Lżejsze statystyki pod hero */
+.statsbar{transform:translateY(0)!important;}
+
+@media (max-width:900px){
+  main section[id]{scroll-margin-top:118px;}
+  .v22-promo-section{padding-top:42px!important;}
+  .v22-hit{border-radius:24px!important;}
+  .v22-mini-img{height:138px!important;min-height:138px!important;}
+}
+@media (max-width:560px){
+  main section[id]{scroll-margin-top:106px;}
+  .v22-promo-section{padding-top:34px!important;}
+  .v22-section-head h2{font-size:31px!important;line-height:1.05!important;}
+  .v22-mini h3,.v22-mini p{min-height:0!important;}
+}

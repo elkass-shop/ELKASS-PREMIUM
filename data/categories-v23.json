@@ -1,0 +1,27 @@
+{
+  "version": "2.3",
+  "section": {
+    "kicker": "Oferta",
+    "title": "Kategorie dopasowane do domu",
+    "description": "Bez przypadkowych haseł. Każda kategoria prowadzi klienta do właściwego sprzętu — RTV, AGD, zabudowy kuchennej, multimediów i usług ELKASS.",
+    "editableInPanel": true,
+    "mobileMode": "horizontal-cards"
+  },
+  "categories": [
+    {"id":"rtv","name":"RTV","count":"247 produktów","image":"assets/categories/rtv.jpg","icon":"tv","description":"Telewizory, soundbary, audio i multimedia do salonu, pokoju gracza oraz domowej strefy rozrywki.","subcategories":["Telewizory","OLED","QLED","Audio","Soundbary"]},
+    {"id":"agd","name":"AGD","count":"318 produktów","image":"assets/categories/agd.jpg","icon":"laundry","description":"Pralki, lodówki, zmywarki, suszarki i zamrażarki dobrane do wielkości domu oraz codziennych potrzeb.","subcategories":["Pralki","Lodówki","Zmywarki","Suszarki","Zamrażarki"]},
+    {"id":"zabudowa","name":"AGD do zabudowy","count":"186 produktów","image":"assets/categories/agd-zabudowa.jpg","icon":"kitchen","description":"Piekarniki, płyty, okapy i zmywarki do kuchni projektowanej pod estetykę, wygodę i trwałość.","subcategories":["Piekarniki","Płyty","Okapy","Zmywarki 45/60","Mikrofale"]},
+    {"id":"male-agd","name":"Małe AGD","count":"221 produktów","image":"assets/categories/male-agd.jpg","icon":"coffee","description":"Ekspresy, odkurzacze, roboty kuchenne, czajniki i sprzęty, które ułatwiają codzienność.","subcategories":["Ekspresy","Odkurzacze","Roboty","Czajniki","Żelazka"]},
+    {"id":"komputery","name":"Komputery i telefony","count":"154 produkty","image":"assets/categories/komputery-telefony.jpg","icon":"laptop","description":"Laptopy, smartfony, tablety, monitory i akcesoria do pracy, nauki oraz rozrywki.","subcategories":["Laptopy","Smartfony","Tablety","Monitory","Akcesoria"]},
+    {"id":"audio","name":"Audio","count":"92 produkty","image":"assets/audio.jpg","icon":"headphones","description":"Soundbary, słuchawki, głośniki i kino domowe do telewizora, muzyki i codziennego słuchania.","subcategories":["Soundbary","Słuchawki","Głośniki","Kino domowe"]},
+    {"id":"gaming","name":"Gaming","count":"73 produkty","image":"assets/gaming.jpg","icon":"gamepad","description":"Monitory, akcesoria, audio i urządzenia do płynnej rozgrywki oraz wygodnego stanowiska.","subcategories":["Monitory","Audio","Akcesoria","Smart TV"]},
+    {"id":"serwis","name":"Usługi ELKASS","count":"Doradztwo","image":"assets/categories/serwis.jpg","icon":"tools","description":"Transport, wniesienie, montaż, konfiguracja i wsparcie po zakupie — lokalnie i konkretnie.","subcategories":["Transport","Montaż","Raty","Serwis"]}
+  ],
+  "futureReady": [
+    "Category Builder",
+    "Smart Image Engine",
+    "SEO per category",
+    "subcategories step by step",
+    "desktop and mobile layouts"
+  ]
+}

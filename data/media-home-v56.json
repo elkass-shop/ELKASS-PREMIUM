@@ -1,0 +1,94 @@
+{
+  "version": "v56",
+  "project": "elkass",
+  "collections": [
+    {
+      "id": "hero",
+      "name": "Hero i kampanie",
+      "items": [
+        {
+          "id": "hero-premium",
+          "title": "Hero Premium ELKASS",
+          "src": "/assets/images/hero/hero-premium-demo.png",
+          "usage": [
+            "home.hero.desktop",
+            "home.hero.mobile"
+          ]
+        },
+        {
+          "id": "blackweek",
+          "title": "Black Week",
+          "src": "/assets/hero-seasonal-real/blackweek.jpg",
+          "usage": [
+            "theme.blackweek.hero"
+          ]
+        },
+        {
+          "id": "christmas",
+          "title": "Boże Narodzenie",
+          "src": "/assets/hero-seasonal-real/christmas.jpg",
+          "usage": [
+            "theme.christmas.hero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "categories",
+      "name": "Kategorie",
+      "items": [
+        {
+          "id": "rtv",
+          "title": "RTV",
+          "src": "/assets/categories/clean-rtv.jpg",
+          "usage": [
+            "category.rtv"
+          ]
+        },
+        {
+          "id": "agd",
+          "title": "AGD",
+          "src": "/assets/categories/clean-agd.jpg",
+          "usage": [
+            "category.agd"
+          ]
+        },
+        {
+          "id": "audio",
+          "title": "Audio",
+          "src": "/assets/categories/clean-audio.jpg",
+          "usage": [
+            "category.audio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "showroom",
+      "name": "Salon i realizacje",
+      "items": [
+        {
+          "id": "salon",
+          "title": "Salon ELKASS",
+          "src": "/assets/images/gallery/salon-elkass-demo.jpg",
+          "usage": [
+            "home.gallery"
+          ]
+        },
+        {
+          "id": "showroom-real",
+          "title": "Ekspozycja salonu",
+          "src": "/assets/gallery/gallery-16-salon-elkass.jpg",
+          "usage": [
+            "gallery.showroom"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    "Grafiki strony głównej nie są wpisywane ręcznie w HTML.",
+    "Home Builder wybiera obraz z Media Studio i zapisuje referencję w danych.",
+    "Na produkcji pliki będą trafiały do Supabase Storage lub innego storage, a nie do repo."
+  ]
+}

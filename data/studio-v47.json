@@ -1,0 +1,148 @@
+{
+  "version": "V47.1-V47.2",
+  "architectureNote": "ELKASS jest pierwszym wdrożeniem; moduły projektowane pod przyszłe WOODYBOY Core.",
+  "dashboard": {
+    "products": 20,
+    "sections": 10,
+    "themes": 13,
+    "media": 128,
+    "pendingReviews": 3,
+    "quality": "Sprint V47 active"
+  },
+  "homeSections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "status": "active",
+      "desktopHeight": 560,
+      "mobileHeight": 470,
+      "visible": {
+        "desktop": true,
+        "tablet": true,
+        "mobile": true
+      },
+      "layout": "premium",
+      "media": "hero-premium.png"
+    },
+    {
+      "id": "promotions",
+      "name": "Promocje ELKASS",
+      "status": "active",
+      "desktopHeight": 430,
+      "mobileHeight": 360,
+      "visible": {
+        "desktop": true,
+        "tablet": true,
+        "mobile": true
+      },
+      "layout": "1+4 premium",
+      "media": "banners/weekend-sale.jpg"
+    },
+    {
+      "id": "brands",
+      "name": "Renomowani producenci",
+      "status": "active",
+      "desktopHeight": 180,
+      "mobileHeight": 150,
+      "visible": {
+        "desktop": true,
+        "tablet": true,
+        "mobile": true
+      },
+      "layout": "slider"
+    },
+    {
+      "id": "categories",
+      "name": "Kategorie dopasowane do domu",
+      "status": "active",
+      "desktopHeight": 520,
+      "mobileHeight": 640,
+      "visible": {
+        "desktop": true,
+        "tablet": true,
+        "mobile": true
+      },
+      "layout": "cards"
+    },
+    {
+      "id": "trust",
+      "name": "Zaufali nam klienci",
+      "status": "active",
+      "desktopHeight": 310,
+      "mobileHeight": 340,
+      "visible": {
+        "desktop": true,
+        "tablet": true,
+        "mobile": true
+      },
+      "layout": "reviews slider"
+    },
+    {
+      "id": "gallery",
+      "name": "Poznaj ELKASS",
+      "status": "active",
+      "desktopHeight": 360,
+      "mobileHeight": 360,
+      "visible": {
+        "desktop": true,
+        "tablet": true,
+        "mobile": true
+      },
+      "layout": "compact story"
+    },
+    {
+      "id": "contact",
+      "name": "Znajdź nas",
+      "status": "active",
+      "desktopHeight": 470,
+      "mobileHeight": 520,
+      "visible": {
+        "desktop": true,
+        "tablet": true,
+        "mobile": true
+      },
+      "layout": "map + contact"
+    }
+  ],
+  "productBuilder": {
+    "templates": [
+      "Telewizor",
+      "Pralka",
+      "Zmywarka",
+      "Lodówka",
+      "Piekarnik",
+      "Ekspres",
+      "Audio",
+      "Laptop"
+    ],
+    "steps": [
+      "Dane podstawowe",
+      "Cena i finansowanie",
+      "Galeria i media",
+      "Parametry kluczowe",
+      "Opis ELKASS",
+      "Opis producenta",
+      "Akcesoria i powiązane",
+      "SEO i publikacja"
+    ],
+    "finance": [
+      "Raty 0%",
+      "Dogodne raty"
+    ],
+    "relations": [
+      "Kupowane razem",
+      "Produkty podobne",
+      "Klienci oglądali również",
+      "Akcesoria"
+    ]
+  },
+  "qualityGate": [
+    "Desktop",
+    "Mobile",
+    "Studio",
+    "Routing",
+    "Media",
+    "Dokumentacja",
+    "WOODYBOY-ready"
+  ]
+}

@@ -1,0 +1,90 @@
+/* ELKASS Layout Builder v4.6.5 — section sizing controlled by data/layout-v465.json + Studio localStorage */
+:root{
+  --elkass-hero-desktop-height:620px;
+  --elkass-hero-mobile-height:520px;
+  --elkass-section-padding-desktop:72px;
+  --elkass-section-padding-mobile:44px;
+  --elkass-promo-hit-height:470px;
+  --elkass-promo-mini-height:270px;
+  --elkass-gallery-height:380px;
+  --elkass-reviews-height:300px;
+  --elkass-section-radius:28px;
+}
+
+/* Global section rhythm */
+main > section.section,
+.v22-brands-section,
+.v23-categories,
+.v25-dynamic-products,
+.v33-reviews,
+.v331-reviews,
+.v24-about,
+.v24-contact,
+.v25-about,
+.v25-contact{
+  padding-top:var(--elkass-section-padding-desktop) !important;
+  padding-bottom:var(--elkass-section-padding-desktop) !important;
+}
+
+.hero{padding-top:clamp(18px,3vw,36px)!important;padding-bottom:calc(var(--elkass-section-padding-desktop) * .65)!important;}
+.hero .hero-card{min-height:var(--elkass-hero-desktop-height)!important;border-radius:var(--elkass-section-radius)!important;overflow:hidden;}
+.hero .hero-inner{min-height:var(--elkass-hero-desktop-height)!important;align-items:center;}
+.statsbar{border-radius:calc(var(--elkass-section-radius) - 6px)!important;}
+
+.v22-promo-shell,.v22-hit,.v22-mini,.v22-brand-card,.v23-category-card,.v25-product-card,.v33-review-card,.v331-review-card,.v24-about-card,.v25-about-card,.contact-card,.map-card{
+  border-radius:var(--elkass-section-radius)!important;
+}
+.v22-hit{min-height:var(--elkass-promo-hit-height)!important;}
+.v22-mini{min-height:var(--elkass-promo-mini-height)!important;}
+.v22-mini-img{min-height:calc(var(--elkass-promo-mini-height) * .34)!important;}
+
+/* Compact gallery/about blocks */
+.v24-about-card,.v25-about-card,.about-card,.v231-gallery-entry,.v25-gallery-entry{min-height:min(var(--elkass-gallery-height), 460px)!important;}
+.v24-about-card img,.v25-about-card img,.about-card img,.v231-gallery-entry img,.v25-gallery-entry img{max-height:var(--elkass-gallery-height)!important;object-fit:cover!important;}
+
+/* Reviews vertical rhythm */
+.v33-review-card,.v331-review-card,.review-card{min-height:var(--elkass-reviews-height)!important;}
+
+/* Product page also respects layout builder for card radius and mobile rhythm */
+.product-premium-card,.product-buy-box,.product-gallery,.product-section,.product-related-card{border-radius:var(--elkass-section-radius)!important;}
+
+/* Section visibility controlled by Studio */
+.elkass-hide-desktop{display:none!important;}
+@media (min-width:701px) and (max-width:1024px){.elkass-hide-tablet{display:none!important;}}
+@media (max-width:700px){
+  .elkass-hide-mobile{display:none!important;}
+  main > section.section,
+  .v22-brands-section,
+  .v23-categories,
+  .v25-dynamic-products,
+  .v33-reviews,
+  .v331-reviews,
+  .v24-about,
+  .v24-contact,
+  .v25-about,
+  .v25-contact{
+    padding-top:var(--elkass-section-padding-mobile)!important;
+    padding-bottom:var(--elkass-section-padding-mobile)!important;
+  }
+  .hero{padding-top:18px!important;padding-bottom:calc(var(--elkass-section-padding-mobile) * .75)!important;}
+  .hero .hero-card,.hero .hero-inner{min-height:var(--elkass-hero-mobile-height)!important;}
+  .hero .hero-card{border-radius:calc(var(--elkass-section-radius) - 6px)!important;}
+  .hero h1{font-size:clamp(31px,9vw,44px)!important;line-height:1.02!important;}
+  .hero p{font-size:15px!important;}
+  .service-panel{grid-template-columns:1fr 1fr!important;gap:10px!important;}
+  .service{padding:12px!important;min-height:118px!important;}
+  .service h3{font-size:13px!important;}
+  .service p{font-size:12px!important;line-height:1.35!important;}
+  .v22-hit{min-height:auto!important;}
+  .v22-mini{min-height:auto!important;}
+  .v22-mini-img{min-height:126px!important;}
+  .v24-about-card,.v25-about-card,.about-card,.v231-gallery-entry,.v25-gallery-entry{min-height:auto!important;}
+  .v33-review-card,.v331-review-card,.review-card{min-height:auto!important;}
+}
+
+/* Studio Layout Builder */
+.layout-builder-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.layout-panel{background:rgba(255,255,255,.78);border:1px solid rgba(15,23,42,.10);box-shadow:0 18px 60px rgba(15,23,42,.08);border-radius:24px;padding:20px}
+.layout-panel.span-4{grid-column:span 4}.layout-panel.span-5{grid-column:span 5}.layout-panel.span-7{grid-column:span 7}.layout-panel.span-8{grid-column:span 8}.layout-panel.span-12{grid-column:span 12}
+.layout-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.layout-controls label{display:grid;gap:7px;font-size:13px;color:#536070;font-weight:800}.layout-controls input,.layout-controls select{border:1px solid rgba(15,23,42,.13);border-radius:14px;padding:12px;background:#fff;font:inherit}.layout-controls output{font-size:12px;color:#7a8594;font-weight:800}.layout-section-row{display:grid;grid-template-columns:34px 1fr repeat(3,72px);gap:10px;align-items:center;border:1px solid rgba(15,23,42,.09);border-radius:18px;padding:12px;background:#fff;margin-bottom:10px}.layout-section-row strong{display:block}.layout-section-row small{color:#6b7280}.layout-section-row label{font-size:11px;text-align:center;color:#6b7280}.layout-preview-card{border-radius:24px;background:linear-gradient(135deg,#111827,#173126);padding:18px;color:#fff;min-height:340px}.layout-preview-hero{height:110px;border-radius:20px;background:linear-gradient(135deg,rgba(255,255,255,.22),rgba(255,255,255,.06));padding:16px;margin-bottom:12px}.layout-preview-section{height:52px;border-radius:16px;background:rgba(255,255,255,.14);margin-bottom:10px;padding:12px}.layout-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.layout-note{background:linear-gradient(135deg,rgba(214,40,40,.10),rgba(31,125,83,.10));border:1px solid rgba(31,125,83,.16);border-radius:18px;padding:14px;color:#334155;font-size:14px}
+@media (max-width:900px){.layout-panel.span-4,.layout-panel.span-5,.layout-panel.span-7,.layout-panel.span-8,.layout-panel.span-12{grid-column:1/-1}.layout-controls{grid-template-columns:1fr}.layout-section-row{grid-template-columns:28px 1fr;}.layout-section-row label{display:inline-flex;align-items:center;gap:5px;text-align:left}}

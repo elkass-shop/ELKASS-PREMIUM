@@ -1,0 +1,26 @@
+{
+  "module": "Visual Experience Pack",
+  "version": "V52",
+  "mediaLibrary": {
+    "hero": [
+      "/assets/hero-premium.png",
+      "/assets/hero-seasonal-real/blackweek.jpg",
+      "/assets/hero-seasonal-real/christmas.jpg"
+    ],
+    "categories": [
+      "/assets/categories/clean-rtv.jpg",
+      "/assets/categories/clean-agd.jpg",
+      "/assets/categories/clean-agd-zabudowa.jpg"
+    ],
+    "lifestyle": [
+      "/assets/gallery/gallery-16-salon-elkass.jpg",
+      "/assets/gallery/gallery-08-rtv-telewizory.jpg",
+      "/assets/gallery/gallery-14-ekspozycja-sklepu.jpg"
+    ]
+  },
+  "rules": [
+    "Grafiki nie są zaszywane w kodzie jako docelowe — mają być wybierane z Media Studio.",
+    "Każdy obraz ma działać w desktop i mobile.",
+    "ELKASS pozostaje wdrożeniem referencyjnym przyszłej platformy WOODYBOY."
+  ]
+}

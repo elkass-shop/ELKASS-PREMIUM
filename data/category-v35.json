@@ -1,0 +1,33 @@
+{
+  "version": "v3.5",
+  "module": "Category Studio Final",
+  "visibility": {
+    "hero": true,
+    "breadcrumbs": true,
+    "subcategories": true,
+    "filtersDesktop": true,
+    "filtersMobile": true,
+    "brandStrip": true,
+    "advisor": true,
+    "guide": true,
+    "faq": false
+  },
+  "filterGroups": [
+    { "id": "category", "label": "Kategoria", "enabled": true },
+    { "id": "brand", "label": "Marka", "enabled": true },
+    { "id": "price", "label": "Cena", "enabled": true },
+    { "id": "status", "label": "Status", "enabled": true },
+    { "id": "size", "label": "Wymiary / przekątna", "enabled": false },
+    { "id": "energy", "label": "Klasa energetyczna", "enabled": false }
+  ],
+  "mobile": {
+    "filterMode": "drawer",
+    "cardsPerRow": 1,
+    "showQuickActions": true
+  },
+  "desktop": {
+    "filterMode": "sidebar",
+    "cardsPerRow": 3,
+    "defaultView": "grid"
+  }
+}
