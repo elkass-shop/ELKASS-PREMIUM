@@ -7,7 +7,6 @@ window.ELKASS_CLOUD_CONFIG = {
   projectId: 'elkass',
   supabaseUrl: '',
   supabaseAnonKey: '',
-  storageBucket: 'elkass-media',
   tables: {
     products: 'products',
     media: 'media_assets',

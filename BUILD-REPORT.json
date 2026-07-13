@@ -1,0 +1,11 @@
+{
+  "files": 385,
+  "html": 16,
+  "themes": 13,
+  "missing_static_refs": [
+    [
+      "app/showroom/index.html",
+      "${p.image}"
+    ]
+  ]
+}

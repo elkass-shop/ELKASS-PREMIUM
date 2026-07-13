@@ -69,7 +69,7 @@
     const url = c.supabaseUrl.replace(/\/$/,'') + '/rest/v1/' + path;
     const headers = Object.assign({
       apikey: c.supabaseAnonKey,
-      Authorization: 'Bearer ' + (window.ElkassProduction?.session?.()?.access_token || c.supabaseAnonKey),
+      Authorization: 'Bearer ' + c.supabaseAnonKey,
       'Content-Type': 'application/json',
       Prefer: 'return=representation'
     }, options.headers || {});
@@ -166,10 +166,6 @@
 
   async function deleteLocalProduct(id){
     writeLocalProducts(readLocalProducts().filter(p=>p.id !== id));
-    if(supabaseReady()){
-      const c=cfg();
-      await supabaseRequest(`${c.tables.products || 'products'}?id=eq.${encodeURIComponent(id)}&project_slug=eq.${encodeURIComponent(c.projectId||DEFAULT_PROJECT)}`, {method:'DELETE'});
-    }
     window.dispatchEvent(new CustomEvent('elkass:product-deleted', {detail:{id}}));
   }
 
