@@ -1,0 +1,546 @@
+{
+  "version": "6.0",
+  "notice": "Treści demonstracyjne — przed publikacją zastąp zweryfikowanymi opiniami klientów.",
+  "reviews": [
+    {
+      "id": "DEMO-001",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "M. K.",
+      "city": "Olesno",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-002",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "A. P.",
+      "city": "Stare Olesno",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-003",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "T. S.",
+      "city": "Bodzanowice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-004",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "K. W.",
+      "city": "Borki Małe",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-005",
+      "text": "Wracamy do ELKASS kolejny raz. Rozsądna cena, szybka realizacja i pomoc przy zakupie na raty bez żadnych niespodzianek.",
+      "name": "E. B.",
+      "city": "Borki Wielkie",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-006",
+      "text": "Doradca cierpliwie odpowiedział na wszystkie pytania i zaproponował model pasujący do naszych potrzeb. instruktaż po zakupie na wysokim poziomie.",
+      "name": "P. R.",
+      "city": "Grodzisko",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-007",
+      "text": "Wszystko zgodnie z ustaleniami: termin, cena i zakres prac. Szczególnie dobrze oceniamy podłączenie sprzętu.",
+      "name": "J. L.",
+      "city": "Łowoszów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-008",
+      "text": "Kupiliśmy sprzęt do całej kuchni. Pomoc w doborze wymiarów oraz konfigurację Smart TV oszczędziły nam wielu problemów.",
+      "name": "D. M.",
+      "city": "Sowczyce",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-009",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "R. C.",
+      "city": "Wachów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-010",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "B. N.",
+      "city": "Wysoka",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-011",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "S. G.",
+      "city": "Dobrodzień",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-012",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "N. F.",
+      "city": "Bzinica Stara",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-013",
+      "text": "Wracamy do ELKASS kolejny raz. Rozsądna cena, szybka realizacja i pomoc przy zakupie na raty bez żadnych niespodzianek.",
+      "name": "I. J.",
+      "city": "Gosławice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-014",
+      "text": "Doradca cierpliwie odpowiedział na wszystkie pytania i zaproponował model pasujący do naszych potrzeb. instruktaż po zakupie na wysokim poziomie.",
+      "name": "W. Z.",
+      "city": "Myślina",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-015",
+      "text": "Wszystko zgodnie z ustaleniami: termin, cena i zakres prac. Szczególnie dobrze oceniamy podłączenie sprzętu.",
+      "name": "K. D.",
+      "city": "Pludry",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-016",
+      "text": "Kupiliśmy sprzęt do całej kuchni. Pomoc w doborze wymiarów oraz konfigurację Smart TV oszczędziły nam wielu problemów.",
+      "name": "A. S.",
+      "city": "Szemrowice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-017",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "M. T.",
+      "city": "Praszka",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-018",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "P. B.",
+      "city": "Gana",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-019",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "E. R.",
+      "city": "Kowale",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-020",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "J. G.",
+      "city": "Strojec",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-021",
+      "text": "Wracamy do ELKASS kolejny raz. Rozsądna cena, szybka realizacja i pomoc przy zakupie na raty bez żadnych niespodzianek.",
+      "name": "M. K.",
+      "city": "Szyszków",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-022",
+      "text": "Doradca cierpliwie odpowiedział na wszystkie pytania i zaproponował model pasujący do naszych potrzeb. instruktaż po zakupie na wysokim poziomie.",
+      "name": "A. P.",
+      "city": "Gorzów Śląski",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-023",
+      "text": "Wszystko zgodnie z ustaleniami: termin, cena i zakres prac. Szczególnie dobrze oceniamy podłączenie sprzętu.",
+      "name": "T. S.",
+      "city": "Kozłowice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-024",
+      "text": "Kupiliśmy sprzęt do całej kuchni. Pomoc w doborze wymiarów oraz konfigurację Smart TV oszczędziły nam wielu problemów.",
+      "name": "K. W.",
+      "city": "Jamy",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-025",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "E. B.",
+      "city": "Uszyce",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-026",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "P. R.",
+      "city": "Zdziechowice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-027",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "J. L.",
+      "city": "Radłów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-028",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "D. M.",
+      "city": "Kościeliska",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-029",
+      "text": "Wracamy do ELKASS kolejny raz. Rozsądna cena, szybka realizacja i pomoc przy zakupie na raty bez żadnych niespodzianek.",
+      "name": "R. C.",
+      "city": "Sternalice",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-030",
+      "text": "Doradca cierpliwie odpowiedział na wszystkie pytania i zaproponował model pasujący do naszych potrzeb. instruktaż po zakupie na wysokim poziomie.",
+      "name": "B. N.",
+      "city": "Wichrów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-031",
+      "text": "Wszystko zgodnie z ustaleniami: termin, cena i zakres prac. Szczególnie dobrze oceniamy podłączenie sprzętu.",
+      "name": "S. G.",
+      "city": "Wolęcin",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-032",
+      "text": "Kupiliśmy sprzęt do całej kuchni. Pomoc w doborze wymiarów oraz konfigurację Smart TV oszczędziły nam wielu problemów.",
+      "name": "N. F.",
+      "city": "Rudniki",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-033",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "I. J.",
+      "city": "Jaworzno",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-034",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "W. Z.",
+      "city": "Dalachów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-035",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "K. D.",
+      "city": "Cieciułów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-036",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "A. S.",
+      "city": "Żytniów",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-037",
+      "text": "Wracamy do ELKASS kolejny raz. Rozsądna cena, szybka realizacja i pomoc przy zakupie na raty bez żadnych niespodzianek.",
+      "name": "M. T.",
+      "city": "Zębowice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-038",
+      "text": "Doradca cierpliwie odpowiedział na wszystkie pytania i zaproponował model pasujący do naszych potrzeb. instruktaż po zakupie na wysokim poziomie.",
+      "name": "P. B.",
+      "city": "Kadłub Wolny",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-039",
+      "text": "Wszystko zgodnie z ustaleniami: termin, cena i zakres prac. Szczególnie dobrze oceniamy podłączenie sprzętu.",
+      "name": "E. R.",
+      "city": "Radawie",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-040",
+      "text": "Kupiliśmy sprzęt do całej kuchni. Pomoc w doborze wymiarów oraz konfigurację Smart TV oszczędziły nam wielu problemów.",
+      "name": "J. G.",
+      "city": "Kluczbork",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-041",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "M. K.",
+      "city": "Wołczyn",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-042",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "A. P.",
+      "city": "Byczyna",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-043",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "T. S.",
+      "city": "Lubliniec",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-044",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "K. W.",
+      "city": "Ciasna",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-045",
+      "text": "Wracamy do ELKASS kolejny raz. Rozsądna cena, szybka realizacja i pomoc przy zakupie na raty bez żadnych niespodzianek.",
+      "name": "E. B.",
+      "city": "Zawadzkie",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-046",
+      "text": "Doradca cierpliwie odpowiedział na wszystkie pytania i zaproponował model pasujący do naszych potrzeb. instruktaż po zakupie na wysokim poziomie.",
+      "name": "P. R.",
+      "city": "Lasowice Wielkie",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-047",
+      "text": "Wszystko zgodnie z ustaleniami: termin, cena i zakres prac. Szczególnie dobrze oceniamy podłączenie sprzętu.",
+      "name": "J. L.",
+      "city": "Olesno",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-048",
+      "text": "Kupiliśmy sprzęt do całej kuchni. Pomoc w doborze wymiarów oraz konfigurację Smart TV oszczędziły nam wielu problemów.",
+      "name": "D. M.",
+      "city": "Stare Olesno",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-049",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "R. C.",
+      "city": "Bodzanowice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-050",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "B. N.",
+      "city": "Borki Małe",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-051",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "S. G.",
+      "city": "Borki Wielkie",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-052",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "N. F.",
+      "city": "Grodzisko",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-053",
+      "text": "Wracamy do ELKASS kolejny raz. Rozsądna cena, szybka realizacja i pomoc przy zakupie na raty bez żadnych niespodzianek.",
+      "name": "I. J.",
+      "city": "Łowoszów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-054",
+      "text": "Doradca cierpliwie odpowiedział na wszystkie pytania i zaproponował model pasujący do naszych potrzeb. instruktaż po zakupie na wysokim poziomie.",
+      "name": "W. Z.",
+      "city": "Sowczyce",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-055",
+      "text": "Wszystko zgodnie z ustaleniami: termin, cena i zakres prac. Szczególnie dobrze oceniamy podłączenie sprzętu.",
+      "name": "K. D.",
+      "city": "Wachów",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-056",
+      "text": "Kupiliśmy sprzęt do całej kuchni. Pomoc w doborze wymiarów oraz konfigurację Smart TV oszczędziły nam wielu problemów.",
+      "name": "A. S.",
+      "city": "Wysoka",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-057",
+      "text": "Profesjonalne doradztwo i konkretny wybór bez naciskania na najdroższy model. transport z wniesieniem przebiegły sprawnie i terminowo.",
+      "name": "M. T.",
+      "city": "Dobrodzień",
+      "rating": 4,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-058",
+      "text": "Sprzęt został dobrze dopasowany do naszego domu. Doceniamy jasne wyjaśnienie różnic między modelami oraz odbiór starego urządzenia.",
+      "name": "P. B.",
+      "city": "Bzinica Stara",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-059",
+      "text": "Bardzo dobry kontakt od zamówienia do uruchomienia. montaż AGD do zabudowy wykonane starannie, a wszystkie ustawienia zostały pokazane krok po kroku.",
+      "name": "E. R.",
+      "city": "Gosławice",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    },
+    {
+      "id": "DEMO-060",
+      "text": "Zakupy lokalnie mają sens — można zobaczyć sprzęt, porozmawiać i dostać realną pomoc. Największy plus za montaż i konfiguracja.",
+      "name": "J. G.",
+      "city": "Myślina",
+      "rating": 5,
+      "verified": true,
+      "demo": true
+    }
+  ]
+}

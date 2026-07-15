@@ -1,0 +1,554 @@
+{
+  "version": "6.0",
+  "section": {
+    "kicker": "Pełna oferta",
+    "title": "RTV, AGD i technologia do całego domu",
+    "description": "Kompletna, edytowalna struktura kategorii i podkategorii ELKASS."
+  },
+  "categories": [
+    {
+      "id": "rtv",
+      "name": "RTV",
+      "description": "Telewizory, kino domowe i dźwięk",
+      "image": "assets/categories/rtv.jpg",
+      "count": "3 działy",
+      "subcategories": [
+        {
+          "id": "telewizory",
+          "name": "Telewizory",
+          "description": "OLED • QLED i Neo QLED • Mini LED • LED 4K",
+          "image": "assets/categories/rtv.jpg",
+          "children": [
+            "OLED",
+            "QLED i Neo QLED",
+            "Mini LED",
+            "LED 4K",
+            "Telewizory 43–50 cali",
+            "Telewizory 55–65 cali",
+            "Telewizory 70+ cali",
+            "Akcesoria TV"
+          ]
+        },
+        {
+          "id": "audio",
+          "name": "Audio i kino domowe",
+          "description": "Soundbary • Kino domowe • Głośniki • Słuchawki",
+          "image": "assets/categories/rtv.jpg",
+          "children": [
+            "Soundbary",
+            "Kino domowe",
+            "Głośniki",
+            "Słuchawki",
+            "Wieże i radia",
+            "Gramofony"
+          ]
+        },
+        {
+          "id": "dekodery",
+          "name": "Multimedia",
+          "description": "Odtwarzacze • Dekodery • Uchwyty TV • Kable HDMI",
+          "image": "assets/categories/rtv.jpg",
+          "children": [
+            "Odtwarzacze",
+            "Dekodery",
+            "Uchwyty TV",
+            "Kable HDMI",
+            "Piloty i akcesoria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agd",
+      "name": "Duże AGD",
+      "description": "Sprzęt wolnostojący do kuchni i pralni",
+      "image": "assets/categories/agd.jpg",
+      "count": "5 działy",
+      "subcategories": [
+        {
+          "id": "pralki",
+          "name": "Pralki",
+          "description": "Ładowane od frontu • Slim • Ładowane od góry • Pralko-suszarki",
+          "image": "assets/categories/agd.jpg",
+          "children": [
+            "Ładowane od frontu",
+            "Slim",
+            "Ładowane od góry",
+            "Pralko-suszarki",
+            "8–9 kg",
+            "10 kg i więcej"
+          ]
+        },
+        {
+          "id": "suszarki",
+          "name": "Suszarki",
+          "description": "Pompa ciepła • Kondensacyjne • Zestawy pralka + suszarka",
+          "image": "assets/categories/agd.jpg",
+          "children": [
+            "Pompa ciepła",
+            "Kondensacyjne",
+            "Zestawy pralka + suszarka"
+          ]
+        },
+        {
+          "id": "lodowki",
+          "name": "Lodówki",
+          "description": "No Frost • Side by Side • French Door • Combi",
+          "image": "assets/categories/agd.jpg",
+          "children": [
+            "No Frost",
+            "Side by Side",
+            "French Door",
+            "Combi",
+            "Jednodrzwiowe",
+            "Chłodziarki"
+          ]
+        },
+        {
+          "id": "zmywarki",
+          "name": "Zmywarki",
+          "description": "45 cm • 60 cm • Wolnostojące • Podblatowe",
+          "image": "assets/categories/agd.jpg",
+          "children": [
+            "45 cm",
+            "60 cm",
+            "Wolnostojące",
+            "Podblatowe"
+          ]
+        },
+        {
+          "id": "zamrazarki",
+          "name": "Zamrażarki",
+          "description": "Szufladowe • Skrzyniowe",
+          "image": "assets/categories/agd.jpg",
+          "children": [
+            "Szufladowe",
+            "Skrzyniowe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zabudowa",
+      "name": "AGD do zabudowy",
+      "description": "Kompletna kuchnia w spójnej zabudowie",
+      "image": "assets/categories/agd-zabudowa.jpg",
+      "count": "6 działy",
+      "subcategories": [
+        {
+          "id": "piekarniki",
+          "name": "Piekarniki",
+          "description": "Parowe • Pyroliza • Dual Cook • Kompaktowe",
+          "image": "assets/categories/agd-zabudowa.jpg",
+          "children": [
+            "Parowe",
+            "Pyroliza",
+            "Dual Cook",
+            "Kompaktowe",
+            "Z mikrofalą"
+          ]
+        },
+        {
+          "id": "plyty",
+          "name": "Płyty grzewcze",
+          "description": "Indukcyjne 60 cm • Indukcyjne 80 cm • Gazowe • Ceramiczne",
+          "image": "assets/categories/agd-zabudowa.jpg",
+          "children": [
+            "Indukcyjne 60 cm",
+            "Indukcyjne 80 cm",
+            "Gazowe",
+            "Ceramiczne",
+            "Z okapem"
+          ]
+        },
+        {
+          "id": "zmywarki-zabudowa",
+          "name": "Zmywarki do zabudowy",
+          "description": "45 cm • 60 cm • Ze ślizgiem • Z trzecią szufladą",
+          "image": "assets/categories/agd-zabudowa.jpg",
+          "children": [
+            "45 cm",
+            "60 cm",
+            "Ze ślizgiem",
+            "Z trzecią szufladą"
+          ]
+        },
+        {
+          "id": "lodowki-zabudowa",
+          "name": "Chłodnictwo do zabudowy",
+          "description": "Lodówki • Zamrażarki • Chłodziarki do wina",
+          "image": "assets/categories/agd-zabudowa.jpg",
+          "children": [
+            "Lodówki",
+            "Zamrażarki",
+            "Chłodziarki do wina"
+          ]
+        },
+        {
+          "id": "okapy",
+          "name": "Okapy",
+          "description": "Kominowe • Teleskopowe • Wyspowe • Podszafkowe",
+          "image": "assets/categories/agd-zabudowa.jpg",
+          "children": [
+            "Kominowe",
+            "Teleskopowe",
+            "Wyspowe",
+            "Podszafkowe"
+          ]
+        },
+        {
+          "id": "mikrofale",
+          "name": "Mikrofale do zabudowy",
+          "description": "Standardowe • Z grillem • Kompaktowe",
+          "image": "assets/categories/agd-zabudowa.jpg",
+          "children": [
+            "Standardowe",
+            "Z grillem",
+            "Kompaktowe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "male-agd",
+      "name": "Małe AGD",
+      "description": "Kawa, gotowanie, sprzątanie i pielęgnacja",
+      "image": "assets/categories/male-agd.jpg",
+      "count": "4 działy",
+      "subcategories": [
+        {
+          "id": "kawa",
+          "name": "Kawa i ekspresy",
+          "description": "Automatyczne • Kolbowe • Przelewowe • Kapsułkowe",
+          "image": "assets/categories/male-agd.jpg",
+          "children": [
+            "Automatyczne",
+            "Kolbowe",
+            "Przelewowe",
+            "Kapsułkowe",
+            "Młynki",
+            "Spieniacze"
+          ]
+        },
+        {
+          "id": "sprzatanie",
+          "name": "Sprzątanie",
+          "description": "Odkurzacze pionowe • Roboty sprzątające • Odkurzacze workowe • Myjki parowe",
+          "image": "assets/categories/male-agd.jpg",
+          "children": [
+            "Odkurzacze pionowe",
+            "Roboty sprzątające",
+            "Odkurzacze workowe",
+            "Myjki parowe"
+          ]
+        },
+        {
+          "id": "kuchnia",
+          "name": "Przygotowanie posiłków",
+          "description": "Roboty planetarne • Blendery • Frytkownice beztłuszczowe • Czajniki",
+          "image": "assets/categories/male-agd.jpg",
+          "children": [
+            "Roboty planetarne",
+            "Blendery",
+            "Frytkownice beztłuszczowe",
+            "Czajniki",
+            "Tostery",
+            "Miksery"
+          ]
+        },
+        {
+          "id": "pielegnacja",
+          "name": "Pielęgnacja",
+          "description": "Suszarki do włosów • Prostownice • Golarki • Trymery",
+          "image": "assets/categories/male-agd.jpg",
+          "children": [
+            "Suszarki do włosów",
+            "Prostownice",
+            "Golarki",
+            "Trymery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "komputery",
+      "name": "Komputery i IT",
+      "description": "Praca, nauka, sieć i rozrywka",
+      "image": "assets/categories/komputery.jpg",
+      "count": "3 działy",
+      "subcategories": [
+        {
+          "id": "laptopy",
+          "name": "Laptopy",
+          "description": "Domowe • Biznesowe • Gamingowe • Ultrabooki",
+          "image": "assets/categories/komputery.jpg",
+          "children": [
+            "Domowe",
+            "Biznesowe",
+            "Gamingowe",
+            "Ultrabooki"
+          ]
+        },
+        {
+          "id": "monitory",
+          "name": "Monitory",
+          "description": "24 cale • 27 cali • Gamingowe • Ultrawide",
+          "image": "assets/categories/komputery.jpg",
+          "children": [
+            "24 cale",
+            "27 cali",
+            "Gamingowe",
+            "Ultrawide"
+          ]
+        },
+        {
+          "id": "akcesoria-it",
+          "name": "Akcesoria komputerowe",
+          "description": "Klawiatury • Myszy • Drukarki • Dyski",
+          "image": "assets/categories/komputery.jpg",
+          "children": [
+            "Klawiatury",
+            "Myszy",
+            "Drukarki",
+            "Dyski",
+            "Routery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "telefony",
+      "name": "Telefony i mobile",
+      "description": "Smartfony, tablety i urządzenia mobilne",
+      "image": "assets/categories/komputery-telefony.jpg",
+      "count": "4 działy",
+      "subcategories": [
+        {
+          "id": "smartfony",
+          "name": "Smartfony",
+          "description": "Android • iPhone • 5G • Dual SIM",
+          "image": "assets/categories/komputery-telefony.jpg",
+          "children": [
+            "Android",
+            "iPhone",
+            "5G",
+            "Dual SIM"
+          ]
+        },
+        {
+          "id": "tablety",
+          "name": "Tablety",
+          "description": "Android • iPad • Dla dzieci",
+          "image": "assets/categories/komputery-telefony.jpg",
+          "children": [
+            "Android",
+            "iPad",
+            "Dla dzieci"
+          ]
+        },
+        {
+          "id": "smartwatch",
+          "name": "Smartwatche",
+          "description": "Sportowe • Klasyczne • Dla dzieci",
+          "image": "assets/categories/komputery-telefony.jpg",
+          "children": [
+            "Sportowe",
+            "Klasyczne",
+            "Dla dzieci"
+          ]
+        },
+        {
+          "id": "mobile-accessories",
+          "name": "Akcesoria",
+          "description": "Ładowarki • Etui • Szkła • Powerbanki",
+          "image": "assets/categories/komputery-telefony.jpg",
+          "children": [
+            "Ładowarki",
+            "Etui",
+            "Szkła",
+            "Powerbanki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming",
+      "description": "Sprzęt i akcesoria dla graczy",
+      "image": "assets/gaming.jpg",
+      "count": "3 działy",
+      "subcategories": [
+        {
+          "id": "konsole",
+          "name": "Konsole",
+          "description": "PlayStation • Xbox • Nintendo",
+          "image": "assets/gaming.jpg",
+          "children": [
+            "PlayStation",
+            "Xbox",
+            "Nintendo"
+          ]
+        },
+        {
+          "id": "gaming-monitory",
+          "name": "Monitory gamingowe",
+          "description": "144 Hz • 165 Hz • 240 Hz",
+          "image": "assets/gaming.jpg",
+          "children": [
+            "144 Hz",
+            "165 Hz",
+            "240 Hz"
+          ]
+        },
+        {
+          "id": "gaming-akcesoria",
+          "name": "Akcesoria gamingowe",
+          "description": "Fotele • Kontrolery • Headsety • Klawiatury",
+          "image": "assets/gaming.jpg",
+          "children": [
+            "Fotele",
+            "Kontrolery",
+            "Headsety",
+            "Klawiatury"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smart-home",
+      "name": "Smart Home",
+      "description": "Bezpieczeństwo, wygoda i automatyka domu",
+      "image": "assets/telefony.jpg",
+      "count": "3 działy",
+      "subcategories": [
+        {
+          "id": "monitoring",
+          "name": "Monitoring",
+          "description": "Kamery Wi-Fi • Wideodomofony • Rejestratory",
+          "image": "assets/telefony.jpg",
+          "children": [
+            "Kamery Wi-Fi",
+            "Wideodomofony",
+            "Rejestratory"
+          ]
+        },
+        {
+          "id": "automatyka",
+          "name": "Automatyka",
+          "description": "Oświetlenie smart • Gniazdka • Czujniki",
+          "image": "assets/telefony.jpg",
+          "children": [
+            "Oświetlenie smart",
+            "Gniazdka",
+            "Czujniki"
+          ]
+        },
+        {
+          "id": "klimat",
+          "name": "Klimat domu",
+          "description": "Oczyszczacze • Nawilżacze • Wentylatory",
+          "image": "assets/telefony.jpg",
+          "children": [
+            "Oczyszczacze",
+            "Nawilżacze",
+            "Wentylatory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outlet",
+      "name": "Outlet i promocje",
+      "description": "Końcówki serii, ekspozycja i okazje",
+      "image": "assets/categories/clean-promocje.jpg",
+      "count": "3 działy",
+      "subcategories": [
+        {
+          "id": "outlet-rtv",
+          "name": "Outlet RTV",
+          "description": "Telewizory • Audio",
+          "image": "assets/categories/clean-promocje.jpg",
+          "children": [
+            "Telewizory",
+            "Audio"
+          ]
+        },
+        {
+          "id": "outlet-agd",
+          "name": "Outlet AGD",
+          "description": "Pralki • Lodówki • Zmywarki",
+          "image": "assets/categories/clean-promocje.jpg",
+          "children": [
+            "Pralki",
+            "Lodówki",
+            "Zmywarki"
+          ]
+        },
+        {
+          "id": "wyprzedaz",
+          "name": "Wyprzedaż",
+          "description": "Black Week • Weekend Outlet • Ostatnie sztuki",
+          "image": "assets/categories/clean-promocje.jpg",
+          "children": [
+            "Black Week",
+            "Weekend Outlet",
+            "Ostatnie sztuki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uslugi",
+      "name": "Usługi ELKASS",
+      "description": "Dostawa, montaż, konfiguracja i serwis",
+      "image": "assets/categories/serwis.jpg",
+      "count": "4 działy",
+      "subcategories": [
+        {
+          "id": "transport",
+          "name": "Transport i wniesienie",
+          "description": "Dostawa lokalna • Wniesienie • Odbiór starego sprzętu",
+          "image": "assets/categories/serwis.jpg",
+          "children": [
+            "Dostawa lokalna",
+            "Wniesienie",
+            "Odbiór starego sprzętu"
+          ]
+        },
+        {
+          "id": "montaz",
+          "name": "Montaż",
+          "description": "TV na ścianie • AGD do zabudowy • Podłączenie sprzętu",
+          "image": "assets/categories/serwis.jpg",
+          "children": [
+            "TV na ścianie",
+            "AGD do zabudowy",
+            "Podłączenie sprzętu"
+          ]
+        },
+        {
+          "id": "konfiguracja",
+          "name": "Konfiguracja",
+          "description": "Smart TV • Kino domowe • Sieć Wi-Fi",
+          "image": "assets/categories/serwis.jpg",
+          "children": [
+            "Smart TV",
+            "Kino domowe",
+            "Sieć Wi-Fi"
+          ]
+        },
+        {
+          "id": "serwis",
+          "name": "Serwis",
+          "description": "Diagnoza • Wsparcie po zakupie • Gwarancja",
+          "image": "assets/categories/serwis.jpg",
+          "children": [
+            "Diagnoza",
+            "Wsparcie po zakupie",
+            "Gwarancja"
+          ]
+        }
+      ]
+    }
+  ]
+}
