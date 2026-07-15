@@ -6,9 +6,9 @@
     heroTitle:'Technologia do Twojego domu',
     heroAccent:'z doradztwem ELKASS',
     heroText:'RTV, AGD, montaż, transport i wsparcie po zakupie. Lokalny salon w Oleśnie, który pomaga dobrać sprzęt do domu, nie tylko do ceny z półki.',
-    heroImage:'/assets/hero-clean-panorama.png',
+    heroImage:'assets/hero-clean-panorama.png',
     heroProduct:'Samsung OLED • Smart TV • kino domowe',
-    salonImage:'/assets/sklep.jpg',
+    salonImage:'assets/sklep.jpg',
     activeTheme:'premium'
   };
   async function baseProducts(){

@@ -8,7 +8,7 @@ body > main .m4-section{
 
 /* 2) Hero — czyste tło bez wtopionych statystyk i napisów z grafiki demo */
 .hero-card{
-  background:#07111f url('/assets/hero-wow-v5.png') center right/cover no-repeat!important;
+  background:#07111f url('../hero-wow-v5.png') center right/cover no-repeat!important;
   min-height:520px!important;
 }
 .hero-card:before{

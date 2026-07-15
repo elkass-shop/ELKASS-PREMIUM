@@ -1,14 +1,14 @@
 
 (function(){
   const KEY='elkass.home.visual.v55';
-  const DEFAULTS={heroTitle:'Sprzęt do domu z doradztwem, nie tylko z półki!',heroSubtitle:'RTV, AGD, multimedia, serwis, transport i pomoc w wyborze. Lokalnie, konkretnie i w premium wydaniu.',heroImage:'/assets/images/hero/hero-premium-demo.png',heroMobileImage:'/assets/images/hero/hero-premium-demo.png',galleryImage:'/assets/images/gallery/salon-elkass-demo.jpg',categoryRtv:'/assets/categories/clean-rtv.jpg',categoryAgd:'/assets/categories/clean-agd.jpg',promoBanner:'/assets/banners/weekend-sale.jpg',heroHeightDesktop:'560px',heroHeightMobile:'430px'};
+  const DEFAULTS={heroTitle:'Sprzęt do domu z doradztwem, nie tylko z półki!',heroSubtitle:'RTV, AGD, multimedia, serwis, transport i pomoc w wyborze. Lokalnie, konkretnie i w premium wydaniu.',heroImage:'assets/images/hero/hero-premium-demo.png',heroMobileImage:'assets/images/hero/hero-premium-demo.png',galleryImage:'assets/images/gallery/salon-elkass-demo.jpg',categoryRtv:'assets/categories/clean-rtv.jpg',categoryAgd:'assets/categories/clean-agd.jpg',promoBanner:'assets/banners/weekend-sale.jpg',heroHeightDesktop:'560px',heroHeightMobile:'430px'};
   const media=[
-    {id:'hero-premium',label:'Hero Premium',src:'/assets/images/hero/hero-premium-demo.png'},
-    {id:'salon',label:'Salon ELKASS',src:'/assets/images/gallery/salon-elkass-demo.jpg'},
-    {id:'weekend',label:'Weekend sale',src:'/assets/banners/weekend-sale.jpg'},
-    {id:'rtv',label:'RTV',src:'/assets/categories/clean-rtv.jpg'},
-    {id:'agd',label:'AGD',src:'/assets/categories/clean-agd.jpg'},
-    {id:'blackweek',label:'Black Week',src:'/assets/hero-seasonal-real/blackweek.jpg'}
+    {id:'hero-premium',label:'Hero Premium',src:'assets/images/hero/hero-premium-demo.png'},
+    {id:'salon',label:'Salon ELKASS',src:'assets/images/gallery/salon-elkass-demo.jpg'},
+    {id:'weekend',label:'Weekend sale',src:'assets/banners/weekend-sale.jpg'},
+    {id:'rtv',label:'RTV',src:'assets/categories/clean-rtv.jpg'},
+    {id:'agd',label:'AGD',src:'assets/categories/clean-agd.jpg'},
+    {id:'blackweek',label:'Black Week',src:'assets/hero-seasonal-real/blackweek.jpg'}
   ];
   const $=(s,r=document)=>r.querySelector(s); const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
   function read(){try{return {...DEFAULTS,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){return {...DEFAULTS}}}

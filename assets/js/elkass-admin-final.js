@@ -12,7 +12,7 @@ const seed={
  customers:[{id:'CUS-001',name:'Anna Kowalska',email:'anna@example.pl',phone:'500 600 700',status:'active',orders:3,total:7497},{id:'CUS-002',name:'Piotr Nowak',email:'piotr@example.pl',phone:'501 601 701',status:'active',orders:1,total:1899}],
  reviews:[{id:'REV-001',author:'Marta',rating:5,content:'Świetna obsługa i szybka dostawa.',status:'published',createdAt:now()}],
  newsletter:[{id:'SUB-001',email:'klient@example.pl',status:'active',createdAt:now()}],
- showroom:[{id:'SH-001',title:'Salon ELKASS Olesno',image:'/assets/gallery/gallery-16-salon-elkass.jpg',status:'published'}],
+ showroom:[{id:'SH-001',title:'Salon ELKASS Olesno',image:'assets/gallery/gallery-16-salon-elkass.jpg',status:'published'}],
  cms:[{id:'CMS-001',slug:'kontakt',title:'Kontakt',content:'Zapraszamy do salonu ELKASS w Oleśnie.',status:'published',updatedAt:now()}],
  seo:[{id:'SEO-home',path:'/',title:'ELKASS — RTV i AGD Olesno',description:'RTV, AGD, doradztwo, transport i serwis w Oleśnie.',index:true}],
  settings:{storeName:'ELKASS',email:'kontakt@elkass.pl',phone:'',currency:'PLN',maintenance:false},

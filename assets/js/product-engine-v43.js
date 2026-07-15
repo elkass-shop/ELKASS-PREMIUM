@@ -25,7 +25,7 @@
     'clean-agd-zabudowa.jpg':'okap-kuchenny-premium'
   };
   const fmt = n => (Number(n)||0).toLocaleString('pl-PL') + ' zł';
-  const productHref = id => '/app/product/?id=' + encodeURIComponent(id);
+  const productHref = id => 'app/product/?id=' + encodeURIComponent(id);
   async function loadProducts(){
     if(window.ELKASS_PRODUCTS) return window.ELKASS_PRODUCTS;
     if(window.ElkassCloud && typeof window.ElkassCloud.getProducts === 'function'){
@@ -60,7 +60,7 @@
     return null;
   }
   function patchProductLinks(){
-    document.querySelectorAll('a[href="/app/product/"], a[href="/app/product"], [data-href="/app/product/"]').forEach(a=>{
+    document.querySelectorAll('a[href="app/product/"], a[href="app/product"], [data-href="app/product/"]').forEach(a=>{
       const card=a.closest('article, .product, .v25-product-card, .product-card-v36, .promo-card, .v34-product, .v22-hit') || a;
       const id=inferIdFromElement(card);
       if(id){
@@ -72,9 +72,9 @@
   function patchNavigation(){
     document.querySelectorAll('a').forEach(a=>{
       const t=(a.textContent||'').toLowerCase();
-      if(t.includes('kontynuuj zakupy')) a.href='/app/category/';
+      if(t.includes('kontynuuj zakupy')) a.href='app/category/';
     });
-    const logo=document.querySelector('.logo'); if(logo) logo.href='/app/home/';
+    const logo=document.querySelector('.logo'); if(logo) logo.href='app/home/';
   }
   function productCard(p, cls='product-card-v36'){
     return `<a class="${cls} elkass-product-card" href="${productHref(p.id)}" data-product-id="${p.id}">
@@ -94,7 +94,7 @@
     }
   }
   function renderProductPage(products){
-    if(!location.pathname.includes('/app/product')) return;
+    if(!location.pathname.includes('app/product')) return;
     // V58: V44 Product Experience has its own renderer (#product-v44). Do not overwrite it with the older v43 renderer.
     if(document.getElementById('product-v44')) return;
     const byId=Object.fromEntries(products.map(p=>[p.id,p]));
@@ -107,7 +107,7 @@
     const paramHtml=Object.entries(p.params||{}).map(([group,rows])=>`<div class="param-group"><h3>${group}</h3>${Object.entries(rows).map(([k,v])=>`<div class="param-row"><span>${k}</span><b>${v}</b></div>`).join('')}</div>`).join('');
     const dimHtml=Object.entries(p.dimensions||{}).map(([k,v])=>`<div class="dimension"><b>${v}</b><span>${k}</span></div>`).join('');
     main.innerHTML=`<div class="wrap product-page-v36" data-product-id="${p.id}">
-      <nav class="breadcrumbs"><a href="/app/home/">Start</a> › <a href="/app/category/">${p.category}</a> › <span>${p.name}</span></nav>
+      <nav class="breadcrumbs"><a href="app/home/">Start</a> › <a href="app/category/">${p.category}</a> › <span>${p.name}</span></nav>
       <section class="product-hero-v36">
         <div class="gallery-v36">
           <div class="gallery-thumbs">${(p.images||[p.image]).map((img,i)=>`<button class="gallery-thumb ${i?'':'active'}" data-img="${img}"><img src="${img}" alt="${p.name} miniatura ${i+1}"></button>`).join('')}</div>
@@ -138,25 +138,25 @@
     document.querySelectorAll('.gallery-thumb').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.gallery-thumb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.getElementById('mainProductImage').src=btn.dataset.img;}));
     document.querySelectorAll('.tab-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.tab-panel').forEach(panel=>panel.classList.remove('active'));btn.classList.add('active');document.getElementById('tab-'+btn.dataset.tab).classList.add('active');}));
     const zoomBtn=document.getElementById('zoomProduct'); if(zoomBtn){zoomBtn.onclick=()=>{let modal=document.getElementById('productZoom'); if(modal){document.getElementById('zoomImage').src=document.getElementById('mainProductImage').src;modal.classList.add('open');}}}
-    const add=document.getElementById('addToCartV43'); if(add){add.onclick=()=>{const key='elkass-cart-v43'; const cart=JSON.parse(localStorage.getItem(key)||'[]'); const item=cart.find(i=>i.id===p.id); if(item) item.qty++; else cart.push({id:p.id,qty:1,price:p.price}); localStorage.setItem(key,JSON.stringify(cart)); location.href='/app/cart/';};}
+    const add=document.getElementById('addToCartV43'); if(add){add.onclick=()=>{const key='elkass-cart-v43'; const cart=JSON.parse(localStorage.getItem(key)||'[]'); const item=cart.find(i=>i.id===p.id); if(item) item.qty++; else cart.push({id:p.id,qty:1,price:p.price}); localStorage.setItem(key,JSON.stringify(cart)); location.href='app/cart/';};}
   }
   function renderCart(products){
-    if(!location.pathname.includes('/app/cart')) return;
+    if(!location.pathname.includes('app/cart')) return;
     const byId=Object.fromEntries(products.map(p=>[p.id,p]));
     const key='elkass-cart-v43';
     const addId=new URLSearchParams(location.search).get('add');
     let cart=JSON.parse(localStorage.getItem(key)||'[]');
-    if(addId){ const existing=cart.find(i=>i.id===addId); if(existing) existing.qty=(existing.qty||1)+1; else cart.push({id:addId,qty:1}); localStorage.setItem(key,JSON.stringify(cart)); history.replaceState(null,'','/app/cart/'); }
-    document.querySelectorAll('a').forEach(a=>{if((a.textContent||'').toLowerCase().includes('kontynuuj zakupy')) a.href='/app/category/';});
+    if(addId){ const existing=cart.find(i=>i.id===addId); if(existing) existing.qty=(existing.qty||1)+1; else cart.push({id:addId,qty:1}); localStorage.setItem(key,JSON.stringify(cart)); history.replaceState(null,'','app/cart/'); }
+    document.querySelectorAll('a').forEach(a=>{if((a.textContent||'').toLowerCase().includes('kontynuuj zakupy')) a.href='app/category/';});
     if(!cart.length) return;
     const main=document.querySelector('main'); if(!main) return;
     const rows=cart.map(i=>({p:byId[i.id],qty:i.qty||1})).filter(x=>x.p);
     const total=rows.reduce((s,x)=>s+x.p.price*x.qty,0);
     const list=rows.map(({p,qty})=>`<article class="cart-item-v43"><img src="${p.image}" alt="${p.name}"><div><h3>${p.name}</h3><p>${p.features.slice(0,3).join(' • ')}</p><a href="${productHref(p.id)}">Zobacz produkt</a></div><strong>${qty} × ${fmt(p.price)}</strong></article>`).join('');
-    main.innerHTML=`<section class="cart-v43 wrap"><h1>Koszyk ELKASS</h1><p>Produkty pobierane są z demo-bazy JSON v43.</p><div class="cart-grid-v43"><div class="cart-list-v43">${list}</div><aside class="cart-summary-v43"><h2>Podsumowanie</h2><div class="summary-row"><span>Razem</span><strong>${fmt(total)}</strong></div><a class="btn" href="/app/checkout/">Przejdź do zamówienia</a><a class="btn light" href="/app/category/">Kontynuuj zakupy</a></aside></div></section>`;
+    main.innerHTML=`<section class="cart-v43 wrap"><h1>Koszyk ELKASS</h1><p>Produkty pobierane są z demo-bazy JSON v43.</p><div class="cart-grid-v43"><div class="cart-list-v43">${list}</div><aside class="cart-summary-v43"><h2>Podsumowanie</h2><div class="summary-row"><span>Razem</span><strong>${fmt(total)}</strong></div><a class="btn" href="app/checkout/">Przejdź do zamówienia</a><a class="btn light" href="app/category/">Kontynuuj zakupy</a></aside></div></section>`;
   }
   function setupSearch(products){
-    document.querySelectorAll('form.search').forEach(form=>{form.addEventListener('submit',e=>{e.preventDefault(); const q=form.querySelector('input')?.value||''; location.href='/app/category/?q='+encodeURIComponent(q);});});
+    document.querySelectorAll('form.search').forEach(form=>{form.addEventListener('submit',e=>{e.preventDefault(); const q=form.querySelector('input')?.value||''; location.href='app/category/?q='+encodeURIComponent(q);});});
   }
   document.addEventListener('DOMContentLoaded', async ()=>{
     patchProductLinks(); patchNavigation();

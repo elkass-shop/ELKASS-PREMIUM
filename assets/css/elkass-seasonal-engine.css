@@ -12,14 +12,14 @@ body[class*="theme-"] .ef-hero-card::before{content:"";position:absolute;inset:0
 .season-luxury-frame{position:fixed;inset:0;z-index:9994;pointer-events:none;background:linear-gradient(90deg,color-mix(in srgb,var(--season-accent) 22%,transparent),transparent 9%,transparent 91%,color-mix(in srgb,var(--season-accent-2) 18%,transparent));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--season-accent) 18%,transparent)}
 .season-luxury-frame::before,.season-luxury-frame::after{content:"";position:absolute;width:220px;height:220px;background-repeat:no-repeat;background-size:contain;opacity:.88;filter:drop-shadow(0 18px 28px rgba(0,0,0,.18))}
 .season-luxury-frame::before{left:0;top:72px}.season-luxury-frame::after{right:0;bottom:12px;transform:rotate(180deg)}
-.season-luxury-frame.christmas::before,.season-luxury-frame.christmas::after{background-image:url('/assets/theme-decor/christmas-corner.svg')}
-.season-luxury-frame.winter::before,.season-luxury-frame.winter::after{background-image:url('/assets/theme-decor/winter-corner.svg')}
-.season-luxury-frame.easter::before,.season-luxury-frame.easter::after{background-image:url('/assets/theme-decor/easter-corner.svg')}
-.season-luxury-frame.spring::before,.season-luxury-frame.spring::after{background-image:url('/assets/theme-decor/spring-corner.svg')}
-.season-luxury-frame.summer::before,.season-luxury-frame.summer::after{background-image:url('/assets/theme-decor/summer-corner.svg')}
-.season-luxury-frame.autumn::before,.season-luxury-frame.autumn::after{background-image:url('/assets/theme-decor/autumn-corner.svg')}
-.season-luxury-frame.blackweek::before,.season-luxury-frame.blackweek::after,.season-luxury-frame.cyberweek::before,.season-luxury-frame.cyberweek::after{background-image:url('/assets/theme-decor/blackweek-corner.svg')}
-.season-luxury-frame.school::before,.season-luxury-frame.school::after{background-image:url('/assets/theme-decor/school-corner.svg')}
+.season-luxury-frame.christmas::before,.season-luxury-frame.christmas::after{background-image:url('../theme-decor/christmas-corner.svg')}
+.season-luxury-frame.winter::before,.season-luxury-frame.winter::after{background-image:url('../theme-decor/winter-corner.svg')}
+.season-luxury-frame.easter::before,.season-luxury-frame.easter::after{background-image:url('../theme-decor/easter-corner.svg')}
+.season-luxury-frame.spring::before,.season-luxury-frame.spring::after{background-image:url('../theme-decor/spring-corner.svg')}
+.season-luxury-frame.summer::before,.season-luxury-frame.summer::after{background-image:url('../theme-decor/summer-corner.svg')}
+.season-luxury-frame.autumn::before,.season-luxury-frame.autumn::after{background-image:url('../theme-decor/autumn-corner.svg')}
+.season-luxury-frame.blackweek::before,.season-luxury-frame.blackweek::after,.season-luxury-frame.cyberweek::before,.season-luxury-frame.cyberweek::after{background-image:url('../theme-decor/blackweek-corner.svg')}
+.season-luxury-frame.school::before,.season-luxury-frame.school::after{background-image:url('../theme-decor/school-corner.svg')}
 .season-luxury-badge{position:fixed;left:50%;top:9px;transform:translateX(-50%);z-index:10000;pointer-events:none;display:flex;align-items:center;gap:9px;padding:8px 14px;border-radius:999px;background:rgba(8,12,20,.88);color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.28);backdrop-filter:blur(14px);max-width:min(92vw,780px)}
 .season-luxury-badge span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:color-mix(in srgb,var(--season-accent) 82%,#fff);font-weight:900}.season-luxury-badge b{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .season-lights{position:fixed;left:0;right:0;top:0;height:7px;display:flex;z-index:9998;pointer-events:none}.season-lights i{flex:1;background:linear-gradient(90deg,var(--season-accent),var(--season-accent-2));opacity:.9;box-shadow:0 0 18px color-mix(in srgb,var(--season-accent) 45%,transparent)}

@@ -1,13 +1,13 @@
 (()=>{
  const KEY='elkass.theme.v1';
  const HISTORY_KEY='elkass.theme.history.v1';
- const BASE='/assets/hero-seasonal-real/';
+ const BASE='assets/hero-seasonal-real/';
  const THEMES={
-  light:{label:'Motyw jasny',hero:'/assets/hero-clean-panorama.png',accent:'#e5091a',accent2:'#263247',soft:'#ffffff',message:'Czysty, jasny design ELKASS',particle:'spark',ornament:'premium'},
-  dark:{label:'Motyw ciemny',hero:'/assets/hero-wow-v5.png',accent:'#ff2b3d',accent2:'#111827',soft:'#0d1118',message:'Technologia w eleganckim, nocnym wydaniu',particle:'digital',ornament:'blackweek'},
-  valentines:{label:'Walentynki',hero:'/assets/hero-premium.png',accent:'#e11d48',accent2:'#9f1239',soft:'#fff1f5',message:'Technologia, którą pokochasz',particle:'petal',ornament:'spring'},
-  sale:{label:'Wyprzedaż',hero:'/assets/banners/weekend-sale.jpg',accent:'#ef233c',accent2:'#ff9f1c',soft:'#fff7ed',message:'Wielka wyprzedaż — ceny, które znikają szybko',particle:'gold',ornament:'blackweek'},
-  premium:{label:'ELKASS Premium',hero:'/assets/hero-clean-panorama.png',accent:'#e5091a',accent2:'#111827',soft:'#fff7f8',message:'Technologia i doradztwo w wydaniu premium',particle:'spark',ornament:'premium'},
+  light:{label:'Motyw jasny',hero:'assets/hero-clean-panorama.png',accent:'#e5091a',accent2:'#263247',soft:'#ffffff',message:'Czysty, jasny design ELKASS',particle:'spark',ornament:'premium'},
+  dark:{label:'Motyw ciemny',hero:'assets/hero-wow-v5.png',accent:'#ff2b3d',accent2:'#111827',soft:'#0d1118',message:'Technologia w eleganckim, nocnym wydaniu',particle:'digital',ornament:'blackweek'},
+  valentines:{label:'Walentynki',hero:'assets/hero-premium.png',accent:'#e11d48',accent2:'#9f1239',soft:'#fff1f5',message:'Technologia, którą pokochasz',particle:'petal',ornament:'spring'},
+  sale:{label:'Wyprzedaż',hero:'assets/banners/weekend-sale.jpg',accent:'#ef233c',accent2:'#ff9f1c',soft:'#fff7ed',message:'Wielka wyprzedaż — ceny, które znikają szybko',particle:'gold',ornament:'blackweek'},
+  premium:{label:'ELKASS Premium',hero:'assets/hero-clean-panorama.png',accent:'#e5091a',accent2:'#111827',soft:'#fff7f8',message:'Technologia i doradztwo w wydaniu premium',particle:'spark',ornament:'premium'},
   christmas:{label:'Boże Narodzenie',hero:BASE+'christmas.jpg',accent:'#b80f2e',accent2:'#0b6b3a',soft:'#fff8f3',message:'Świąteczne premiery, prezenty i wyjątkowe ceny',particle:'snow',ornament:'christmas'},
   winter:{label:'Zima',hero:BASE+'winter.jpg',accent:'#0c6fb8',accent2:'#9fd8ff',soft:'#f2f9ff',message:'Zimowe okazje i ciepło domowego komfortu',particle:'snow',ornament:'winter'},
   easter:{label:'Wielkanoc',hero:BASE+'easter.jpg',accent:'#8a4fc7',accent2:'#6aa84f',soft:'#fff9ef',message:'Wielkanocne inspiracje dla pięknego domu',particle:'petal',ornament:'easter'},
@@ -17,9 +17,9 @@
   blackweek:{label:'Black Week',hero:BASE+'blackweek.jpg',accent:'#d8b02c',accent2:'#07080b',soft:'#f7f7f8',message:'BLACK WEEK — wyjątkowe ceny w ELKASS',particle:'gold',ornament:'blackweek'},
   cyberweek:{label:'Cyber Week',hero:BASE+'cyberweek.jpg',accent:'#8b5cf6',accent2:'#0b0d16',soft:'#f7f3ff',message:'CYBER WEEK — technologia w specjalnych cenach',particle:'digital',ornament:'cyberweek'},
   mikolajki:{label:'Mikołajki',hero:BASE+'mikolajki.jpg',accent:'#d21e38',accent2:'#f0c75e',soft:'#fff8f4',message:'Mikołajkowe prezenty dla całego domu',particle:'snow',ornament:'mikolajki'},
-  backtoschool:{label:'Back to School',hero:'/assets/hero-seasonal/backtoschool.svg',accent:'#1f5fd3',accent2:'#f0a522',soft:'#f3f7ff',message:'Powrót do szkoły z dobrą technologią',particle:'paper',ornament:'school'},
-  rtvdays:{label:'RTV Days',hero:'/assets/hero-seasonal/rtvdays.svg',accent:'#6e3fd1',accent2:'#00a9d6',soft:'#f6f2ff',message:'RTV Days — obraz, dźwięk i gaming',particle:'digital',ornament:'rtv'},
-  agddays:{label:'AGD Days',hero:'/assets/hero-seasonal/agddays.svg',accent:'#0c8174',accent2:'#e5091a',soft:'#effcf9',message:'AGD Days — wyposażamy Twój dom',particle:'light',ornament:'agd'}
+  backtoschool:{label:'Back to School',hero:'assets/hero-seasonal/backtoschool.svg',accent:'#1f5fd3',accent2:'#f0a522',soft:'#f3f7ff',message:'Powrót do szkoły z dobrą technologią',particle:'paper',ornament:'school'},
+  rtvdays:{label:'RTV Days',hero:'assets/hero-seasonal/rtvdays.svg',accent:'#6e3fd1',accent2:'#00a9d6',soft:'#f6f2ff',message:'RTV Days — obraz, dźwięk i gaming',particle:'digital',ornament:'rtv'},
+  agddays:{label:'AGD Days',hero:'assets/hero-seasonal/agddays.svg',accent:'#0c8174',accent2:'#e5091a',soft:'#effcf9',message:'AGD Days — wyposażamy Twój dom',particle:'light',ornament:'agd'}
  };
  function safe(v,f){try{return JSON.parse(v)||f}catch(e){return f}}
  function read(){return safe(localStorage.getItem(KEY),{theme:'premium',decorations:true,intensity:'balanced',useThemeHero:true,autoSchedule:false})}
@@ -37,7 +37,7 @@
   return (map[type]||map.spark)[i%3];
  }
  function apply(input){
-  const t=resolved(input); const custom=t.theme==='custom'; const key=THEMES[t.theme]?t.theme:(custom?'custom':'premium'); const cfg=custom?{label:t.customName||'Własny motyw',hero:t.heroDesktop||'/assets/hero-clean-panorama.png',accent:t.primaryColor||'#e5091a',accent2:t.secondaryColor||'#111827',soft:t.backgroundColor||'#ffffff',message:t.message||'Autorski motyw ELKASS',particle:t.particle||'spark',ornament:'premium'}:THEMES[key];
+  const t=resolved(input); const custom=t.theme==='custom'; const key=THEMES[t.theme]?t.theme:(custom?'custom':'premium'); const cfg=custom?{label:t.customName||'Własny motyw',hero:t.heroDesktop||'assets/hero-clean-panorama.png',accent:t.primaryColor||'#e5091a',accent2:t.secondaryColor||'#111827',soft:t.backgroundColor||'#ffffff',message:t.message||'Autorski motyw ELKASS',particle:t.particle||'spark',ornament:'premium'}:THEMES[key];
   document.body.className=document.body.className.replace(/\btheme-[a-z0-9]+\b/g,'').replace(/\btheme-intensity-[a-z]+\b/g,'').replace(/\s+/g,' ').trim();
   document.body.classList.add('theme-'+key,'theme-intensity-'+(t.intensity||'balanced'));
   document.body.style.setProperty('--season-accent',t.accent||cfg.accent);

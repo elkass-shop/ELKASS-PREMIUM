@@ -24,7 +24,7 @@
     const price = Number(String(p.price||0).replace(/[^0-9.,]/g,'').replace(',','.')) || 0;
     const oldPrice = Number(String(p.oldPrice||p.old_price||0).replace(/[^0-9.,]/g,'').replace(',','.')) || null;
     const features = Array.isArray(p.features) ? p.features : String(p.features||'').split('\n').map(x=>x.trim()).filter(Boolean);
-    const image = p.image || '/assets/products/product-10-zmywarka-bosch.jpg';
+    const image = p.image || 'assets/products/product-10-zmywarka-bosch.jpg';
     return {
       id,
       name: p.name || 'Nowy produkt ELKASS',

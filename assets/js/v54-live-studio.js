@@ -20,7 +20,7 @@
           <label>Stara cena<input name="oldPrice" type="number" min="0" step="1" placeholder="2499"></label>
           <label>Badge<select name="badge"><option>Poleca ELKASS</option><option>Hit tygodnia</option><option>Promocja</option><option>Nowość</option><option>Bestseller</option></select></label>
           <label>Dostępność<select name="availability"><option>Dostępny od ręki</option><option>Dostępny w salonie</option><option>Na zamówienie</option><option>Chwilowo niedostępny</option></select></label>
-          <label class="full">Zdjęcie / ścieżka z Media Studio<input name="image" placeholder="/assets/products/product-10-zmywarka-bosch.jpg"></label>
+          <label class="full">Zdjęcie / ścieżka z Media Studio<input name="image" placeholder="assets/products/product-10-zmywarka-bosch.jpg"></label>
           <label class="full">Krótki opis<textarea name="short" rows="3" placeholder="Krótki opis widoczny na karcie produktu."></textarea></label>
           <label class="full">Parametry wysoko, każdy w nowej linii<textarea name="features" rows="5" placeholder="60 cm\n14 kompletów\n42 dB\nAquaStop"></textarea></label>
           <div class="full v54-actions"><button class="v47-btn primary" type="submit">Zapisz produkt</button><button class="v47-btn" type="button" id="v54FillDemo">Wstaw demo</button><button class="v47-btn dark" type="button" id="v54ExportProducts">Eksport JSON</button></div>
@@ -42,7 +42,7 @@
     const box = $('#v54ProductsList'); if(!box || !window.ElkassCloud) return;
     const local = window.ElkassCloud.readLocalProducts();
     if(!local.length){ box.innerHTML = '<div class="v54-empty">Brak produktów zapisanych z panelu. Kliknij „Wstaw demo” i „Zapisz produkt”.</div>'; return; }
-    box.innerHTML = local.map(p=>`<article class="v54-product-row"><img src="${p.image || '/assets/products/product-10-zmywarka-bosch.jpg'}" alt=""><div><b>${p.name}</b><small>${p.brand || ''} • ${p.category || ''} • ${p.price || 0} zł</small><a href="/app/product/?id=${encodeURIComponent(p.id)}" target="_blank">Otwórz produkt</a></div><button class="v47-btn" data-v54-delete="${p.id}">Usuń lokalnie</button></article>`).join('');
+    box.innerHTML = local.map(p=>`<article class="v54-product-row"><img src="${p.image || 'assets/products/product-10-zmywarka-bosch.jpg'}" alt=""><div><b>${p.name}</b><small>${p.brand || ''} • ${p.category || ''} • ${p.price || 0} zł</small><a href="app/product/?id=${encodeURIComponent(p.id)}" target="_blank">Otwórz produkt</a></div><button class="v47-btn" data-v54-delete="${p.id}">Usuń lokalnie</button></article>`).join('');
     $$('[data-v54-delete]').forEach(btn=>btn.onclick=async()=>{await window.ElkassCloud.deleteLocalProduct(btn.dataset.v54Delete);renderList();toast('Usunięto lokalny produkt')});
   }
 
@@ -61,7 +61,7 @@
       form.oldPrice.value = '2499';
       form.badge.value = 'Poleca ELKASS';
       form.availability.value = 'Dostępny od ręki';
-      form.image.value = '/assets/products/product-10-zmywarka-bosch.jpg';
+      form.image.value = 'assets/products/product-10-zmywarka-bosch.jpg';
       form.short.value = 'Produkt zapisany z panelu. To test żywego Product Buildera z localStorage/Supabase-ready.';
       form.features.value = '60 cm\n14 kompletów\n42 dB\nAquaStop\nRaty 0%\nDogodne raty';
     });
