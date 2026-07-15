@@ -3,6 +3,10 @@
  const HISTORY_KEY='elkass.theme.history.v1';
  const BASE='/assets/hero-seasonal-real/';
  const THEMES={
+  light:{label:'Motyw jasny',hero:'/assets/hero-clean-panorama.png',accent:'#e5091a',accent2:'#263247',soft:'#ffffff',message:'Czysty, jasny design ELKASS',particle:'spark',ornament:'premium'},
+  dark:{label:'Motyw ciemny',hero:'/assets/hero-wow-v5.png',accent:'#ff2b3d',accent2:'#111827',soft:'#0d1118',message:'Technologia w eleganckim, nocnym wydaniu',particle:'digital',ornament:'blackweek'},
+  valentines:{label:'Walentynki',hero:'/assets/hero-premium.png',accent:'#e11d48',accent2:'#9f1239',soft:'#fff1f5',message:'Technologia, którą pokochasz',particle:'petal',ornament:'spring'},
+  sale:{label:'Wyprzedaż',hero:'/assets/banners/weekend-sale.jpg',accent:'#ef233c',accent2:'#ff9f1c',soft:'#fff7ed',message:'Wielka wyprzedaż — ceny, które znikają szybko',particle:'gold',ornament:'blackweek'},
   premium:{label:'ELKASS Premium',hero:'/assets/hero-clean-panorama.png',accent:'#e5091a',accent2:'#111827',soft:'#fff7f8',message:'Technologia i doradztwo w wydaniu premium',particle:'spark',ornament:'premium'},
   christmas:{label:'Boże Narodzenie',hero:BASE+'christmas.jpg',accent:'#b80f2e',accent2:'#0b6b3a',soft:'#fff8f3',message:'Świąteczne premiery, prezenty i wyjątkowe ceny',particle:'snow',ornament:'christmas'},
   winter:{label:'Zima',hero:BASE+'winter.jpg',accent:'#0c6fb8',accent2:'#9fd8ff',soft:'#f2f9ff',message:'Zimowe okazje i ciepło domowego komfortu',particle:'snow',ornament:'winter'},
@@ -33,17 +37,19 @@
   return (map[type]||map.spark)[i%3];
  }
  function apply(input){
-  const t=resolved(input); const key=THEMES[t.theme]?t.theme:'premium'; const cfg=THEMES[key];
+  const t=resolved(input); const custom=t.theme==='custom'; const key=THEMES[t.theme]?t.theme:(custom?'custom':'premium'); const cfg=custom?{label:t.customName||'Własny motyw',hero:t.heroDesktop||'/assets/hero-clean-panorama.png',accent:t.primaryColor||'#e5091a',accent2:t.secondaryColor||'#111827',soft:t.backgroundColor||'#ffffff',message:t.message||'Autorski motyw ELKASS',particle:t.particle||'spark',ornament:'premium'}:THEMES[key];
   document.body.className=document.body.className.replace(/\btheme-[a-z0-9]+\b/g,'').replace(/\btheme-intensity-[a-z]+\b/g,'').replace(/\s+/g,' ').trim();
   document.body.classList.add('theme-'+key,'theme-intensity-'+(t.intensity||'balanced'));
   document.body.style.setProperty('--season-accent',t.accent||cfg.accent);
   document.body.style.setProperty('--season-accent-2',t.accent2||cfg.accent2);
-  document.body.style.setProperty('--season-soft',cfg.soft);
+  document.body.style.setProperty('--season-soft',t.backgroundColor||cfg.soft);
+  document.body.style.setProperty('--custom-text',t.textColor||'');
+  if(custom){document.body.style.setProperty('--px-bg',t.backgroundColor||'#ffffff');document.body.style.setProperty('--px-text',t.textColor||'#111827');}
   document.body.dataset.season=key;
   remove();
   const hero=document.querySelector('#efHeroImage,.ef-hero-media img,.hero img');
   if(hero && t.useThemeHero!==false){hero.dataset.originalSrc=hero.dataset.originalSrc||hero.getAttribute('src')||''; hero.src=t.heroDesktop||cfg.hero; hero.classList.add('season-hero-image');}
-  if(t.decorations===false||key==='premium') return;
+  if(t.decorations===false||key==='premium'||key==='light'||key==='dark') return;
   const layer=document.createElement('div'); layer.className='season-layer season-'+cfg.particle; layer.setAttribute('aria-hidden','true');
   for(let i=0;i<count(t);i++){const p=document.createElement('i');p.className='season-particle';p.textContent=particleMarkup(cfg.particle,i);p.style.left=(Math.random()*100)+'%';p.style.fontSize=(7+Math.random()*11)+'px';p.style.opacity=(.18+Math.random()*.36);p.style.animationDuration=(10+Math.random()*14)+'s';p.style.animationDelay=(-Math.random()*16)+'s';p.style.setProperty('--drift',(-50+Math.random()*100)+'px');layer.appendChild(p)}
   document.body.appendChild(layer);
@@ -55,7 +61,7 @@
   const campaign=document.querySelector('.ef-kicker'); if(campaign) campaign.textContent=t.campaignLabel||cfg.label;
  }
  function preview(theme){const current=read();apply({...current,theme,autoSchedule:false})}
- function status(t=read()){return {active:within(t),theme:t.theme||'premium',label:(THEMES[t.theme]||THEMES.premium).label,startAt:t.startAt||'',endAt:t.endAt||''}}
+ function status(t=read()){return {active:within(t),theme:t.theme||'premium',label:t.theme==='custom'?(t.customName||'Własny motyw'):(THEMES[t.theme]||THEMES.premium).label,startAt:t.startAt||'',endAt:t.endAt||''}}
  window.ELKASSSeasonal={apply,preview,read,write,status,themes:THEMES};
  document.addEventListener('DOMContentLoaded',()=>apply());
  window.addEventListener('storage',e=>{if(e.key===KEY)apply()});

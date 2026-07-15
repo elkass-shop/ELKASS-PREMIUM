@@ -15,7 +15,7 @@ main{background:linear-gradient(180deg,#f7f9fc 0,#fff 18%,#fff 100%);}
   min-height:430px!important;
   max-height:470px!important;
   border-radius:28px!important;
-  background:#070b12 url('../hero-clean-panorama.png') center right/cover no-repeat!important;
+  background:#070b12 url('/assets/hero-clean-panorama.png') center right/cover no-repeat!important;
   box-shadow:0 28px 70px rgba(15,23,42,.18)!important;
 }
 .hero-card:before{

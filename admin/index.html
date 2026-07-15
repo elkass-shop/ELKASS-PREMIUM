@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <script src="../assets/js/elkass-paths.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ELKASS Studio LIVE</title>
   <link rel="stylesheet" href="/assets/css/elkass-studio-live.css">
   <link rel="stylesheet" href="/assets/css/elkass-seasonal-engine.css">
+  <link rel="stylesheet" href="/assets/css/elkass-admin-final.css">
+  <link rel="stylesheet" href="/assets/css/elkass-premium-experience.css">
 </head>
 <body>
   <section class="login-shell" id="loginView">
@@ -15,16 +16,16 @@
       <h1>Zaloguj do panelu</h1>
       <p>Panel do dodawania produktów, grafik, zmiany Hero i przygotowania sklepu do prezentacji.</p>
       <form id="loginForm" class="auth-form">
-        <label>Email<input name="email" type="email" placeholder="szef@twoja-domena.pl" required></label>
-        <label>Hasło<input name="password" type="password" placeholder="Hasło" required></label>
+        <label>Email<input name="email" type="email" value="admin@elkass.pl" required></label>
+        <label>Hasło<input name="password" type="password" value="admin123" required></label>
         <button>Zaloguj</button>
       </form>
       <button class="linklike" id="showReset" type="button">Nie pamiętasz hasła? Wyślij reset na email</button>
       <form id="resetForm" class="auth-form hidden">
-        <label>Email do resetu<input name="email" type="email" placeholder="szef@twoja-domena.pl" required></label>
+        <label>Email do resetu<input name="email" type="email" value="admin@elkass.pl" required></label>
         <button type="submit">Wyślij link resetujący</button>
       </form>
-      <div class="demo-users" id="demoUsersInfo">
+      <div class="demo-users">
         <b>Konta testowe:</b>
         <span>admin@elkass.pl / admin123 — pełny dostęp</span>
         <span>mod@elkass.pl / mod123 — produkty i grafiki</span>
@@ -149,9 +150,10 @@ Raty 0%</textarea></label>
 
       <section class="tab" id="layout"><div class="panel"><h2>Układ strony</h2><p>Na prezentację kolejność sekcji jest zablokowana: Hero, statystyki, kategorie, Hit tygodnia, marki, produkty, salon, opinie, kontakt i stopka. To chroni wygląd przed przypadkowym rozsypaniem.</p></div></section>
 
-      <section class="tab" id="users"><div class="grid"><form id="userForm" class="panel"><h2>Dodaj użytkownika</h2><label>Email<input name="email" type="email" placeholder="pracownik@elkass.pl" required></label><label>Imię<input name="name" placeholder="Pracownik"></label><label>Rola<select name="role"><option value="moderator">Moderator</option><option value="admin">Administrator</option></select></label><label>Hasło startowe<input name="password" placeholder="Minimum 10 znaków"></label><button>Dodaj użytkownika</button></form><div class="panel"><h2>Użytkownicy i role</h2><div id="usersList" class="list"></div><p class="note">Wersja lokalna do prezentacji. Docelowo logowanie i reset hasła podłączamy do Supabase Auth.</p></div></div></section>
+      <section class="tab" id="users"><div class="grid"><form id="userForm" class="panel"><h2>Dodaj użytkownika</h2><label>Email<input name="email" type="email" placeholder="pracownik@elkass.pl" required></label><label>Imię<input name="name" placeholder="Pracownik"></label><label>Rola<select name="role"><option value="moderator">Moderator</option><option value="admin">Administrator</option></select></label><label>Hasło startowe<input name="password" value="elkass123"></label><button>Dodaj użytkownika</button></form><div class="panel"><h2>Użytkownicy i role</h2><div id="usersList" class="list"></div><p class="note">Wersja lokalna do prezentacji. Docelowo logowanie i reset hasła podłączamy do Supabase Auth.</p></div></div></section>
     </main>
   </div>
-  <div id="toast"></div><script src="/config/cloud-config.js"></script><script src="/assets/js/cloud-data-v54.js"></script><script src="/assets/js/elkass-seasonal-engine.js"></script><script src="/assets/js/elkass-studio-live.js"></script>
+  <div id="toast"></div><script src="/config/cloud-config.js"></script><script src="/assets/js/cloud-data-v54.js"></script><script src="/assets/js/elkass-seasonal-engine.js"></script><script src="/assets/js/elkass-studio-live.js"></script><script src="/assets/js/elkass-admin-final.js"></script>
+  <script src="/assets/js/elkass-premium-experience.js"></script>
 </body>
 </html>

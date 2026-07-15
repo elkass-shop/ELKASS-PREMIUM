@@ -37,7 +37,7 @@ body{background:#fff!important;color:var(--final-ink)!important;}
 /* HERO — 1:1 kierunek z wizualizacji: niższy, szeroki, panoramiczny */
 .hero{padding:18px 0 22px!important;background:linear-gradient(180deg,#fff 0%,#f9fbfd 100%)!important;}
 .hero .wrap{max-width:1248px!important;}
-.hero-card{height:365px!important;min-height:365px!important;border-radius:20px!important;overflow:hidden!important;background-image:linear-gradient(90deg,rgba(3,8,18,.84) 0%,rgba(3,8,18,.66) 34%,rgba(3,8,18,.22) 62%,rgba(3,8,18,.04) 100%),url('../hero-clean-panorama.png')!important;background-size:cover!important;background-position:center!important;box-shadow:0 22px 65px rgba(8,17,31,.18)!important;border:1px solid rgba(255,255,255,.12)!important;}
+.hero-card{height:365px!important;min-height:365px!important;border-radius:20px!important;overflow:hidden!important;background-image:linear-gradient(90deg,rgba(3,8,18,.84) 0%,rgba(3,8,18,.66) 34%,rgba(3,8,18,.22) 62%,rgba(3,8,18,.04) 100%),url('/assets/hero-clean-panorama.png')!important;background-size:cover!important;background-position:center!important;box-shadow:0 22px 65px rgba(8,17,31,.18)!important;border:1px solid rgba(255,255,255,.12)!important;}
 .hero-card:before,.hero-card:after{display:none!important;}
 .hero-inner{height:100%!important;display:grid!important;grid-template-columns:minmax(0,1fr) 360px!important;gap:28px!important;align-items:center!important;padding:42px!important;}
 .hero .eyebrow{display:inline-flex!important;padding:8px 13px!important;border-radius:999px!important;background:rgba(255,255,255,.12)!important;color:#fff!important;border:1px solid rgba(255,255,255,.24)!important;font-size:12px!important;font-weight:900!important;}
