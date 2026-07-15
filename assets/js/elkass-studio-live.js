@@ -89,6 +89,6 @@ function themeForm(){
  $('#themePreviewOpen')?.addEventListener('click',()=>window.open((window.ELKASS_BASE||'/')+'?themePreview=1','_blank'));
 }
 function usersForm(){ $('#userForm')?.addEventListener('submit',e=>{e.preventDefault(); if(!isAdmin())return toast('Tylko administrator może dodawać użytkowników'); const u=Object.fromEntries(new FormData(e.currentTarget).entries()); u.email=String(u.email||'').toLowerCase().trim(); const users=readUsers(); if(users.some(x=>x.email===u.email))return toast('Taki użytkownik już istnieje'); users.push(u); writeUsers(users); renderUsers(); e.currentTarget.reset(); toast('Użytkownik dodany');}); }
-function publish(){ $('#publish')?.addEventListener('click',()=>{toast('Zapisane. Otwieram podgląd sklepu.'); setTimeout(()=>window.open('/','_blank'),400);}); }
+function publish(){ $('#publish')?.addEventListener('click',()=>{toast('Zapisane. Otwieram podgląd sklepu.'); setTimeout(()=>window.open((window.ELKASS_BASE||'/'),'_blank'),400);}); }
 document.addEventListener('DOMContentLoaded',()=>{auth();tabs();formProduct();mediaUpload();homeForm();brandForm();categoryForms();themeForm();usersForm();publish();showApp();});
 })();

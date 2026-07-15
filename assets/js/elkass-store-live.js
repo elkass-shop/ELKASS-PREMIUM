@@ -13,7 +13,7 @@
   };
   async function baseProducts(){
     try{
-      const res=await fetch('/data/products.json',{cache:'no-store'});
+      const res=await fetch((window.ELKASS_URL?window.ELKASS_URL('data/products.json'):'data/products.json'),{cache:'no-store'});
       const json=await res.json();
       return Array.isArray(json)?json:(json.products||[]);
     }catch(e){return []}

@@ -1,0 +1,29 @@
+/* ELKASS Premium 4.1 — regression fix: product badges and review carousel */
+.elkass-final-home .ef-product::after{content:none!important;display:none!important}
+.elkass-final-home .ef-product,
+.elkass-final-home .ef-product:hover{overflow:hidden!important}
+.elkass-final-home .ef-product-media{position:relative!important;isolation:isolate!important;overflow:hidden!important;display:grid!important;place-items:center!important;min-height:0!important}
+.elkass-final-home .ef-product-media img{position:relative!important;z-index:0!important;opacity:1!important;visibility:visible!important}
+.elkass-final-home .ef-product-badge{z-index:4!important;top:11px!important;left:11px!important;right:auto!important;max-width:calc(100% - 22px)!important;width:max-content!important;box-sizing:border-box!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;pointer-events:none!important}
+.elkass-final-home .ef-product-body{position:relative!important;z-index:3!important;background:#fff!important;overflow:hidden!important}
+.elkass-final-home .ef-product-body>small,
+.elkass-final-home .ef-product h3,
+.elkass-final-home .ef-product p,
+.elkass-final-home .ef-product .row{position:relative!important;z-index:3!important;opacity:1!important;visibility:visible!important;transform:none!important}
+.elkass-final-home .ef-product h3{overflow-wrap:anywhere!important}
+
+/* Reviews are rendered one page at a time. No flex-track calculations, no squeezed cards. */
+.elkass-final-home .ef-review-viewport{overflow:hidden!important;min-width:0!important}
+.elkass-final-home .ef-review-track{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;width:100%!important;transform:none!important;transition:opacity .25s ease,transform .25s ease!important;will-change:opacity,transform!important}
+.elkass-final-home .ef-review-track.is-changing{opacity:0!important;transform:translateY(8px)!important}
+.elkass-final-home .ef-review-slide{display:contents!important}
+.elkass-final-home .ef-review-card{display:flex!important;width:auto!important;min-width:0!important;max-width:none!important;overflow:hidden!important}
+.elkass-final-home .ef-review-card p{overflow-wrap:anywhere!important;word-break:normal!important}
+@media(max-width:1060px){
+ .elkass-final-home .ef-review-track{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:760px){
+ .elkass-final-home .ef-review-track{grid-template-columns:1fr!important}
+ .elkass-final-home .ef-review-card{min-height:220px!important}
+ .elkass-final-home .ef-product-badge{font-size:.58rem!important;padding:6px 8px!important;max-width:calc(100% - 16px)!important;top:8px!important;left:8px!important}
+}

@@ -11,7 +11,7 @@ async function load(){
    if(window.ElkassCloud && typeof window.ElkassCloud.getProducts === 'function'){
      products = await window.ElkassCloud.getProducts();
    } else {
-     const data = await fetch('/data/products.json', {cache:'no-store'}).then(r=>r.json());
+     const data = await fetch((window.ELKASS_URL?window.ELKASS_URL('data/products.json'):'data/products.json'), {cache:'no-store'}).then(r=>r.json());
      products = data.products || [];
    }
  }catch(e){console.warn(e)}

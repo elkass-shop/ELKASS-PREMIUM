@@ -6,7 +6,7 @@
   const safe=(key,fb)=>{try{return JSON.parse(localStorage.getItem(key)||'null') ?? fb}catch(e){return fb}};
   const set=(key,val)=>localStorage.setItem(key,JSON.stringify(val));
   async function products(){try{return await (window.ElkassCloud?.getProducts?.()||[])}catch(e){return []}}
-  async function loadDemo(){const res=await fetch('/data/demo-store-v61.json',{cache:'no-store'});return await res.json()}
+  async function loadDemo(){const res=await fetch((window.ELKASS_URL?window.ELKASS_URL('data/demo-store-v61.json'):'data/demo-store-v61.json'),{cache:'no-store'});return await res.json()}
   function download(name, obj){const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},300)}
   function cloudMode(){return window.ElkassCloud?.mode?.() || 'local-demo'}
   function injectNav(){const nav=$('.v47-nav'); if(nav && !nav.querySelector('[data-v47-tab="m1"]')){const b=document.createElement('button');b.dataset.v47Tab='m1';b.innerHTML='🚀 M1 Live CMS'; const ref=nav.querySelector('[data-v47-tab="woodyboy"]'); nav.insertBefore(b, ref||null); b.addEventListener('click',()=>{document.querySelectorAll('.v47-nav button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); document.querySelectorAll('.v47-tab').forEach(x=>x.classList.remove('active')); $('#m1')?.classList.add('active'); render();});}}
