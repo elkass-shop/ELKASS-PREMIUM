@@ -5,7 +5,7 @@ const mediaKey='elkass.media.v60'; const authKey='elkass.auth.session.v1'; const
 const defaults=[{email:'admin@elkass.pl',password:'admin123',name:'Administrator',role:'admin'},{email:'mod@elkass.pl',password:'mod123',name:'Moderator',role:'moderator'}];
 const read=(k,f)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(f))}catch(e){return f}}; const write=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const readMedia=()=>read(mediaKey,[]); const writeMedia=v=>write(mediaKey,v||[]);
-const defaultBrands=['Samsung','Bosch','LG','Beko','Amica','Philips','Sony','Lenovo','Whirlpool','Electrolux','Tefal','JBL','Siemens','Sharp','TCL','Hisense','Gorenje','Xiaomi','AEG','Panasonic','Remington','Blaupunkt','Kernau','Sencor','Manta','Philco','DeLonghi','Miele','Liebherr','Haier','Candy'];
+const defaultBrands=['Samsung','LG','Sony','Panasonic','Philips','TCL','Hisense','Sharp','Toshiba','JVC','Loewe','Grundig','Thomson','Blaupunkt','Manta','Xiaomi','JBL','Denon','Yamaha','Pioneer','Onkyo','Marshall','Bose','Sennheiser','Harman Kardon','Bosch','Siemens','Electrolux','AEG','Whirlpool','Beko','Amica','Gorenje','Miele','Liebherr','Haier','Candy','Hoover','Kernau','Franke','Faber','Elica','Teka','Smeg','DeLonghi','Krups','Tefal','Braun','Kenwood','KitchenAid','Ninja','Russell Hobbs','Zelmer','MPM','Łucznik','Dyson','Kärcher','Rowenta','Remington','Lenovo','ASUS','Acer','HP','Dell','Apple','Motorola','realme','OPPO','Garmin'];
 const defaultCategories=[
  {name:'RTV',description:'Telewizory, audio, kino domowe',image:'assets/categories/clean-rtv.jpg',subcategories:['Telewizory','Soundbary','Kino domowe','Projektory','Dekodery','Akcesoria RTV']},
  {name:'AGD',description:'Pralki, lodówki, zmywarki',image:'assets/categories/clean-agd.jpg',subcategories:['Pralki ładowane od frontu','Pralki slim','Suszarki','Lodówki','Zmywarki','Zamrażarki']},
@@ -14,7 +14,7 @@ const defaultCategories=[
  {name:'Komputery',description:'Laptopy, smartfony, tablety',image:'assets/categories/clean-komputery-telefony.jpg',subcategories:['Laptopy','Smartfony','Tablety','Monitory','Drukarki','Akcesoria komputerowe']},
  {name:'Usługi',description:'Montaż, transport, konfiguracja',image:'assets/categories/clean-serwis.jpg',subcategories:['Transport','Wniesienie','Montaż AGD','Konfiguracja TV','Serwis','Doradztwo']}
 ];
-const readBrands=()=>read(brandsKey,defaultBrands); const writeBrands=v=>write(brandsKey,v&&v.length?v:defaultBrands);
+const readBrands=()=>{const saved=read(brandsKey,[]);const merged=[...defaultBrands,...(Array.isArray(saved)?saved:[])];return [...new Map(merged.map(x=>[String(x).toLocaleLowerCase('pl-PL'),String(x)])).values()]}; const writeBrands=v=>write(brandsKey,v&&v.length?v:defaultBrands);
 const readCategories=()=>read(categoriesKey,defaultCategories); const writeCategories=v=>write(categoriesKey,v&&v.length?v:defaultCategories);
 const readTheme=()=>read(themeKey,{theme:'premium',message:'',campaignLabel:'',decorations:true,intensity:'balanced',useThemeHero:true,autoSchedule:false,startAt:'',endAt:''}); const writeTheme=v=>write(themeKey,v||{theme:'premium'}); const readThemeHistory=()=>read(themeHistoryKey,[]); const writeThemeHistory=v=>write(themeHistoryKey,(v||[]).slice(0,12));
 const readUsers=()=>{let u=read(usersKey,null); if(!u){u=defaults; write(usersKey,u)} return u}; const writeUsers=u=>write(usersKey,u||defaults);

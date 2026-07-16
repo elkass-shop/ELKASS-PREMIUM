@@ -1,0 +1,49 @@
+/* ELKASS Premium 9.0 — balanced categories and complete brand wall */
+.elkass-final-home #kategorie{padding:46px 0 8px}
+.elkass-final-home #kategorie .ef-section-head{margin-bottom:20px}
+.elkass-final-home #kategorie .ef-section-head h2{font-size:clamp(27px,2.45vw,38px);max-width:none}
+.elkass-final-home .ef-categories{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.elkass-final-home .ef-cat:nth-child(n){grid-column:auto;min-height:0;height:auto;aspect-ratio:1.62/1;border-radius:18px;box-shadow:0 9px 26px rgba(15,23,42,.085)}
+.elkass-final-home .ef-cat:nth-child(n+5){aspect-ratio:2.05/1}
+.elkass-final-home .ef-cat>div,.elkass-final-home .ef-cat:nth-child(-n+4)>div{padding:20px 56px 18px 20px}
+.elkass-final-home .ef-cat .ef-cat-kicker{font-size:8px;margin-bottom:5px;letter-spacing:.13em}
+.elkass-final-home .ef-cat b,.elkass-final-home .ef-cat:nth-child(n+5) b{font-size:clamp(18px,1.65vw,25px);line-height:1.05}
+.elkass-final-home .ef-cat small{font-size:10.5px;line-height:1.35;margin-top:5px;max-width:220px;-webkit-line-clamp:1}
+.elkass-final-home .ef-cat:after{right:14px;bottom:14px;width:32px;height:32px;font-size:16px}
+.elkass-final-home .ef-cat:hover{transform:translateY(-3px)}
+
+/* A composed brand wall: all brands remain visible without dominating the page. */
+.elkass-final-home .ef-brands{height:auto!important;min-height:118px!important;margin-top:34px!important;padding:20px 22px!important;display:grid!important;grid-template-columns:190px minmax(0,1fr)!important;gap:18px!important;align-items:center!important;border:1px solid #e7eaf0!important;border-radius:20px!important;background:rgba(255,255,255,.92)!important;box-shadow:0 10px 30px rgba(15,23,42,.055)!important;overflow:hidden!important}
+.elkass-final-home .ef-brands>b{display:block!important;min-width:0!important;font-size:11px!important;line-height:1.35!important;letter-spacing:.13em!important;text-transform:uppercase!important;color:#566171!important}
+.elkass-final-home .ef-brands>b:after{content:"RTV • AGD • zabudowa • multimedia";display:block;margin-top:7px;font-size:9px;font-weight:700;line-height:1.45;letter-spacing:.04em;text-transform:none;color:#9aa3af}
+.elkass-final-home .ef-brand-track{width:100%;overflow:hidden!important;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.elkass-final-home .ef-brand-track:before,.elkass-final-home .ef-brand-track:after{display:none!important}
+.elkass-final-home .ef-brand-marquee{gap:9px!important;animation-duration:62s!important}
+.elkass-final-home .ef-brand-chip{min-width:auto!important;height:34px!important;padding:0 15px!important;border-radius:10px!important;font-size:11px!important;letter-spacing:.025em!important;box-shadow:none!important;background:#f8f9fb!important;border-color:#e8ebf0!important;white-space:nowrap!important}
+
+@media(max-width:1080px){
+ .elkass-final-home .ef-categories{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .elkass-final-home .ef-cat:nth-child(n){aspect-ratio:1.58/1}
+ .elkass-final-home .ef-cat:nth-child(n+7){display:none}
+ .elkass-final-home .ef-brands{grid-template-columns:155px minmax(0,1fr)!important}
+}
+@media(max-width:760px){
+ .elkass-final-home #kategorie{padding-top:36px}
+ .elkass-final-home .ef-categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .elkass-final-home .ef-cat:nth-child(n){display:flex;aspect-ratio:1.42/1;border-radius:15px}
+ .elkass-final-home .ef-cat>div,.elkass-final-home .ef-cat:nth-child(-n+4)>div{padding:16px 44px 14px 15px}
+ .elkass-final-home .ef-cat b,.elkass-final-home .ef-cat:nth-child(n+5) b{font-size:18px}
+ .elkass-final-home .ef-cat small{font-size:9.5px}
+ .elkass-final-home .ef-cat:after{width:28px;height:28px;right:10px;bottom:10px;font-size:14px}
+ .elkass-final-home .ef-brands{min-height:92px!important;grid-template-columns:1fr!important;gap:10px!important;padding:15px!important}
+ .elkass-final-home .ef-brands>b{display:block!important;font-size:10px!important}
+ .elkass-final-home .ef-brands>b:after{display:none}
+ .elkass-final-home .ef-brand-chip{height:32px!important;font-size:10px!important;padding:0 12px!important}
+}
+@media(max-width:480px){
+ .elkass-final-home .ef-categories{grid-template-columns:1fr 1fr}
+ .elkass-final-home .ef-cat:nth-child(n){aspect-ratio:1.25/1}
+ .elkass-final-home .ef-cat .ef-cat-kicker{display:none}
+ .elkass-final-home .ef-cat small{display:none}
+ .elkass-final-home .ef-cat b,.elkass-final-home .ef-cat:nth-child(n+5) b{font-size:16px}
+}
