@@ -1,0 +1,13 @@
+{
+  "version": "10.0",
+  "configured_decor_styles": 17,
+  "svg_assets": 16,
+  "viewport_fixed_decorations": false,
+  "missing_theme_assets": [],
+  "checks": [
+    "JavaScript syntax",
+    "SVG asset presence",
+    "no fixed viewport decorations",
+    "versioned CSS/JS references"
+  ]
+}

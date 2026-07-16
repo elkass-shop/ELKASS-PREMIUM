@@ -1,42 +1,46 @@
-/* ELKASS Luxury Seasonal Design Engine F7 */
+/* ELKASS Section-Bound Seasonal Design Engine v10 */
 :root{--season-accent:#e5091a;--season-accent-2:#111827;--season-soft:#fff7f8}
 body{transition:background-color .35s ease,color .35s ease}
 body[class*="theme-"] .ef-btn:not(.ef-btn-light),body[class*="theme-"] .ef-studio{background:linear-gradient(135deg,var(--season-accent),var(--season-accent-2));border-color:transparent}
 body[class*="theme-"] .ef-section-head span,body[class*="theme-"] .ef-kicker{color:var(--season-accent)}
 body[class*="theme-"] .ef-product .badge{background:var(--season-accent);color:#fff}
-body[class*="theme-"] .ef-hero-card,body[class*="theme-"] .ef-hit-main,body[class*="theme-"] .ef-showroom article{position:relative;isolation:isolate}
-body[class*="theme-"] .ef-hero-card::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--season-accent) 28%,transparent),inset 0 -120px 120px rgba(0,0,0,.16)}
-.season-hero-image{transition:filter .4s ease,transform .8s ease;filter:saturate(1.05) contrast(1.03)}
-.season-layer{position:fixed;inset:0;z-index:9995;pointer-events:none;overflow:hidden}
-.season-particle{position:absolute;top:-10vh;animation:season-fall linear infinite;will-change:transform;user-select:none;color:var(--season-accent);text-shadow:0 0 12px color-mix(in srgb,var(--season-accent) 45%,transparent)}
-.season-luxury-frame{position:fixed;inset:0;z-index:9994;pointer-events:none;background:linear-gradient(90deg,color-mix(in srgb,var(--season-accent) 22%,transparent),transparent 9%,transparent 91%,color-mix(in srgb,var(--season-accent-2) 18%,transparent));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--season-accent) 18%,transparent)}
-.season-luxury-frame::before,.season-luxury-frame::after{content:"";position:absolute;width:220px;height:220px;background-repeat:no-repeat;background-size:contain;opacity:.88;filter:drop-shadow(0 18px 28px rgba(0,0,0,.18))}
-.season-luxury-frame::before{left:0;top:72px}.season-luxury-frame::after{right:0;bottom:12px;transform:rotate(180deg)}
-.season-luxury-frame.christmas::before,.season-luxury-frame.christmas::after{background-image:url('../theme-decor/christmas-corner.svg')}
-.season-luxury-frame.winter::before,.season-luxury-frame.winter::after{background-image:url('../theme-decor/winter-corner.svg')}
-.season-luxury-frame.easter::before,.season-luxury-frame.easter::after{background-image:url('../theme-decor/easter-corner.svg')}
-.season-luxury-frame.spring::before,.season-luxury-frame.spring::after{background-image:url('../theme-decor/spring-corner.svg')}
-.season-luxury-frame.summer::before,.season-luxury-frame.summer::after{background-image:url('../theme-decor/summer-corner.svg')}
-.season-luxury-frame.autumn::before,.season-luxury-frame.autumn::after{background-image:url('../theme-decor/autumn-corner.svg')}
-.season-luxury-frame.blackweek::before,.season-luxury-frame.blackweek::after,.season-luxury-frame.cyberweek::before,.season-luxury-frame.cyberweek::after{background-image:url('../theme-decor/blackweek-corner.svg')}
-.season-luxury-frame.school::before,.season-luxury-frame.school::after{background-image:url('../theme-decor/school-corner.svg')}
-.season-luxury-badge{position:fixed;left:50%;top:9px;transform:translateX(-50%);z-index:10000;pointer-events:none;display:flex;align-items:center;gap:9px;padding:8px 14px;border-radius:999px;background:rgba(8,12,20,.88);color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.28);backdrop-filter:blur(14px);max-width:min(92vw,780px)}
-.season-luxury-badge span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:color-mix(in srgb,var(--season-accent) 82%,#fff);font-weight:900}.season-luxury-badge b{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.season-lights{position:fixed;left:0;right:0;top:0;height:7px;display:flex;z-index:9998;pointer-events:none}.season-lights i{flex:1;background:linear-gradient(90deg,var(--season-accent),var(--season-accent-2));opacity:.9;box-shadow:0 0 18px color-mix(in srgb,var(--season-accent) 45%,transparent)}
-.season-lights i:nth-child(even){opacity:.42}.season-lights i:nth-child(3n){background:var(--season-accent-2)}
-.season-ribbon{position:fixed;z-index:9998;top:78px;right:-64px;transform:rotate(45deg);background:#08090c;color:#e6c75b;font-weight:950;letter-spacing:.16em;padding:11px 72px;box-shadow:0 9px 22px rgba(0,0,0,.28);font-size:11px;border:1px solid rgba(230,199,91,.55)}
-.season-glow{position:fixed;pointer-events:none;z-index:0;width:420px;height:420px;border-radius:50%;filter:blur(82px);opacity:.10}.season-glow.a{top:80px;left:-120px;background:var(--season-accent)}.season-glow.b{right:-120px;bottom:100px;background:var(--season-accent-2)}
-body.theme-blackweek{background:linear-gradient(180deg,#f8f8f8,#f1f1f2)}body.theme-blackweek .ef-topbar,body.theme-blackweek .ef-footer{background:#08090c}body.theme-blackweek .ef-hero-card,body.theme-blackweek .ef-hit-main{box-shadow:0 0 0 1px rgba(220,183,64,.7),0 26px 56px rgba(0,0,0,.18)}
-body.theme-christmas .ef-hero-card,body.theme-winter .ef-hero-card{box-shadow:0 28px 70px rgba(17,69,98,.22)}
-body.theme-easter .ef-section:nth-of-type(even),body.theme-spring .ef-section:nth-of-type(even){background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--season-soft) 68%,transparent));border-radius:32px}
-body.theme-autumn .ef-showroom article{background:linear-gradient(135deg,#18120f,#4e2616)}
-body.theme-summer .ef-showroom article{background:linear-gradient(135deg,#071927,#0c5676)}
-.theme-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
-.theme-swatch{border:1px solid #e4e7ec;border-radius:20px;overflow:hidden;background:#fff;min-height:184px;position:relative;padding:0;cursor:pointer;transition:.22s ease;text-align:left}
-.theme-swatch:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(16,24,40,.13)}.theme-swatch.active{outline:3px solid #e5091a;outline-offset:3px}
-.theme-swatch .theme-cover{height:106px;background-size:cover;background-position:center;position:relative}.theme-swatch .theme-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(7,10,15,.55))}
-.theme-swatch .theme-meta{padding:13px 14px}.theme-swatch b{display:block;font-size:15px;margin-bottom:4px}.theme-swatch small{color:#667085;display:block;line-height:1.35}.theme-swatch .theme-tag{position:absolute;left:12px;top:82px;z-index:2;background:#fff;color:#101828;border-radius:999px;padding:5px 9px;font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 8px 20px rgba(0,0,0,.16)}
+body[class*="theme-"] .ef-hero-card,body[class*="theme-"] .ef-hit-main,body[class*="theme-"] .ef-showroom article{position:relative;isolation:isolate;overflow:hidden}
+body[class*="theme-"] .ef-hero-card::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--season-accent) 26%,transparent),inset 0 -110px 120px rgba(0,0,0,.12)}
+.season-hero-image{transition:filter .4s ease,transform .8s ease;filter:saturate(1.04) contrast(1.03)}
+.season-host{position:relative;isolation:isolate;overflow:hidden}
+.season-scene{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden;border-radius:inherit}
+.season-art{position:absolute;display:block;object-fit:contain;filter:drop-shadow(0 18px 34px rgba(0,0,0,.16));opacity:.94}
+.season-art-main{right:-1.5%;bottom:-5%;width:min(38%,420px);height:min(78%,430px);object-position:right bottom}
+.season-orbit{position:absolute;width:310px;height:310px;right:-90px;top:-120px;border-radius:50%;border:1px solid color-mix(in srgb,var(--season-accent) 32%,transparent);box-shadow:0 0 0 34px color-mix(in srgb,var(--season-accent) 4%,transparent),0 0 0 72px color-mix(in srgb,var(--season-accent-2) 3%,transparent)}
+.season-hero-particles{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden;border-radius:inherit}
+.season-hero-particles i{position:absolute;color:var(--season-accent);text-shadow:0 0 12px color-mix(in srgb,var(--season-accent) 40%,transparent);animation:season-float ease-in-out infinite;will-change:transform;user-select:none}
+.season-campaign{position:absolute;left:24px;right:24px;bottom:18px;z-index:5;min-height:42px;display:flex;align-items:center;gap:11px;padding:9px 14px;border-radius:14px;background:rgba(8,12,19,.72);color:#fff;border:1px solid rgba(255,255,255,.16);box-shadow:0 14px 34px rgba(0,0,0,.18);backdrop-filter:blur(16px);pointer-events:none}
+.season-campaign-label{font-size:9px;font-weight:950;letter-spacing:.16em;text-transform:uppercase;color:color-mix(in srgb,var(--season-accent) 76%,#fff);white-space:nowrap}.season-campaign strong{font-size:11px;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.season-campaign-dot{margin-left:auto;width:8px;height:8px;border-radius:50%;background:var(--season-accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--season-accent) 18%,transparent)}
+.season-section-accent{position:absolute;z-index:0;pointer-events:none;background-repeat:no-repeat;background-size:contain;opacity:.12;filter:saturate(.85)}
+.season-section-accent-hit{right:-45px;top:-35px;width:240px;height:240px;background-position:right top}
+.season-section-accent-showroom{right:-30px;bottom:-42px;width:260px;height:260px;background-position:right bottom;opacity:.09}
+.ef-hit-main>*:not(.season-section-accent),.ef-showroom article>*:not(.season-section-accent){position:relative;z-index:1}
+/* Theme-specific placement and tone */
+.season-scene-christmas .season-art-main,.season-scene-mikolajki .season-art-main{width:min(43%,470px);right:-2%;bottom:-3%}
+.season-scene-blackweek .season-art-main,.season-scene-cyberweek .season-art-main,.season-scene-dark-tech .season-art-main{width:min(46%,510px);opacity:.92}
+.season-scene-valentines .season-art-main,.season-scene-spring .season-art-main{width:min(37%,410px);right:0;bottom:-2%}
+.season-scene-summer .season-art-main{width:min(40%,440px);right:-2%;bottom:-1%}
+.season-scene-autumn .season-art-main{width:min(39%,430px);right:-1%;bottom:-2%}
+.season-scene-sale .season-art-main{width:min(45%,500px);right:-2%;bottom:-2%}
+body.theme-blackweek{background:linear-gradient(180deg,#f8f8f8,#f1f1f2)}body.theme-blackweek .ef-topbar,body.theme-blackweek .ef-footer{background:#08090c}body.theme-blackweek .ef-hero-card,body.theme-blackweek .ef-hit-main{box-shadow:0 0 0 1px rgba(220,183,64,.58),0 24px 52px rgba(0,0,0,.16)}
+body.theme-blackweek .season-campaign{background:linear-gradient(90deg,rgba(5,6,9,.92),rgba(28,25,15,.88));border-color:rgba(222,187,75,.45)}
+body.theme-christmas .ef-hero-card,body.theme-winter .ef-hero-card{box-shadow:0 28px 70px rgba(17,69,98,.20)}
+body.theme-christmas .season-campaign{background:linear-gradient(90deg,rgba(98,8,26,.88),rgba(4,77,42,.84))}
+body.theme-valentines{background:radial-gradient(circle at 88% 8%,rgba(244,63,94,.11),transparent 32%),#fff8fb}
+body.theme-valentines .season-campaign{background:linear-gradient(90deg,rgba(126,13,48,.86),rgba(190,24,76,.78))}
+body.theme-easter .ef-section:nth-of-type(even),body.theme-spring .ef-section:nth-of-type(even){background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--season-soft) 68%,transparent));border-radius:30px}
+body.theme-autumn .ef-showroom article{background:linear-gradient(135deg,#18120f,#4e2616)}body.theme-summer .ef-showroom article{background:linear-gradient(135deg,#071927,#0c5676)}
+body.theme-sale .season-campaign{background:linear-gradient(90deg,rgba(183,18,40,.9),rgba(226,95,15,.84))}
+body.theme-dark .season-campaign{background:rgba(5,8,15,.78)}
+/* Admin theme cards */
+.theme-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}.theme-swatch{border:1px solid #e4e7ec;border-radius:20px;overflow:hidden;background:#fff;min-height:184px;position:relative;padding:0;cursor:pointer;transition:.22s ease;text-align:left}.theme-swatch:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(16,24,40,.13)}.theme-swatch.active{outline:3px solid #e5091a;outline-offset:3px}.theme-swatch .theme-cover{height:106px;background-size:cover;background-position:center;position:relative}.theme-swatch .theme-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(7,10,15,.55))}.theme-swatch .theme-meta{padding:13px 14px}.theme-swatch b{display:block;font-size:15px;margin-bottom:4px}.theme-swatch small{color:#667085;display:block;line-height:1.35}.theme-swatch .theme-tag{position:absolute;left:12px;top:82px;z-index:2;background:#fff;color:#101828;border-radius:999px;padding:5px 9px;font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 8px 20px rgba(0,0,0,.16)}
 .theme-status{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.theme-status div{padding:12px;border-radius:15px;background:#f8fafc;border:1px solid #e4e7ec}.theme-status b{display:block;font-size:13px}.theme-status small{color:#667085}.theme-history{margin-top:12px;display:grid;gap:8px}.theme-history .row{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border:1px solid #e4e7ec;border-radius:14px}.theme-history small{display:block;color:#667085}
-@keyframes season-fall{0%{transform:translate3d(0,-10vh,0) rotate(0)}100%{transform:translate3d(var(--drift,40px),115vh,0) rotate(360deg)}}
-@media (max-width:760px){.season-luxury-badge{top:auto;bottom:10px;padding:7px 10px}.season-luxury-badge span{display:none}.season-luxury-badge b{font-size:10px}.season-luxury-frame::before,.season-luxury-frame::after{width:110px;height:110px;opacity:.58}.season-luxury-frame::before{top:118px}.season-ribbon{top:61px;font-size:9px}.theme-gallery{grid-template-columns:1fr}.theme-status{grid-template-columns:1fr}.season-lights{height:4px}}
-@media (prefers-reduced-motion:reduce){.season-particle{animation:none!important}}
+@keyframes season-float{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(var(--drift,12px),14px,0) rotate(135deg)}}
+@media(max-width:900px){.season-art-main{width:min(42%,330px);opacity:.78}.season-campaign{left:16px;right:16px;bottom:14px}.season-section-accent{opacity:.07}}
+@media(max-width:680px){.season-art-main{width:46%;height:58%;right:-6%;bottom:0;opacity:.58}.season-orbit{width:190px;height:190px;right:-80px;top:-85px}.season-campaign{left:12px;right:12px;bottom:10px;min-height:36px;padding:7px 10px}.season-campaign-label{display:none}.season-campaign strong{font-size:10px}.season-section-accent{display:none}.theme-gallery{grid-template-columns:1fr}.theme-status{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.season-hero-particles i{animation:none!important}}
