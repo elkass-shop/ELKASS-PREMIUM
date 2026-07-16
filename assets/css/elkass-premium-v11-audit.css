@@ -1,0 +1,115 @@
+/* ELKASS Premium 11 — audited visual system and Theme Engine PRO */
+:root{--v11-space:clamp(44px,6vw,78px);--theme-symbol:"";--theme-surface:#fff;--theme-line:rgba(15,23,42,.09);--theme-glow:rgba(227,6,44,.08)}
+
+/* Safety: no section may disappear because of stale reveal/animation rules */
+.elkass-final-home main>section,.elkass-final-home .ef-section,.elkass-final-home .ef-showroom,.elkass-final-home .ef-reviews,.elkass-final-home .ef-contact{opacity:1!important;visibility:visible!important;transform:none}
+.elkass-final-home .ef-wrap{width:min(1320px,calc(100% - 48px))}
+.elkass-final-home .ef-section{margin-top:var(--v11-space)}
+
+/* Balanced category architecture: compact, consistent and resistant to old overrides */
+.elkass-final-home #kategorie{padding:44px 0 4px!important}
+.elkass-final-home #kategorie .ef-section-head{margin-bottom:18px!important}
+.elkass-final-home #kategorie .ef-section-head h2{font-size:clamp(26px,2.5vw,38px)!important}
+.elkass-final-home .ef-categories{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+.elkass-final-home .ef-cat:nth-child(n){grid-column:auto!important;min-height:0!important;height:176px!important;aspect-ratio:auto!important;border-radius:18px!important;overflow:hidden!important;box-shadow:0 12px 30px rgba(15,23,42,.09)!important;border:1px solid var(--theme-line)!important}
+.elkass-final-home .ef-cat:nth-child(n+5){height:154px!important}
+.elkass-final-home .ef-cat>div,.elkass-final-home .ef-cat:nth-child(-n+4)>div{padding:18px 50px 17px 18px!important}
+.elkass-final-home .ef-cat b,.elkass-final-home .ef-cat:nth-child(n+5) b{font-size:clamp(17px,1.45vw,22px)!important;line-height:1.04!important}
+.elkass-final-home .ef-cat small{font-size:10px!important;line-height:1.3!important;margin-top:5px!important;-webkit-line-clamp:1!important}
+.elkass-final-home .ef-cat .ef-cat-kicker{font-size:7.5px!important;margin-bottom:5px!important}
+.elkass-final-home .ef-cat:after{width:30px!important;height:30px!important;right:12px!important;bottom:12px!important;font-size:15px!important}
+.elkass-final-home .ef-cat:hover{transform:translateY(-3px)!important}
+
+/* Theme signature on categories without covering their artwork */
+body[class*="theme-"] .ef-cat{box-shadow:0 12px 32px rgba(15,23,42,.09),inset 0 0 0 1px color-mix(in srgb,var(--season-accent) 15%,transparent)!important}
+body[class*="theme-"] .ef-cat::before{background:linear-gradient(180deg,color-mix(in srgb,var(--season-accent-2) 5%,transparent) 0%,rgba(5,10,18,.30) 54%,rgba(5,10,18,.91) 100%)!important}
+body[class*="theme-"] .ef-cat>div::before{content:var(--theme-symbol);position:absolute;right:15px;top:14px;font-size:18px;line-height:1;filter:drop-shadow(0 5px 10px rgba(0,0,0,.24));opacity:.9}
+body[class*="theme-"] .ef-cat .ef-cat-kicker{color:color-mix(in srgb,var(--season-accent) 72%,#fff)!important}
+
+/* Section rhythm and visual hierarchy */
+.elkass-final-home #hit,.elkass-final-home #produkty{position:relative}
+body[class*="theme-"] #hit::before,body[class*="theme-"] #produkty::before{content:"";position:absolute;left:50%;top:-24px;width:100vw;height:calc(100% + 48px);transform:translateX(-50%);z-index:-1;background:linear-gradient(180deg,color-mix(in srgb,var(--season-soft) 45%,transparent),transparent 78%);pointer-events:none}
+body[class*="theme-"] .ef-section-head h2{position:relative}
+body[class*="theme-"] .ef-section-head h2::after{content:"";display:block;width:46px;height:3px;margin-top:10px;border-radius:999px;background:linear-gradient(90deg,var(--season-accent),var(--season-accent-2))}
+
+/* Product cards: theme-aware but calm */
+body[class*="theme-"] .ef-product{border-color:color-mix(in srgb,var(--season-accent) 16%,#e7eaf0)!important}
+body[class*="theme-"] .ef-product::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--season-accent),var(--season-accent-2));opacity:.72;z-index:4}
+body[class*="theme-"] .ef-product-badge{background:linear-gradient(135deg,var(--season-accent),var(--season-accent-2))!important;max-width:calc(100% - 28px)!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+
+/* Theme campaign must remain inside hero and never cover CTA */
+.season-campaign{left:auto!important;right:18px!important;bottom:16px!important;width:min(48%,480px)!important;min-width:260px!important}
+.season-art-main{right:0!important;bottom:0!important;width:min(36%,390px)!important;height:min(70%,390px)!important;opacity:.82!important}
+.season-hero-particles{opacity:.75}
+
+/* Reviews and footer reflect theme with restrained accents */
+body[class*="theme-"] .ef-reviews{background:linear-gradient(125deg,#101827 0%,color-mix(in srgb,var(--season-accent-2) 58%,#172235) 62%,color-mix(in srgb,var(--season-accent) 35%,#250817) 120%)!important}
+body[class*="theme-"] .ef-review-card{border-top:3px solid var(--season-accent)!important}
+body[class*="theme-"] .ef-footer{border-top:3px solid var(--season-accent);background:linear-gradient(135deg,#060a11,color-mix(in srgb,var(--season-accent-2) 28%,#060a11))!important}
+body[class*="theme-"] .ef-topbar{border-bottom-color:var(--season-accent)!important}
+
+/* Explicit theme vocabulary */
+body.theme-light{--theme-symbol:"✦";--theme-glow:rgba(227,6,44,.05)}
+body.theme-dark{--theme-symbol:"◈";--theme-glow:rgba(99,102,241,.10)}
+body.theme-christmas{--theme-symbol:"🎄";--theme-glow:rgba(184,15,46,.10)}
+body.theme-mikolajki{--theme-symbol:"🎁";--theme-glow:rgba(210,30,56,.10)}
+body.theme-winter{--theme-symbol:"❄";--theme-glow:rgba(12,111,184,.10)}
+body.theme-valentines{--theme-symbol:"♥";--theme-glow:rgba(225,29,72,.10)}
+body.theme-spring{--theme-symbol:"✿";--theme-glow:rgba(47,143,86,.10)}
+body.theme-easter{--theme-symbol:"◉";--theme-glow:rgba(138,79,199,.10)}
+body.theme-summer{--theme-symbol:"☀";--theme-glow:rgba(8,127,193,.10)}
+body.theme-autumn{--theme-symbol:"◆";--theme-glow:rgba(191,91,32,.10)}
+body.theme-blackweek{--theme-symbol:"⚡";--theme-glow:rgba(216,176,44,.12)}
+body.theme-cyberweek{--theme-symbol:"⌁";--theme-glow:rgba(139,92,246,.12)}
+body.theme-sale{--theme-symbol:"%";--theme-glow:rgba(239,35,60,.11)}
+body.theme-backtoschool{--theme-symbol:"✎";--theme-glow:rgba(31,95,211,.10)}
+body.theme-rtvdays{--theme-symbol:"▣";--theme-glow:rgba(110,63,209,.10)}
+body.theme-agddays{--theme-symbol:"◫";--theme-glow:rgba(12,129,116,.10)}
+body.theme-premium,body.theme-custom{--theme-symbol:"✦"}
+body[class*="theme-"] main{background:radial-gradient(circle at 85% 9%,var(--theme-glow),transparent 23%),transparent}
+
+/* Theme-specific micro details */
+body.theme-christmas .ef-nav::after,body.theme-mikolajki .ef-nav::after{content:"🎄  Świąteczna oferta ELKASS  •  🎁  Prezenty z doradztwem"}
+body.theme-blackweek .ef-nav::after{content:"BLACK WEEK  •  specjalne ceny RTV i AGD  •  ograniczona liczba sztuk"}
+body.theme-valentines .ef-nav::after{content:"♥  Pomysły na prezent do wspólnego domu"}
+body.theme-spring .ef-nav::after{content:"Wiosenne odświeżenie domu  •  nowe inspiracje"}
+body.theme-summer .ef-nav::after{content:"Letnie ceny  •  chłodzenie, multimedia i sprzęt na urlop"}
+body.theme-autumn .ef-nav::after{content:"Jesienne wyposażenie domu  •  komfort na chłodniejsze dni"}
+body.theme-sale .ef-nav::after{content:"WYPRZEDAŻ  •  wybrane produkty w specjalnych cenach"}
+body.theme-cyberweek .ef-nav::after{content:"CYBER WEEK  •  technologia w cyfrowych cenach"}
+body.theme-backtoschool .ef-nav::after{content:"Back to School  •  laptopy, drukarki i akcesoria"}
+body.theme-rtvdays .ef-nav::after{content:"RTV Days  •  telewizory, audio i gaming"}
+body.theme-agddays .ef-nav::after{content:"AGD Days  •  wyposażenie kuchni i domu"}
+body[class*="theme-"] .ef-nav::after{display:none;padding:7px 20px;text-align:center;font-size:10px;font-weight:850;letter-spacing:.06em;color:#fff;background:linear-gradient(90deg,var(--season-accent-2),var(--season-accent));}
+body.theme-christmas .ef-nav::after,body.theme-mikolajki .ef-nav::after,body.theme-blackweek .ef-nav::after,body.theme-valentines .ef-nav::after,body.theme-spring .ef-nav::after,body.theme-summer .ef-nav::after,body.theme-autumn .ef-nav::after,body.theme-sale .ef-nav::after,body.theme-cyberweek .ef-nav::after,body.theme-backtoschool .ef-nav::after,body.theme-rtvdays .ef-nav::after,body.theme-agddays .ef-nav::after{display:block}
+
+/* Prevent large voids caused by incomplete dynamic sections */
+.elkass-final-home #produkty:empty,.elkass-final-home #opinie:empty,.elkass-final-home #salon:empty,.elkass-final-home #kontakt:empty{display:none!important}
+.elkass-final-home .ef-footer{margin-top:64px!important}
+
+@media(max-width:1100px){
+ .elkass-final-home .ef-categories{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ .elkass-final-home .ef-cat:nth-child(n){height:164px!important}
+ .elkass-final-home .ef-cat:nth-child(n+7){display:none!important}
+ .season-campaign{width:min(52%,420px)!important}
+}
+@media(max-width:760px){
+ .elkass-final-home .ef-wrap{width:min(100% - 24px,720px)}
+ .elkass-final-home .ef-categories{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ .elkass-final-home .ef-cat:nth-child(n){display:flex!important;height:142px!important}
+ .elkass-final-home .ef-cat:nth-child(n+7){display:none!important}
+ .elkass-final-home .ef-cat>div,.elkass-final-home .ef-cat:nth-child(-n+4)>div{padding:15px 40px 13px 14px!important}
+ .elkass-final-home .ef-cat b,.elkass-final-home .ef-cat:nth-child(n+5) b{font-size:16px!important}
+ .elkass-final-home .ef-cat small{display:none!important}
+ .season-art-main{width:40%!important;height:52%!important;opacity:.58!important}
+ .season-campaign{left:12px!important;right:12px!important;width:auto!important;min-width:0!important}
+ body[class*="theme-"] .ef-nav::after{font-size:8.5px;padding:6px 10px}
+}
+@media(max-width:430px){
+ .elkass-final-home .ef-categories{grid-template-columns:1fr 1fr!important}
+ .elkass-final-home .ef-cat:nth-child(n){height:126px!important}
+ .elkass-final-home .ef-cat b,.elkass-final-home .ef-cat:nth-child(n+5) b{font-size:14px!important}
+ .elkass-final-home .ef-cat .ef-cat-kicker{display:none!important}
+ .elkass-final-home .ef-cat>div::before{font-size:14px;right:10px;top:10px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.ef-cat,.ef-product,.season-art,.season-hero-image{transition:none!important}}
