@@ -113,3 +113,9 @@ body.theme-christmas .ef-nav::after,body.theme-mikolajki .ef-nav::after,body.the
  .elkass-final-home .ef-cat>div::before{font-size:14px;right:10px;top:10px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.ef-cat,.ef-product,.season-art,.season-hero-image{transition:none!important}}
+/* V12 — bezszwowy pasek renomowanych producentów */
+.brand-marquee,.brands-marquee,.ef-brands-track-wrap{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.brand-marquee-track,.brands-track,.ef-brands-track{display:flex;width:max-content;flex-wrap:nowrap;will-change:transform;animation:elkassBrandsLoop 32s linear infinite}
+.brand-marquee:hover .brand-marquee-track,.brands-marquee:hover .brands-track,.ef-brands-track-wrap:hover .ef-brands-track{animation-play-state:paused}
+@keyframes elkassBrandsLoop{to{transform:translate3d(-50%,0,0)}}
+@media(prefers-reduced-motion:reduce){.brand-marquee-track,.brands-track,.ef-brands-track{animation:none;overflow-x:auto}}

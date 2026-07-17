@@ -1,0 +1,12 @@
+{
+  "version": "12.0-production-database",
+  "checks": {
+    "migration_005_exists": true,
+    "db_adapter_syntax_checked": true,
+    "migration_tool_exists": true,
+    "config_contains_no_secret_value": true,
+    "entrypoints_include_db": true,
+    "hierarchical_categories": true,
+    "order_price_revalidation": true
+  }
+}
